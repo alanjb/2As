@@ -5,6 +5,8 @@ import Home from './components/Home';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Navbar from './components/Navbar';
+import Profile from './components/Profile';
+import SignInUp from './components/SignInUp';
 
 import {
   Route,
@@ -17,20 +19,17 @@ class App extends Component {
   render() {
     return (
         <div className="App">
-            <div className="primary-layout">
               <Navbar />
-
-
+              <SignInUp />
               <main>
                 <Switch>
                   <Route path="/" exact component={Home} />
-                  <Route onClick="" path="/" component={Signup} />
-                  <Route path="/" component={Login} />
+                  <Route path="/" exact component={Profile} />
+                  {/* <Route onClick="" path="/" component={Signup} />
+                  <Route path="/" component={Login} /> */}
                 </Switch>
               </main>
           </div>
-        </div>
-
     );
   }
 }

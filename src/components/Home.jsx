@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
 export default class Home extends React.Component {
-  
+
   constructor(props) {
     super(props);
       this.state = {
@@ -10,9 +10,6 @@ export default class Home extends React.Component {
       }
   }
   componentWillMount() {
-    // generate new city to display in search bar
-
-
       this.setState({
 
       });

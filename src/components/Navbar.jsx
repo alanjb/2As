@@ -7,37 +7,34 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+ } from 'reactstrap';
 
+import SignUpLink from './SignUpLink';
 import { Link } from 'react-router-dom';
 
 export default class Example extends React.Component {
+
   constructor(props) {
     super(props);
     this.toggle = this.toggle.bind(this);
     this.handleClick = this.handleClick.bind(this);
     this.state = {
       isOpen: false,
-      buttonClicked: false
-    };
+      isButtonClicked: false
+    }
   }
 
-  handleClick(event)
-    if(event.)
-
-    this.setState(
-      {
-        buttonClicked: !this.state.ButtonClicked;
-      }
-    )
+  handleClick(e){
+    alert("TESTTTT");
+    this.setState({
+      isButtonClicked: !this.state.isButtonClicked
+    });
+    console.log(!this.state.isButtonClicked);
   }
 
   toggle() {
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpen: !this.state.isButtonClicked
     });
   }
 
@@ -48,19 +45,11 @@ export default class Example extends React.Component {
           <NavbarBrand><Link to="/">zas</Link></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
-
               <Nav className="ml-auto" navbar>
-
+                    <SignUpLink clickHandler={this.handleClick}> </SignUpLink>
                 <NavItem>
-                  <button onCLick={this.handleClick}>
-                    <NavLink onCLick={this.handleClick}><Link to="/login" onCLick={this.handleClick}> Log in </Link></NavLink>
-                  </button>
+                  <NavLink><Link to="/profile">Profile</Link></NavLink>
                 </NavItem>
-
-                <NavItem>
-                  <NavLink><Link to="/signup">Sign up</Link></NavLink>
-                </NavItem>
-
               </Nav>
             </Collapse>
         </Navbar>
