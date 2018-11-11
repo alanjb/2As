@@ -3,6 +3,7 @@ import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 // import SignForm from './components/SignForm';
 import { Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import Tab from './Tab';
 
 
 class ModalExample extends React.Component {
@@ -28,18 +29,19 @@ class ModalExample extends React.Component {
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>Log in to ZAS</ModalHeader>
           <ModalBody>
-            <FormGroup>
-         <Label for="exampleEmail">Email</Label>
-         <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
-           </FormGroup>
-              </ModalBody>
-              <ModalFooter>
-                <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
-                <Button color="secondary" onClick={this.toggle}>Cancel</Button>
-              </ModalFooter>
-            </Modal>
-          </div>
-      );
+              <Tab />
+          </ModalBody>
+          <ModalFooter>
+
+
+              OR
+
+              <Button color="secondary" onClick={this.toggle}>Connect with Facebook</Button>
+
+          </ModalFooter>
+        </Modal>
+      </div>
+    );
   }
 }
 export default ModalExample;

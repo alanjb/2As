@@ -11,14 +11,14 @@ export default class Home extends React.Component {
   }
   componentWillMount() {
       this.setState({
-
+        //
       });
   };
 
   render() {
     return (
+      <Container>
         <div className="Home">
-          <Container>
             <div className="main_area">
               <h1 className="header">ZAS HOME</h1>
               <h2 className="subheading">check it out</h2>
@@ -32,8 +32,8 @@ export default class Home extends React.Component {
                 </div>
               </div>
             </div>
-          </Container>
-      </div>
+          </div>
+      </Container>
     )
   }
 }

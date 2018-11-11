@@ -25,11 +25,23 @@ export default class Example extends React.Component {
   }
 
   handleClick(e){
-    alert("TESTTTT");
+    // alert("TESTTTT");
+    let currentState = !this.state.isButtonClicked;
+
     this.setState({
       isButtonClicked: !this.state.isButtonClicked
     });
-    console.log(!this.state.isButtonClicked);
+
+    if(currentState === true){
+       // sidebar.style.display = 'block';
+
+    }
+    else{
+      // sidebar.style.display = 'block';
+    }
+    // console.log(!this.state.isButtonClicked);
+
+
   }
 
   toggle() {
@@ -46,7 +58,7 @@ export default class Example extends React.Component {
           <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
-                    <SignUpLink clickHandler={this.handleClick}> </SignUpLink>
+                  <SignUpLink clickHandler={this.handleClick}> </SignUpLink>
                 <NavItem>
                   <NavLink><Link to="/profile">Profile</Link></NavLink>
                 </NavItem>
