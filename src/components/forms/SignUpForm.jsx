@@ -7,7 +7,8 @@ import { Container } from 'reactstrap';
 export default class SignUpForm extends React.Component {
   constructor(props) {
     super(props);
-
+    // this.onChange = this.bind.onChange(this);
+    // this.onSubmit = this.bind.onSubmit(this);
     this.state = {
       data: {
         username: "",
@@ -16,7 +17,12 @@ export default class SignUpForm extends React.Component {
         confirmPassword: ""
       },
       loading: false,
-      errors: {} // when we pass errors into setState, the new error object will replace the old one in the state object
+      errors: {
+        username: "",
+        email: "",
+        password: "",
+        confirmPassword: ""
+      } // when we pass errors into setState, the new error object will replace the old one in the state object
     };
   }
 
@@ -36,25 +42,18 @@ export default class SignUpForm extends React.Component {
 
   validate = (data, e) => {
     const errors = {};
-    if(data.username === "" || !data.username || data.username.length <10) {
-      errors.username = "USERNAME Input is blank. Username length: " + data.username.length;
-      alert(errors.username);
-      e.preventDefault();
-
-    }
-
-    else if(data.username === "" || !data.username){
+    if(data.username.length<1){
       errors.password = "PASSWORD Input is blank. Password length: " + data.password.length;
       alert(errors.password);
       e.preventDefault();
     }
-
-    else{
-      alert("good to go");
+    else if(data.username === "" || !data.username) {
+      errors.username = "USERNAME Input is blank. Username length: " + data.username.length + ", " + data.password.length;
+      alert(errors.username);
+      e.preventDefault();
     }
 
     return errors;
-
   }
 
   render() {
@@ -70,13 +69,11 @@ export default class SignUpForm extends React.Component {
             <Label for="exampleEmail">Email</Label>
             <Input type="email" name="email" id="exampleEmail" value={this.state.data.email} onChange={this.onChange} placeholder="Enter your email" />
 
-            <Label for="exampleEmail">Password</Label>
+            <Label for="examplePassword">Password</Label>
             <Input type="password" name="password" id="examplePassword" value={this.state.data.password} onChange={this.onChange} placeholder="Enter a password" />
 
-            <Label for="exampleEmail">Confirm Password</Label>
-            <Input type="password" name="password" id="examplePassword" value={this.state.data.password} onChange={this.onChange} placeholder="Confirm above password" />
-
-
+            <Label for="examplePassword">Confirm Password</Label>
+            <Input type="password" name="password" id="examplePassword1" value={this.state.data.confirmPassword} onChange={this.onChange} placeholder="Confirm above password" />
 
             <Button color="primary" onClick={this.handleSignUpSumbit}>Sign Up</Button>
             <Button color="secondary" onClick={this.toggle}>Cancel</Button>

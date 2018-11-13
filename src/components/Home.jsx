@@ -1,39 +1,41 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import NameTitle from './NameTitle';
+
+const User = function (firstName) {
+  const user = {};
+  user.firstName = firstName;
+  return user;
+};
+
+const user1 = User('alan');
+const userFirstName = user1.firstName;
 
 export default class Home extends React.Component {
-
   constructor(props) {
     super(props);
-      this.state = {
-
-      }
-  }
-  componentWillMount() {
-      this.setState({
-        //
-      });
+    this.state = {
+        userFirstName: "no name yet"
+    }
   };
 
-  render() {
-    return (
-      <Container>
-        <div className="Home">
-            <div className="main_area">
-              <h1 className="header">ZAS HOME</h1>
-              <h2 className="subheading">check it out</h2>
-              <div className="SearchArea">
-                {/* <MainSearchBar placeholder={this.state.placeholder} /> */}
-              </div>
-              <div className="Featured-area">
-                <h1 className="header" id="Featured-heading">Featured Members</h1>
+  componentWillMount() {
+    this.setState({
+      userFirstName: userFirstName
+    });
 
-                <div className="CardDeckArea">
-                </div>
-              </div>
-            </div>
-          </div>
-      </Container>
+  }
+
+  render() {
+
+    return (
+        <div className="main_area">
+          <h1 className="welcome-header">
+            {/* {" " + user1.firstName} */}
+            <NameTitle className="welcome-header" firstName={this.state.userFirstName}/>
+
+          </h1>
+        </div>
     )
   }
 }

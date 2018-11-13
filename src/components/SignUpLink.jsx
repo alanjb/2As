@@ -3,6 +3,7 @@ import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 // import SignForm from './components/SignForm';
 import { Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+// import Signup from './components/SignUp';
 
 export default class SignUpLink extends React.Component{
   render(){
