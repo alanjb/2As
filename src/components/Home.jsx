@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import NameTitle from './NameTitle';
+import StartATrade from './forms/StartATrade';
+import TradeCart from './forms/TradeCart';
+import TradeSettings from './forms/TradeSettings';
 
 const User = function (firstName) {
   const user = {};
@@ -27,14 +30,13 @@ export default class Home extends React.Component {
   }
 
   render() {
-
     return (
         <div className="main_area">
-          <h1 className="welcome-header">
             {/* {" " + user1.firstName} */}
             <NameTitle className="welcome-header" firstName={this.state.userFirstName}/>
-
-          </h1>
+            <StartATrade/>
+            <TradeCart />
+            <TradeSettings />
         </div>
     )
   }
