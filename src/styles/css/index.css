@@ -3,7 +3,7 @@
   border-style: solid;
   border-width: thin;
   border-color: #050505;
-  height: 1000px !important; }
+  height: 2000px !important; }
 
 .eye-graphic {
   height: 40px;
@@ -42,7 +42,7 @@ input.form-control {
     color: black; }
 
 .App-logo {
-  height: 20px;
+  height: 30px;
   z-index: 50; }
 
 .welcome-header {
