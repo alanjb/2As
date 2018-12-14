@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import React, {Component} from 'react';
+import {Container, Row, Col} from 'reactstrap';
 import NameTitle from './NameTitle';
-import StartATrade from './forms/StartATrade';
-import TradeCart from './forms/TradeCart';
-import TradeSettings from './forms/TradeSettings';
+import StartATrade from './StartATrade';
+import TradeCart from './TradeCart';
+import TradeSettings from './TradeSettings';
 
-const User = function (firstName) {
+const User = function(firstName) {
   const user = {};
   user.firstName = firstName;
   return user;
@@ -18,26 +18,23 @@ export default class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-        userFirstName: "no name yet"
+      userFirstName: "no name yet"
     }
   };
 
-  componentWillMount() {
-    this.setState({
-      userFirstName: userFirstName
-    });
-
-  }
+  // componentWillMount() {
+  //   this.setState({userFirstName: userFirstName});
+  // 
+  // }
 
   render() {
-    return (
-        <div className="main_area">
-            {/* {" " + user1.firstName} */}
-            <NameTitle className="welcome-header" firstName={this.state.userFirstName}/>
-            <StartATrade/>
-            <TradeCart />
-            <TradeSettings />
-        </div>
-    )
+    return (<div className="main_area">
+      {/* {" " + user1.firstName} */}
+      {/* <NameTitle className="welcome-header" firstName={this.state.userFirstName}/> */}
+      <StartATrade/>
+      <TradeCart/>
+      <TradeSettings/>
+
+    </div>)
   }
 }
