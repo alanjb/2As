@@ -3,7 +3,7 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import NameTitle from './components/NameTitle';
 import {Container} from 'reactstrap';
-import { store } from "./store";
+import {store} from "./store";
 
 class App extends Component {
   // state = store.getState();
@@ -14,7 +14,7 @@ class App extends Component {
       </div>
       <div className="Body">
         <Container>
-          <NameTitle key={1} tech={store.getState().tech}/>
+          {/* <NameTitle key={1} tech={store.getState().tech}/> */}
           {/* <ButtonGroup key={2} technologies={["React", "Elm", "React-redux"]} /> */}
           <Home/>
         </Container>

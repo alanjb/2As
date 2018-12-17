@@ -1,25 +1,8 @@
 import React from 'react';
-import {
-  TabContent,
-  TabPane,
-  Nav,
-  NavItem,
-  NavLink,
-  Card,
-  Button,
-  CardTitle,
-  CardText,
-  CardSubtitle,
-  Row,
-  Col,
-  CardBody
-} from 'reactstrap';
-import {Form, FormGroup, Label, Input, FormText} from 'reactstrap';
-import classnames from 'classnames';
-import {Container} from 'reactstrap';
-import {InputGroup, InputGroupAddon, InputGroupText} from 'reactstrap';
+import {Button, CardTitle, CardSubtitle} from 'reactstrap';
+import {Form, FormGroup, Label, Input} from 'reactstrap';
+import {InputGroup} from 'reactstrap';
 import Tag from './Tag';
-import skillFactory from './skillFactory';
 
 export default class SkillsStore extends React.Component {
   constructor(props) {
@@ -30,15 +13,15 @@ export default class SkillsStore extends React.Component {
 
     // skills array updated here everytime the add to cart button is clicked
     this.state = {
-      //componentDidUpdate effects this because the skill array is adding or deleting for itself
       skills: [],
-      // the current state of the description input textbox
       description: '',
       selectedOption: 'justOnce'
     }
+
+    this.skills = [];
   }
 
-  componentWillMount(){
+  componentWillMount() {
     // console.log("WILL MOUNT");
   }
 
@@ -97,7 +80,7 @@ export default class SkillsStore extends React.Component {
           <CardSubtitle>describe what you need from this skill</CardSubtitle>
         </FormGroup>
         <FormGroup>
-          <Input text="text" type="textarea" name="text" id="exampleText" value={this.state.description} onChange={this.handleDescripitionChange}/>
+          <Input text="text" type="textarea" name="text" id="description" value={this.state.description} onChange={this.handleDescripitionChange}/>
         </FormGroup>
         <FormGroup>
           <Button type="submit" color="success" value="Submit">add to cart</Button>
@@ -119,29 +102,36 @@ export default class SkillsStore extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    console.log('Click');
+    // console.log('Click');
     const skillObject = createSkill(this.state.description, this.state.selectedOption);
-    console.log("this skills description: " + skillObject.description);
+    // console.log("this skills description: " + skillObject.description);
+    //update local state of SkillsStore for skills array
+    this.skills.push(skillObject);
     this.setState(prevState => ({
       skills: [
         ...prevState.skills,
         skillObject
       ]
     }));
+    //callback up to SkillStore component in Trade parent to update parent skills array state
     // console.log(this.state.skills);
+    // this.props.handleSkills(this.state.skills);
+    this.props.handleSkills(skillObject);
+
   } //end handleSubmit
 
-  componentDidUpdate(prevState, prevProps, snapshot){
-    console.log(this.state.skills);
-
+  componentDidUpdate(prevState, prevProps, snapshot) {
+    console.log("SKILLSTORE ARRAY: ");
+    console.log(this.skills);
   }
 
 } //END COMPONENT
 
+// SkillsStore.propTypes = {
+//   description: React.PropTypes.string,
+// };
+
 //skill factory function
-function createSkill(des, length){
-  return{
-    description: des,
-    lengthOfTime: length
-  }
+function createSkill(des, length) {
+  return {description: des, lengthOfTime: length}
 }

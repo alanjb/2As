@@ -20,8 +20,8 @@ import {Container} from 'reactstrap';
 import {InputGroup, InputGroupAddon, InputGroupText} from 'reactstrap';
 import SkillsStore from './SkillsStore';
 import ItemForm from './ItemForm';
-// import TradeCart from './TradeCart';
-// import TradeSettings from './TradeSettings';
+import TradeCart from './TradeCart';
+import TradeSettings from './TradeSettings';
 
 export default class StartATrade extends React.Component {
   constructor(props) {
@@ -52,8 +52,6 @@ export default class StartATrade extends React.Component {
   //   alert(this.state.objectsInTradeArray.length);
   // }
 
-
-
   // updateTradeArray = (newSkill) => {
   //
   //   // objectsInTrade.push(newSkill);
@@ -83,11 +81,10 @@ export default class StartATrade extends React.Component {
 
   // DEFAULT IS Add Skill Form
   render() {
-    // const { trade } = this.state;
-    return (<div className="StartATrade-Component">
-      <Card>
+    const { trade } = this.state;
+    return (
+      <div className="StartATrade-Component">
         <Container>
-          <CardBody>
             <Form onSubmit={this.onSubmit}>
               <div className='StartATrade-Header'>
                 <CardTitle>start a trade</CardTitle>
@@ -103,12 +100,11 @@ export default class StartATrade extends React.Component {
                 <SkillsStore updateTradeArray={this.updateTradeArray}/> {/* <ItemForm isOn={this.state.itemButtonOn}/> */}
               </div>
             </Form>
-          </CardBody>
         </Container>
-      </Card>
-      {/* <TradeCart />
-        <TradeSettings /> */
-      }
+      {/* */}
+      <TradeCart />
+      {/* */}
+      <TradeSettings />
     </div>);
   }
 }
