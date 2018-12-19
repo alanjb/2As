@@ -33,27 +33,27 @@ export default class TradeCart extends React.Component {
   render() {
     const {skills} = this.props;
     const skillsList = skills.map(skill => {
-      return (<li>{skill.description}</li>)
+      return (<Card>
+        <CardBody>
+          <li key={skill.id}>{skill.id}</li>
+        </CardBody>
+      </Card>)
     })
     return (<div className="TradeCart-Component">
       <Card>
-        <Container>
-          <CardBody>
-            <Form onSubmit={this.onSubmit}>
-              <FormGroup>
-                <CardTitle>trade cart</CardTitle>
-              </FormGroup>
-              <FormGroup>
-                <ul>
-                  {skillsList}
-                </ul>
-              </FormGroup>
-              <FormGroup>
-                <Button color="success">Search for Trades</Button>
-              </FormGroup>
-            </Form>
-          </CardBody>
-        </Container>
+        <CardBody>
+          <Form onSubmit={this.onSubmit}>
+            <FormGroup>
+              <CardTitle>trade cart</CardTitle>
+            </FormGroup>
+            <FormGroup>
+              {skillsList}
+            </FormGroup>
+            <FormGroup>
+              <Button color="success">Search for Trades</Button>
+            </FormGroup>
+          </Form>
+        </CardBody>
       </Card>
     </div>);
   }

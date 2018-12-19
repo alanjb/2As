@@ -47,7 +47,7 @@ export default class StartATrade extends React.Component {
   }
 
   render() {
-    const {trade} = this.state;
+    const { trade } = this.state;
     return (<div className="Trade-Component">
       <Container>
         <Form onSubmit={this.onSubmit}>
