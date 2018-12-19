@@ -21,9 +21,6 @@ import {
   AvRadio
 } from 'availity-reactstrap-validation';
 
-// var React = require('react');
-var ReactDOM = require('react-dom');
-
 export default class SkillsStore extends React.Component {
   constructor(props) {
     super(props);
@@ -50,27 +47,25 @@ export default class SkillsStore extends React.Component {
 
   componentDidMount(){
     // const skillsForm = ReactDOM.findDomNode(this.refs.skillsForm);
+    // console.log("Did Mount");
 
   }
+
   render() {
     // console.log("HAS RENDERED");
     return (
       <div className="SkillForm-Component">
-      <Form onSubmit={this.handleSubmit} ref={c => (this.skillForm = c)}>
+      <Form onSubmit={this.handleSubmit}>
       <FormGroup>
         <CardTitle>search or select a skill category</CardTitle>
       </FormGroup>
       <FormGroup>
         <InputGroup>
-          {/* <InputGroupAddon addonType="prepend">@</InputGroupAddon> */}
           <Input placeholder="try 'gardening' "/>
         </InputGroup>
       </FormGroup>
       <FormGroup>
         <CardSubtitle>search results</CardSubtitle>
-        {/* <Tag />
-    <Tag /> */
-        }
         <hr/>
       </FormGroup>
       <FormGroup>
@@ -81,28 +76,21 @@ export default class SkillsStore extends React.Component {
         <CardSubtitle>recently viewed</CardSubtitle>
         <hr/>
       </FormGroup>
-      {/* <FormGroup>
-    <Button color="warning">create new skill</Button>
-  </FormGroup> */
-      }
       <FormGroup>
         <CardSubtitle>specify how long you need this skill</CardSubtitle>
       </FormGroup>
-
       <FormGroup check="check">
         <Label check="check">
           <Input type="radio" name="justOnce" value="justOnce" checked={this.state.selectedOption === "justOnce"} onChange={this.handleOptionChange}/>{' '}
           just once
         </Label>
       </FormGroup>
-
       <FormGroup check="check">
         <Label check="check">
           <Input type="radio" name="permanently" value="permanently" checked={this.state.selectedOption === "permanently"} onChange={this.handleOptionChange}/>{' '}
           permanently
         </Label>
       </FormGroup>
-
       <FormGroup>
         <CardSubtitle>describe what you need from this skill</CardSubtitle>
       </FormGroup>
@@ -114,9 +102,9 @@ export default class SkillsStore extends React.Component {
         {/* <Button color="danger" onClick={this.toggle}>cancel</Button> */}
       </FormGroup>
     </Form>
-    < /div>)
-
-}
+    </div>
+    )
+  }//end render
 
   handleOptionChange(event) {
     this.setState({selectedOption: event.target.value});
@@ -151,25 +139,25 @@ export default class SkillsStore extends React.Component {
       // console.log(this.state.skills);
       // this.props.handleSkills(this.state.skills);
       this.props.handleSkills(skillObject);
-      console.log("its working");
+      // console.log("its working");
       this.resetSkillForm();
       // console.log(this.refs.skillForm);
       // this.form && this.form.reset();
     } else {
       window.alert("Trade Cart is FULL. Remove some items or submit!");
+      // this.resetSkillForm();
       // console.log(this.refs.skillForm);
       // this.form && this.form.reset();
     }
   } //end handleSubmit
 
   resetSkillForm(){
-    console.log('test1');
     this.setState({
       name: '',
       description: ""
     })
-    console.log('test2');
   }
+
   componentDidUpdate(prevState, prevProps, snapshot) {
     // console.log("SKILLSTORE ARRAY: ");
     // console.log(this.skills);
@@ -177,11 +165,7 @@ export default class SkillsStore extends React.Component {
 
 } //END COMPONENT
 
-// SkillsStore.propTypes = {
-//   description: React.PropTypes.string,
-// };
-
-//skill factory function
+// skill factory function
 function createSkill(des, length, id) {
   return {description: des, lengthOfTime: length, id: id}
 }

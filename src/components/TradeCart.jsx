@@ -30,14 +30,30 @@ export default class TradeCart extends React.Component {
     }
   }
 
+  // handleSkillClick = (event) => {
+  //   event.preventDefault();
+  //   console.log('skill clicked');
+  // }
+
+  deleteTradeObject = (event) => {
+    event.preventDefault();
+    console.log('skill delete: ' + this.skill.id);
+
+  }
+
   render() {
-    const {skills} = this.props;
+    const {skills} = this.props; //object destructuring
     const skillsList = skills.map(skill => {
-      return (<Card>
-        <CardBody>
-          <li key={skill.id}>{skill.id}</li>
-        </CardBody>
-      </Card>)
+      return (
+        <Card onClick={this.handleSkillClick}>
+          <CardBody>
+            <li
+              key={skill.id}>{skill.description}
+              <Button color="danger" onClick={this.deleteTradeObject}>delete</Button>{' '}
+            </li>
+          </CardBody>
+        </Card>
+      )
     })
     return (<div className="TradeCart-Component">
       <Card>
