@@ -23,7 +23,7 @@ export default class TradeCart extends React.Component {
   constructor(props) {
     // StartATrade is the parent component of the SkillStore
     super(props);
-    this.deleteTradeObject= this.deleteTradeObject.bind(this);
+    // this.deleteTradeObject= this.deleteTradeObject.bind(this);
     // should be able to delete objects from cart
     this.state = {
       loading: false,
@@ -32,16 +32,16 @@ export default class TradeCart extends React.Component {
     }
   }
 
-  // handleSkillClick = (event) => {
-  //   event.preventDefault();
-  //   console.log('skill clicked');
-  // }
-
-  deleteTradeObject = (event) => {
-    event.preventDefault();
-    console.log('skill delete: ' + this.state.buttonTracker);
-
-
+  deleteTradeObject = deleteSkill => {
+    console.log('skill delete: ', deleteSkill.description);
+    const { skills } = this.props;
+    const newSkills = skills.filter(keepSkill => {
+      return keepSkill.description !== deleteSkill.description;
+    });
+    this.setState({
+      currentSkillsArray: [...newSkills]
+    });
+    this.props.handleUpdateAfterDelete(newSkills);
   }
 
   render() {
@@ -52,7 +52,7 @@ export default class TradeCart extends React.Component {
           <CardBody>
             <li
               key={skill.name}>{skill.description}
-              <Button color="danger" onClick={this.deleteTradeObject}>delete</Button>{' '}
+              <Button onClick={(event)=>this.deleteTradeObject(skill)} color="danger">delete</Button>{' '}
             </li>
           </CardBody>
         </Card>

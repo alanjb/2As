@@ -46,9 +46,16 @@ export default class StartATrade extends React.Component {
     }));
   }
 
+  handleUpdateAfterDelete = (newArray) => {
+    this.setState({
+      skills: [...newArray]
+    });
+  }
+
   render() {
     const { trade } = this.state;
-    return (<div className="Trade-Component">
+    return (
+      <div className="Trade-Component">
       <Container>
         <Form onSubmit={this.onSubmit}>
           <div className='StartATrade-Header'>
@@ -62,12 +69,12 @@ export default class StartATrade extends React.Component {
             </FormGroup>
           </div>
           <div className="SkillStore-Component">
-            <SkillsStore handleSkills={this.handleSubmit}/> {/* <ItemForm isOn={this.state.itemButtonOn}/> */}
+            <SkillsStore handleSkills={this.handleSubmit} /> {/* <ItemForm isOn={this.state.itemButtonOn}/> */}
           </div>
         </Form>
       </Container>
       {/*  */}
-      <TradeCart skills={this.state.skills}/> {/*  */}
+      <TradeCart skills={this.state.skills} handleUpdateAfterDelete={this.handleUpdateAfterDelete}/> {/*  */}
       <TradeSettings/>
     </div>);
   }
