@@ -1,8 +1,7 @@
 {
   "name": "2as",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
     "availity-reactstrap-validation": "^2.3.3",
     "bcrypt": "^3.0.3",
@@ -13,12 +12,8 @@
     "gravatar": "^1.8.0",
     "jsonwebtoken": "^8.4.0",
     "mongoose": "^5.4.2",
-    "nodemon": "^1.18.9",
     "passport": "^0.4.0",
-    "passport-facebook": "^2.1.1",
     "passport-jwt": "^4.0.0",
-    "passport-remember-me": "0.0.1",
-    "prettier": "^1.15.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-redux": "^5.1.0",
@@ -31,20 +26,27 @@
     "redux-thunk": "^2.3.0",
     "validator": "^10.10.0"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "react-scripts start",
+    "build": "npm sass:build && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "sass": "sass --watch src/styles/scss:src/styles/css",
+    "sass: build": "sass - update src/styles/scss:src/styles/css",
     "server": "nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alanjb/2as.git"
+  "proxy": "http://localhost:5000",
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "author": "Alan JB",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alanjb/2as/issues"
-  },
-  "homepage": "https://github.com/alanjb/2as#readme"
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "prettier": "1.15.1"
+  }
 }

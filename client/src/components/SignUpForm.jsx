@@ -10,7 +10,7 @@ export default class SignUpForm extends React.Component {
     // this.onChange = this.bind.onChange(this);
     // this.onSubmit = this.bind.onSubmit(this);
     this.state = {
-
+      
     }
   }
 

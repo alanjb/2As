@@ -26,7 +26,7 @@ export default class SkillsStore extends React.Component {
     super(props);
     this.handleDescripitionChange = this.handleDescripitionChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleOptionChange = this.handleOptionChange.bind(this);
+    // this.handleOptionChange = this.handleOptionChange.bind(this);
     // skills array updated here everytime the add to cart button is clicked
     this.state = {
       count: 0,
@@ -106,7 +106,7 @@ export default class SkillsStore extends React.Component {
     )
   }//end render
 
-  handleOptionChange(event) {
+  handleOptionChange = (event) => {
     this.setState({selectedOption: event.target.value});
     // console.log('selectedOption change');
   }
