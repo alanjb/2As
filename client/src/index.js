@@ -9,6 +9,7 @@ import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import rootReducer from './RootReducer';
+import { Route, Link } from 'react-router-dom'
 
 // const store = createStore(
 //   rootReducer,

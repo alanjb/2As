@@ -1,28 +1,64 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin-top: 0; }
+
 .Body {
-  background-color: #fafbfb;
-  border-style: solid;
-  border-width: thin;
-  border-color: #050505;
-  height: 2000px !important; }
+  background-color: #FCFCFC;
+  border-left: 0.5px solid #473479;
+  border-right: 0.5px solid #473479; }
 
-.eye-graphic {
-  height: 40px;
-  z-index: 50; }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FCFCFC; }
 
-.App-link {
-  color: #171617; }
+.caret {
+  height: 7px !important;
+  margin-left: -12px !important;
+  position: relative;
+  display: inline-block; }
 
-.Main-Navbar {
-  background-color: #f286c2 !important;
-  border-style: solid;
+.cart {
+  height: 35px !important;
+  position: relative;
+  display: inline-block;
+  margin-left: 12px !important; }
+
+.eyeball {
+  height: 45px !important;
+  position: relative;
+  display: inline-block;
+  margin-left: 12px !important;
+  margin-top: 7px; }
+
+.logo {
+  height: 28px !important; }
+
+.navigation {
+  background: #7D6AB1 !important;
+  border: 0.5px solid #473479;
   border-width: 1px 1px 0px 1px !important; }
 
-input.form-control {
-  border-radius: 30px !important;
-  border-color: #171617;
-  width: 35% !important;
+.startATrade {
+  margin-left: 35px !important;
+  font-size: 12px !important;
+  background-color: #5A4298;
+  border: 0.5px solid #473479;
+  border-radius: 0px; }
+
+.search {
+  background: #CEC2ED !important;
+  border: 0.5px solid #473479;
+  border-radius: 0px;
+  height: 50px; }
+
+.searchbox {
+  border: 0.5px solid #473479;
+  width: 300px !important;
   height: 30px;
-  font-size: .9em; }
+  font-size: .9em;
+  border-radius: 0px;
+  display: block; }
 
 .ml-auto.navbar-nav {
   margin-left: none !important; }
@@ -32,21 +68,19 @@ input.form-control {
   opacity: 1;
   /* Firefox */ }
 
-.nav-link a {
-  color: #171617 !important;
-  padding: 12px; }
-
-.navbar-toggler {
-  border: none !important; }
-  .navbar-toggler .navbar-toggler-icon {
-    color: black; }
-
-.App-logo {
-  height: 30px;
-  z-index: 50; }
-
-.welcome-header {
-  padding-top: 25px;
-  padding-bottom: 100px; }
+@media only screen and (min-width: 768px) {
+  /* tablets and desktop */
+  h1 {
+    font-size: 2rem; } }
+@media only screen and (max-width: 767px) {
+  /* phones */
+  h1 {
+    font-size: 1.5rem; } }
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  /* portrait phones */ }
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    margin-left: initial; } }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,30 @@
+@import 'variables';
+
+.search {
+  background: $light-purple !important;
+  border: .5px solid $darker-purple;
+  border-radius: 0px;
+  height: 50px;
+}
+
+// input.form-control{
+//
+// }
+
+.searchbox {
+  border: .5px solid $darker-purple;
+  width: 300px !important;
+  height: 30px;
+  font-size: .9em;
+  border-radius: 0px;
+  display: block;
+}
+
+.ml-auto.navbar-nav {
+  margin-left: none !important;
+}
+
+::placeholder {
+    color: #171617 !important;
+    opacity: 1; /* Firefox */
+}

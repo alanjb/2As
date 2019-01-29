@@ -1,0 +1,86 @@
+@import 'variables';
+
+.caret {
+  height: 7px !important;
+  margin-left: -12px !important;
+  position: relative;
+  display:inline-block;
+}
+
+.cart {
+  height: 35px !important;
+  position: relative;
+  display:inline-block;
+  margin-left: 12px !important;
+  // margin-top: 5px;
+}
+
+.eyeball {
+  height: 45px !important;
+  position: relative;
+  display: inline-block;
+  margin-left: 12px !important;
+  margin-top: 7px;
+}
+
+.logo {
+  height: 28px !important;
+}
+
+.navigation{
+  background: $purple !important;
+  border: .5px solid $darker-purple;
+  border-width: 1px 1px 0px 1px !important;
+}
+
+.startATrade {
+  margin-left: 35px !important;
+  font-size: 12px !important;
+  background-color: $dark-purple;
+  border: .5px solid $darker-purple;
+  border-radius: 0px;
+}
+
+
+
+
+
+
+
+
+
+// .nav {
+//   display: block !important;
+// }
+//
+// .nav-link{
+//   color: $black !important;
+//   margin-top: 10px;
+// }
+//
+// .navbar-expand-md .navbar-nav .nav-link{
+//   padding-left: 1rem !important;
+//   padding-right: 1rem !important;
+// }
+//
+// li {
+//   display: block !important;
+// }
+//
+// span.navbar-toggler-icon{
+//   width: 1em;
+//   height: 1em;
+// }
+//
+// .navbar-toggler{
+//   border: none;
+//   z-index: 50;
+// }
+//
+// .navbar-toggler{
+//   border: none !important;
+//
+//   .navbar-toggler-icon{
+//     color: black;
+//   }
+// }

@@ -1,25 +1,25 @@
 import React, {Component} from 'react';
-import Home from './components/Home';
-import Navbar from './components/Navbar';
-import NameTitle from './components/NameTitle';
-import {Container} from 'reactstrap';
-import {store} from "./store";
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Home from './components/home/Home';
+import Navbar from './components/navigation/Navbar';
+// import NameTitle from './components/home/NameTitle';
+// import {Container} from 'reactstrap';
+// import {store} from "./store";
+import Search from './components/navigation/SearchBar';
+import EditProfile from './components/ups/EditProfile';
+import Landing from "./components/auth/Landing";
 
 class App extends Component {
-  // state = store.getState();
   render() {
-    return (<div className="App">
-      <div className="Navbar">
-        <Navbar/>
-      </div>
-      <div className="Body">
-        <Container>
-          {/* <NameTitle key={1} tech={store.getState().tech}/> */}
-          {/* <ButtonGroup key={2} technologies={["React", "Elm", "React-redux"]} /> */}
-          <Home/>
-        </Container>
-      </div>
-    </div>);
+    return (
+      <Router>
+        <div className="App">
+          <Landing></Landing>
+          <Route exact path="/" Component={ Landing } />
+
+        </div>
+      </Router>
+    );
   }
 }
 export default App;

@@ -61,7 +61,7 @@ router.post('/register',(req,res) => {
 });
 
 //@route    POST api/users/login
-//@desc     Login user / returning JWT token
+//@desc     Validating user for login / returning JWT token
 //@access   Public
 router.post('/login', (req, res) => {
   const email = req.body.email;
@@ -70,8 +70,8 @@ router.post('/login', (req, res) => {
   User.findOne({email:email})
   //use the USER schema
     .then(user => {
-      if(!user){
-        // if no user then error that no 
+      if(!user) {
+        // if no user then error that no
         return res.status(404).json({email: 'User not found!'});
       }
       // if user exists....continue to here
