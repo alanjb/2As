@@ -2,85 +2,112 @@
   box-sizing: border-box;
   margin-top: 0; }
 
-.Body {
-  background-color: #FCFCFC;
-  border-left: 0.5px solid #473479;
-  border-right: 0.5px solid #473479; }
-
 body {
   margin: 0;
-  padding: 0;
-  background-color: #FCFCFC; }
+  background-color: #FCFCFC;
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.42;
+  color: #3c3d3b; }
 
-.caret {
-  height: 7px !important;
-  margin-left: -12px !important;
-  position: relative;
-  display: inline-block; }
+.Navbar-Component {
+  overflow: hidden !important;
+  position: fixed !important;
+  width: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  height: 64px !important;
+  background-color: #3c3d3b !important;
+  box-shadow: none !important;
+  z-index: 1000 !important;
+  display: flex !important;
+  align-items: center !important;
+  border-bottom: 1px solid #2A2B29 !important; }
 
-.cart {
-  height: 35px !important;
-  position: relative;
-  display: inline-block;
-  margin-left: 12px !important; }
+.SearchBar-Component {
+  position: relative !important;
+  width: 100% !important;
+  padding-left: 33px !important; }
 
-.eyeball {
-  height: 45px !important;
-  position: relative;
-  display: inline-block;
-  margin-left: 12px !important;
-  margin-top: 7px; }
-
-.logo {
-  height: 28px !important; }
-
-.navigation {
-  background: #7D6AB1 !important;
-  border: 0.5px solid #473479;
-  border-width: 1px 1px 0px 1px !important; }
-
-.startATrade {
-  margin-left: 35px !important;
-  font-size: 12px !important;
-  background-color: #5A4298;
-  border: 0.5px solid #473479;
-  border-radius: 0px; }
-
-.search {
-  background: #CEC2ED !important;
-  border: 0.5px solid #473479;
-  border-radius: 0px;
-  height: 50px; }
-
-.searchbox {
-  border: 0.5px solid #473479;
-  width: 300px !important;
-  height: 30px;
-  font-size: .9em;
-  border-radius: 0px;
-  display: block; }
-
-.ml-auto.navbar-nav {
-  margin-left: none !important; }
+.SearchBar-Input {
+  background: #FCFCFC !important;
+  border: 1px solid #2A2B29 !important;
+  border-radius: 4px !important;
+  height: 45px;
+  width: 12rem !important;
+  overflow: auto;
+  padding-left: 15px !important; }
+  .SearchBar-Input:before {
+    position: absolute;
+    top: 0;
+    right: 0; }
 
 ::placeholder {
-  color: #171617 !important;
+  font-size: 15px;
+  color: #656664 !important;
   opacity: 1;
-  /* Firefox */ }
+  /* Firefox */
+  font-weight: 200; }
 
-@media only screen and (min-width: 768px) {
-  /* tablets and desktop */
-  h1 {
-    font-size: 2rem; } }
-@media only screen and (max-width: 767px) {
-  /* phones */
-  h1 {
-    font-size: 1.5rem; } }
-@media only screen and (max-width: 767px) and (orientation: portrait) {
-  /* portrait phones */ }
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-    margin-left: initial; } }
+@media only screen and (min-width: 150px) and (max-width: 780px) {
+  .SearchBar-Component {
+    width: 120%;
+    margin: 0 auto; } }
+.navigation-sidepanel {
+  border: 1px solid #2A2B29;
+  position: absolute !important;
+  margin-top: 60px !important;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100vw;
+  height: 100vh;
+  padding: 5px 20px;
+  text-align: left;
+  background-color: #FCFCFC;
+  z-index: 500;
+  background-size: auto;
+  list-style-type: none;
+  overflow-x: auto !important;
+  overflow-y: auto !important;
+  transform: translateX(-100vh);
+  -webkit-transition: transform 0.5s ease-out; }
+  .navigation-sidepanel .navigation-sidepanel-items > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none; }
+  .navigation-sidepanel .navigation-sidepanel-items > ul > li {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 18px;
+    padding-bottom: 15px;
+    text-decoration: none; }
+  .navigation-sidepanel .navigation-sidepanel-items > ul > li > a {
+    color: #3c3d3b !important;
+    display: block !important;
+    text-decoration: none !important; }
+
+.navigation-sidepanel.open {
+  transform: translateX(0vh) !important; }
+
+.caret {
+  left: 65px !important;
+  top: 27px !important;
+  position: fixed !important;
+  height: 10px !important;
+  display: inline-block; }
+
+.PiX-Icon {
+  padding-left: 15px;
+  height: 3em; }
+
+.pixchat-area {
+  padding-left: 1.3rem; }
+
+.pixchaticon {
+  height: 43px !important;
+  padding-right: .8rem; }
 
 /*# sourceMappingURL=App.css.map */

@@ -1,0 +1,47 @@
+@import './abstract/variables';
+
+.navigation-sidepanel {
+  border: 1px solid $dark-black;
+  position: absolute !important;
+  margin-top: 60px !important;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100vw;
+  height: 100vh;
+  padding: 5px 20px;
+  text-align: left;
+  background-color: $white;
+  z-index:500;
+  background-size: auto;
+  list-style-type: none;
+  overflow-x: auto !important;
+  overflow-y: auto !important;
+  transform: translateX(-100vh);
+  -webkit-transition: transform 0.5s ease-out;
+
+  .navigation-sidepanel-items > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+
+  .navigation-sidepanel-items > ul > li{
+    list-style-type: none;
+    margin: 0;
+    padding-top: 18px;
+    padding-bottom: 15px;
+    text-decoration: none;
+  }
+
+  .navigation-sidepanel-items > ul > li > a{
+    color: $black !important;
+    display: block !important;
+    text-decoration: none !important;
+  }
+}
+.navigation-sidepanel.open {
+  transform: translateX(0vh) !important;
+}

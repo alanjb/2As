@@ -1,35 +1,39 @@
-@import 'variables';
-@import 'body';
-@import 'navbar';
-@import 'searchbar';
+@import './abstract/variables';
+@import './layout/body';
+@import './layout/navbar';
+@import './layout/searchbar';
+@import './layout/sidepanel';
+@import './layout/caret';
+@import './layout/logo';
+@import './layout/pixchaticon';
 
-@media only screen and (min-width: 768px) {
-    /* tablets and desktop */
-    h1 {
-      font-size: 2rem;
-    }
-
-  // input.form-control{
-  //   width: 60% !important;
-  // }
-}
-
-@media only screen and (max-width: 767px) {
-    /* phones */
-    h1 {
-      font-size: 1.5rem;
-    }
-}
-
-@media only screen and (max-width: 767px) and (orientation: portrait) {
-    /* portrait phones */
-
-}
-
-@media (min-width: 576px) {
-
-  .container {
-    max-width: 540px;
-    margin-left: initial;
-  }
-}
+// @media only screen and (min-width: 768px) {
+//     /* tablets and desktop */
+//     h1 {
+//       font-size: 2rem;
+//     }
+//
+//   // input.form-control{
+//   //   width: 60% !important;
+//   // }
+// }
+//
+// @media only screen and (max-width: 767px) {
+//     /* phones */
+//     h1 {
+//       font-size: 1.5rem;
+//     }
+// }
+//
+// @media only screen and (max-width: 767px) and (orientation: portrait) {
+//     /* portrait phones */
+//
+// }
+//
+// @media (min-width: 576px) {
+//
+//   .container {
+//     max-width: 540px;
+//     margin-left: initial;
+//   }
+// }
