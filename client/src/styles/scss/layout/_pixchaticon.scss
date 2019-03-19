@@ -1,10 +1,12 @@
 @import './abstract/variables';
 
 .pixchat-area{
-  padding-left: 1.3rem;
+  padding-left: 6%;
+  position: relative;
+  top: 2px;
+  left: 1px;
 }
 
 .pixchaticon{
   height: 43px !important;
-  padding-right: .8rem;
 }

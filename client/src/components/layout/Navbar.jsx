@@ -1,26 +1,40 @@
 import React from 'react';
 import PiXIcon from '../../components/assets/PiXIcon';
+import SearchBar from '../layout/SearchBar';
+import Caret from '../assets/Caret';
+import PiXChatIcon from '../../components/assets/PiXChatIcon';
 
-const Navbar = () => {
-  return(
-    <React.Fragment>
-      <header className="Navbar" role="banner">
-        <div className="Navbar-Component">
-          <nav className="navigation" id="navigation">
-            <div className="navigation-logo">
-              <PiXIcon/>
-
-            </div>
-            <div className="navigation-items">
-              <ul>
-
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </header>
-    </React.Fragment>
-  );
+interface IProps {
+  isSidePanelOpen: boolean
 }
 
-export default Navbar;
+export default class Navbar extends React.Component<IProps,{}>{
+  constructor(props: any){
+    super(props);
+  }
+
+  render(){
+    return(
+        <header className="Navbar" role="banner">
+          <div className="Navbar-Component">
+            <nav className="navigation-area" id="navigation">
+            <div className="navigation-caret">
+              <Caret isSidePanelOpen={this.props.isSidePanelOpen}/>
+            </div>
+
+            <div className="navigation-logo">
+              <PiXIcon/>
+            </div>
+
+            </nav>
+            <div className="searchbar-area">
+              <SearchBar/>
+            </div>
+            <div className="pixchat-area">
+              <PiXChatIcon/>
+            </div>
+          </div>
+        </header>
+  );
+}
+}
