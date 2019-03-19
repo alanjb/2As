@@ -172,6 +172,15 @@ hr.Title-LineBreak {
 .indexbutton {
   height: 1.5em; }
 
+.button-blue {
+  background-color: #27489a !important; }
+
+.button-fullWidth {
+  width: 100% !important; }
+
+.divider-line {
+  border: 0.5px solid #eaeaea; }
+
 .form-container {
   display: grid; }
 
@@ -180,16 +189,16 @@ hr.Title-LineBreak {
   padding: 15px 30px !important;
   background-color: #38b34a;
   color: #FFFFFF;
-  border: none !important;
+  border: none;
   font-size: 20px;
   font-weight: 600;
   margin: 7px 0px !important; }
 
 .form-link {
-  text-decoration: underline;
-  margin: 0px 20px;
+  text-decoration: none;
+  margin: 0px 25px;
   color: #27489a !important;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 15px; }
 
 .subtitle {

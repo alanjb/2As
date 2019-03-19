@@ -1,5 +1,17 @@
 @import './abstract/variables';
 
+.button-blue{
+  background-color: $dark-blue !important;
+}
+
+.button-fullWidth{
+  width: 100% !important;
+}
+
+.divider-line{
+  border: .5px solid $light-grey;
+}
+
 .form-container{
   display: grid;
 }
@@ -9,17 +21,17 @@
   padding: 15px 30px !important;
   background-color: $green;
   color: $white;
-  border: none !important;
+  border: none;
   font-size: 20px;
   font-weight: 600;
   margin: 7px 0px !important;
 }
 
 .form-link{
-  text-decoration: underline;
-  margin: 0px 20px;
+  text-decoration: none;
+  margin: 0px 25px;
   color: $dark-blue !important;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 15px;
 
 }
