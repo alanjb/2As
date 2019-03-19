@@ -8,7 +8,7 @@
 
 body {
   margin: 0px !important;
-  background-color: #FCFCFC;
+  background-color: #FFFFFF;
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.42;
@@ -17,9 +17,6 @@ body {
   width: 100%;
   height: 100%;
   -webkit-font-smoothing: antialiased; }
-  body h1 {
-    font-weight: 800;
-    font-size: 1.5rem; }
 
 .Navbar-Component {
   overflow: hidden !important;
@@ -34,7 +31,7 @@ body {
   display: flex !important;
   align-items: center !important;
   border-bottom: 1px solid #2A2B29 !important;
-  padding: 10px 20px; }
+  padding: 10px 18px; }
 
 .SearchBar-Component {
   width: 100% !important;
@@ -58,24 +55,23 @@ input.SearchBar-Input {
 
 .navigation-sidepanel {
   border: 1px solid #2A2B29;
-  position: absolute !important;
+  position: fixed !important;
   margin-top: 60px !important;
   top: 0px;
   bottom: 0px;
   left: 0px;
   right: 0px;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100% !important;
   padding: 5px 20px;
   text-align: left;
-  background-color: #FCFCFC;
+  background-color: #FFFFFF;
   z-index: 500;
   background-size: auto;
   list-style-type: none;
-  overflow-x: auto !important;
-  overflow-y: auto !important;
-  transform: translateX(-1000vh);
-  -webkit-transition: transform 0.5s ease-out; }
+  overflow: scroll !important;
+  transform: translateX(-200vh);
+  -webkit-transition: transform 0.5s ease-out !important; }
   .navigation-sidepanel .navigation-sidepanel-items > ul {
     list-style-type: none;
     margin: 0;
@@ -108,7 +104,9 @@ input.SearchBar-Input {
   transition: transform 300ms ease; }
 
 .PiX-Icon {
-  height: 3em; }
+  height: 3em;
+  position: relative;
+  top: 2px; }
 
 .pixchat-area {
   padding-left: 6%;
@@ -173,5 +171,82 @@ hr.Title-LineBreak {
 
 .indexbutton {
   height: 1.5em; }
+
+.form-container {
+  display: grid; }
+
+.form-button {
+  border-radius: 4px !important;
+  padding: 15px 30px !important;
+  background-color: #38b34a;
+  color: #FFFFFF;
+  border: none !important;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 7px 0px !important; }
+
+.form-link {
+  text-decoration: underline;
+  margin: 0px 20px;
+  color: #27489a !important;
+  font-weight: 600;
+  font-size: 15px; }
+
+.subtitle {
+  color: #A2A2A2;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1 !important; }
+
+.title-header {
+  font-weight: bold !important;
+  font-size: 1.5rem;
+  margin-bottom: 3px; }
+
+.form-input {
+  background-size: 20px;
+  border: 1px solid #eaeaea !important;
+  border-radius: 4px !important;
+  height: 35px;
+  width: 100% !important;
+  overflow: auto;
+  padding-left: 10px !important;
+  font-size: 14px; }
+
+::placeholder {
+  font-size: 12px;
+  color: #656664 !important;
+  opacity: 1;
+  /* Firefox */
+  font-weight: 200; }
+
+.Input-Area {
+  padding: 10px 0px; }
+
+.input-header {
+  font-size: 15px;
+  margin-bottom: 5px !important; }
+
+.Title-Area {
+  padding-bottom: 10px; }
+
+.large-textarea {
+  height: 100px !important;
+  padding: 15px 0 100px 0; }
+
+select.multiselect {
+  background-color: #FFFFFF !important;
+  background-size: 20px;
+  border: 1px solid #eaeaea !important;
+  border-radius: 4px !important;
+  height: 100% !important;
+  width: 100% !important;
+  overflow: auto;
+  padding-left: 10px !important;
+  font-size: 14px;
+  padding: 10px 10px;
+  margin-bottom: 5px; }
+  select.multiselect option {
+    padding: 2px 0; }
 
 /*# sourceMappingURL=App.css.map */

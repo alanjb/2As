@@ -4,6 +4,7 @@ import Navbar from './components/layout/Navbar';
 import SidePanel from './components/layout/SidePanel';
 import Home from './components/layout/Home';
 import Article from './components/layout/Article';
+import InviteNewUser from './components/layout/InviteNewUser';
 import Context from './config/Context';
 
 interface IState{
@@ -41,7 +42,7 @@ class App extends React.Component<{}, IState> {
             <SidePanel isOpen={this.state.isSidePanelOpen}/>
           </div>
           <div className="body">
-            <Article/>
+            <InviteNewUser/>
           </div>
         </div>
       </Context.Provider>
