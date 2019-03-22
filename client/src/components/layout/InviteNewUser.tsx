@@ -1,28 +1,25 @@
 import React from 'react';
-import PortalInviteModal from './PortalInviteModal';
+import AddToPortalButton from './AddToPortalButton';
 
-interface IState {
-  isPortalInviteModalOpen: boolean
+interface IProps{
+  isAddToPortalModalOpen: boolean
 }
 
-export default class Home extends React.Component<{}, IState> {
+export default class Home extends React.Component<IProps, {}> {
   constructor(props: any) {
     super(props);
-    this.state = {
-      isPortalInviteModalOpen: false
-    }
+
   };
 
   render() {
     return (
-      <div className="modal-container">
-
+      <div className="form-container">
         <div className="Title-Area">
           <h1 className="title-header">Invite new user</h1>
-          <text className="subtitle">
-          Send someone an invitation to PiX. You can also
-          invite them to a specific portal that you are an
-          admin of.
+          <text className="form-subtitle">
+            Send someone an invitation to PiX. You can also
+            invite them to a specific portal that you are an
+            admin of.
           </text>
         </div>
 
@@ -62,9 +59,7 @@ export default class Home extends React.Component<{}, IState> {
         </div>
 
         <div className="Input-Area">
-          <button type="button" className="form-button button-blue button-fullWidth" name="addToPortal">
-            Add this user to your portals
-          </button>
+            <AddToPortalButton />
         </div>
 
         <div className="Input-Area">
@@ -74,8 +69,9 @@ export default class Home extends React.Component<{}, IState> {
           </button>
           <a href="/" className="form-link">View invitation list</a>
         </div>
-
+        <div>
       </div>
+    </div>
     );
   }
 }

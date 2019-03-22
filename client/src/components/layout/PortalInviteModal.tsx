@@ -1,44 +1,57 @@
 import React from 'react';
+import Card from './Card';
+import Backdrop from './Backdrop';
 
-export default class Home extends React.Component {
+interface IProps{
+  isOpen: boolean
+}
+
+export default class Home extends React.Component<IProps, {}> {
   constructor(props: any) {
     super(props);
   };
 
   render() {
+    let _backdrop;
+    let portalInviteClasses = 'form-container modal';
+    const {isOpen} = this.props;
+    if(isOpen){
+      portalInviteClasses = 'form-container modal open-modal';
+      _backdrop = <Backdrop/>;
+    }
+    else{
+      portalInviteClasses = 'form-container modal'
+    }
     return (
-      <div className="form-container">
+      <div className={portalInviteClasses}>
+        {_backdrop}
+        <div className="tools-area">
 
+        </div>
         <div className="Title-Area">
           <h1 className="title-header">Add to portals</h1>
-          <text className="subtitle">
+          <text className="form-subtitle">
             Designate which portals you will invite this user to
           </text>
         </div>
 
-        <div className="Input-Area">
-          <h2 className="input-header">Make this user a member of my portal</h2>
-          <select className="multiselect" name="portals" multiple>
-            <option value="portal1">Portal1</option>
-            <option value="portal2">Portal2</option>
-            <option value="portal3">Portal3</option>
-          </select>
-
-          <select className="multiselect" name="portals" placeholder="Choose a permission level">
-            <option selected value="0" disabled>Choose a permission role</option>
-            <option value="admin">Admin</option>
-            <option value="writer">Writer</option>
-            <option value="reader">Reader</option>
-          </select>
+        <div className="Card-Area">
+          <h2 className="input-header">
+            Assign this users roles to your portals
+          </h2>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
         </div>
 
         <div className="Input-Area">
-
           <button type="button" className="form-button" name="SendInvite">
-          Add user to portal
+          {/*show number of portals on button*/}
+            Add user to portal(s)
           </button>
           <a href="/" className="form-link">cancel</a>
-
         </div>
 
       </div>
