@@ -1,12 +1,27 @@
 @import './abstract/variables';
 
 .pixchat-area{
-  padding-left: 6%;
-  position: relative;
-  top: 2px;
-  left: 1px;
+  margin-left: 20px;
+
 }
 
 .pixchaticon{
+  position: relative;
+  top: 2px;
   height: 43px !important;
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .pixchaticon{
+    visibility: hidden !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .pixchaticon{
+    visibility: hidden !important;
+  }
 }

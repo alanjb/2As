@@ -1,0 +1,53 @@
+@import './abstract/variables';
+
+.FilterBar-Input{
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid $grey;
+  width: 100%;
+  background-image: url('../../assets/filter.svg');
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  background-size: 14px;
+  height: 25px;
+  margin: 20px 0px;
+  margin-bottom: 10px;
+}
+
+.FilterBar-Input::placeholder {
+  position: relative;
+  bottom: 3px;
+  font-size: 13px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .FilterBar-Input{
+    width: 40% !important;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .FilterBar-Input{
+    width: 42% !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .FilterBar-Input{
+    width: 45% !important;
+  }
+}

@@ -18,19 +18,19 @@ export default class Navbar extends React.Component<IProps,{}>{
         <header className="Navbar" role="banner">
           <div className="Navbar-Component">
             <nav className="navigation-area" id="navigation">
-            <div className="navigation-logo">
-              <PiXIcon/>
-            </div>
-            <div className="navigation-caret">
-              <Caret isSidePanelOpen={this.props.isSidePanelOpen}/>
-            </div>
+              <div className="navigation-logo">
+                <PiXIcon/>
+              </div>
+              <div className="navigation-caret">
+                <Caret isSidePanelOpen={this.props.isSidePanelOpen}/>
+              </div>
             </nav>
-            <div className="searchbar-area">
-              <SearchBar/>
-            </div>
-            <div className="pixchat-area">
-              <PiXChatIcon/>
-            </div>
+              <div className="searchbar-area">
+                <SearchBar/>
+              </div>
+              <div className="pixchat-area">
+                <PiXChatIcon/>
+              </div>
           </div>
         </header>
   );

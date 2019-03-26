@@ -16,16 +16,16 @@ export default class Home extends React.Component<{}, IState> {
   render() {
     return (
       <div className="card-container">
-        <div className="role-radios">
-          <header className="card-header">The Princess Bride </header>
-          <input className="radio-inputs" type="radio" name="portalRole" value="Admin"/>
-          <span className="radioButtonText">Admin</span>
-          <input className="radio-inputs" type="radio" name="portalRole" value="Writer"/>
-          <span className="radioButtonText">Writer</span>
-          <input className="radio-inputs" type="radio" name="portalRole" value="Reader"/>
-          <span className="radioButtonText">Reader</span>
-        </div>
-        
+        <span className="card-header">
+          Sgt. Pepper's Lonely Hearts Club Band
+        </span>
+        <span className="form-subtitle">Choose a permission role</span>
+        <select className="select-portal-permission">
+          <option value="none">None</option>
+          <option value="admin">Admin</option>
+          <option value="writer">Writer</option>
+          <option value="reader">Reader</option>
+        </select>
       </div>
     );
   }

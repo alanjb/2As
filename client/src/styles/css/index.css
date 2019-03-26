@@ -28,14 +28,16 @@ body {
   padding: 0 !important; }
 
 .backdrop-modal:after {
-  overflow-y: hidden;
+  margin: 0 !important;
+  overflow: hidden !important;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.4);
-  content: ''; }
+  content: '';
+  height: 100% !important; }
 
 .Navbar-Component {
   overflow: hidden !important;
@@ -50,18 +52,17 @@ body {
   display: flex !important;
   align-items: center !important;
   border-bottom: 1px solid #2A2B29 !important;
-  padding: 10px 12px; }
+  padding: 10px 20px; }
 
 .SearchBar-Component {
-  width: 100% !important;
-  padding-left: 33px !important; }
+  position: relative !important;
+  margin-left: 30px !important; }
 
 input.SearchBar-Input {
   background-size: 20px;
   border: 1px solid #2A2B29 !important;
   border-radius: 4px !important;
   height: 45px;
-  width: 13rem !important;
   overflow: auto;
   padding-left: 15px !important; }
 
@@ -72,8 +73,15 @@ input.SearchBar-Input {
   /* Firefox */
   font-weight: 200; }
 
+@media only screen and (min-width: 150px) and (max-width: 780px) {
+  .SearchBar-Component {
+    width: 95%;
+    margin: 0 auto; }
+
+  input.SearchBar-Input {
+    width: 95%; } }
 .navigation-sidepanel {
-  border: 1px solid #2A2B29;
+  border: 0.5px solid #eaeaea;
   position: fixed !important;
   margin-top: 60px !important;
   top: 0px;
@@ -88,7 +96,8 @@ input.SearchBar-Input {
   z-index: 10000;
   background-size: auto;
   list-style-type: none;
-  overflow: scroll !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
   transform: translateX(-200vh);
   -webkit-transition: transform 0.5s ease-out !important; }
   .navigation-sidepanel .navigation-sidepanel-items {
@@ -112,6 +121,17 @@ input.SearchBar-Input {
 .navigation-sidepanel.open {
   transform: translateX(0vh) !important; }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .navigation-sidepanel-items > ul > li {
+    padding: 20px 0px; }
+
+  .navigation-sidepanel-items > ul > li > a {
+    font-size: 1.7rem; } }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .navigation-sidepanel-items > ul > li > a {
+    font-size: 1.2rem; } }
 .caret {
   left: 65px !important;
   top: 27px !important;
@@ -130,14 +150,21 @@ input.SearchBar-Input {
   top: 2px; }
 
 .pixchat-area {
-  padding-left: 6%;
-  position: relative;
-  top: 2px;
-  left: 1px; }
+  margin-left: 20px; }
 
 .pixchaticon {
+  position: relative;
+  top: 2px;
   height: 43px !important; }
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .pixchaticon {
+    visibility: hidden !important; } }
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .pixchaticon {
+    visibility: hidden !important; } }
 .article-container {
   display: grid; }
 
@@ -196,9 +223,6 @@ hr.Title-LineBreak {
 .button-blue {
   background-color: #27489a !important; }
 
-.button-fullWidth {
-  width: 100% !important; }
-
 .Card-Area {
   display: grid; }
 
@@ -206,10 +230,14 @@ hr.Title-LineBreak {
   border: 0.5px solid #eaeaea; }
 
 .form-container {
-  display: grid;
   margin: 0 !important;
-  padding: 20px 20px !important;
-  height: 100%; }
+  padding-top: 80px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100%;
+  width: 100%;
+  margin: 0 !important; }
 
 .form-button {
   border-radius: 4px !important;
@@ -219,7 +247,27 @@ hr.Title-LineBreak {
   border: none;
   font-size: 15px;
   font-weight: 600;
-  margin: 7px 0px !important; }
+  margin: 7px 0px !important;
+  cursor: pointer; }
+
+.form-exitButton {
+  text-align: right !important;
+  padding: 1px;
+  display: inline-block;
+  height: 25px !important;
+  float: right !important;
+  cursor: pointer; }
+
+.form-input {
+  background-size: 20px;
+  border: 1px solid #eaeaea !important;
+  border-radius: 4px !important;
+  height: 35px;
+  width: 100% !important;
+  overflow: auto;
+  padding-left: 10px !important;
+  font-size: 14px;
+  cursor: inherit; }
 
 .form-link {
   text-decoration: none;
@@ -234,47 +282,10 @@ hr.Title-LineBreak {
   font-size: 14px;
   line-height: 1 !important; }
 
-.modal {
-  display: none;
-  background-color: #FFFFFF !important;
-  border: 0.5px solid #eaeaea;
-  padding: 35px 25px !important;
-  border-radius: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 5000;
-  box-shadow: 2px 3px 10px #eaeaea;
-  overflow-y: auto !important;
-  transform: translateY(0vh) !important;
-  position: relative; }
-
-.open-modal {
-  display: block !important;
-  transform: translateY(-100vh) !important;
-  overflow-y: auto !important; }
-
-.title-header {
-  margin: 0 !important;
-  font-weight: bold !important;
-  font-size: 1.5rem;
-  margin-bottom: 3px; }
-
-.form-input {
-  background-size: 20px;
-  border: 1px solid #eaeaea !important;
-  border-radius: 4px !important;
-  height: 35px;
-  width: 100% !important;
-  overflow: auto;
-  padding-left: 10px !important;
-  font-size: 14px; }
-
-::placeholder {
-  font-size: 12px;
-  color: #656664 !important;
-  opacity: 1;
-  /* Firefox */
-  font-weight: 200; }
+input:focus, select.multiselect:focus {
+  border-color: #3c3d3b !important;
+  outline-color: transparent;
+  outline-style: none; }
 
 .Input-Area {
   padding: 10px 0px; }
@@ -284,12 +295,58 @@ hr.Title-LineBreak {
   margin-top: 5px;
   margin-bottom: 5px !important; }
 
-.Title-Area {
-  padding-bottom: 10px; }
+.modal {
+  border-top: 1px solid #3c3d3b;
+  overflow: scroll !important;
+  position: fixed !important;
+  bottom: 0px;
+  width: 100%;
+  visibility: hidden !important;
+  background-color: #FFFFFF !important;
+  padding: 20px 20px;
+  border-radius: 0px;
+  width: 100%;
+  height: 75%;
+  z-index: 5000;
+  padding-bottom: 5px !important;
+  margin: 0 !important; }
+  .modal .Title-Area {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10%;
+    margin: 0 !important;
+    padding: 0 !important; }
+
+.modal-header {
+  display: inline-block !important; }
+
+.open-modal {
+  visibility: visible !important; }
+
+.title-header {
+  margin: 0 !important;
+  font-weight: bold !important;
+  font-size: 1.6rem;
+  margin-bottom: -50px; }
+
+.select-portal-permission {
+  margin: 10px;
+  font-size: 14px;
+  border: 1px solid #A2A2A2 !important;
+  border-radius: 4px !important;
+  padding: 10px;
+  background-color: #FFFFFF; }
+
+::placeholder {
+  font-size: 12px;
+  color: #656664 !important;
+  opacity: 1;
+  /* Firefox */
+  font-weight: 200; }
 
 .large-textarea {
   height: 100px !important;
-  padding: 15px 0 100px 0; }
+  padding: 25px 0 100px 0; }
 
 select.multiselect {
   background-color: #FFFFFF !important;
@@ -306,19 +363,62 @@ select.multiselect {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url(../../assets/caret.svg) no-repeat 254px 12px; }
+  background: url(../../assets/caret.svg) no-repeat 254px 12px;
+  cursor: pointer; }
   select.multiselect option {
     padding: 2px 0; }
+
+select:invalid {
+  color: gray; }
 
 select::-ms-expand {
   display: block; }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .button-fullWidth {
+    width: 100% !important; }
+
+  .form-exitButton {
+    height: 25px;
+    bottom: 2px;
+    left: 88px; } }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .Card-Area {
+    display: grid !important;
+    grid-template-columns: auto auto;
+    grid-gap: 5px; } }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  select.multiselect {
+    width: 45% !important; }
+
+  .form-input {
+    width: 45% !important; }
+
+  .Card-Area {
+    display: grid !important;
+    grid-template-columns: auto auto;
+    grid-gap: 5px; } }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .Card-Area {
+    display: grid !important;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px; } }
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .Card-Area {
+    display: grid !important;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 5px; } }
 .card-container {
   display: grid;
   grid-template-columns: auto;
   padding: 10px 10px;
   margin: 10px 0px;
-  border: 0.5px solid #eaeaea;
+  border: 0.5px solid #A2A2A2;
   border-radius: 4px;
   width: 100%;
   text-align: center; }
@@ -347,6 +447,11 @@ select::-ms-expand {
   margin-left: 5px;
   margin-right: 15px; }
 
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 .Trash-Component {
   margin-top: 1rem !important; }
 
@@ -364,5 +469,38 @@ select::-ms-expand {
   filter: alpha(opacity=50);
   /* For IE8 and earlier */
   position: absolute; }
+
+.FilterBar-Input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #A2A2A2;
+  width: 100%;
+  background-image: url("../../assets/filter.svg");
+  background-repeat: no-repeat;
+  padding-left: 25px;
+  background-size: 14px;
+  height: 25px;
+  margin: 20px 0px;
+  margin-bottom: 10px; }
+
+.FilterBar-Input::placeholder {
+  position: relative;
+  bottom: 3px;
+  font-size: 13px; }
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .FilterBar-Input {
+    width: 40% !important; } }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .FilterBar-Input {
+    width: 42% !important; } }
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .FilterBar-Input {
+    width: 45% !important; } }
 
 /*# sourceMappingURL=index.css.map */

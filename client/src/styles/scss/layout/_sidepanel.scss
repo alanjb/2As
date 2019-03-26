@@ -1,7 +1,7 @@
 @import './abstract/variables';
 
 .navigation-sidepanel {
-  border: 1px solid $dark-black;
+  border: .5px solid $light-grey;
   position: fixed !important;
   margin-top: 60px !important;
   top: 0px;
@@ -16,7 +16,8 @@
   z-index:10000;
   background-size: auto;
   list-style-type: none;
-  overflow: scroll !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
   transform: translateX(-200vh);
   -webkit-transition: transform 0.5s ease-out !important;
 
@@ -47,4 +48,22 @@
 }
 .navigation-sidepanel.open {
   transform: translateX(0vh) !important;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .navigation-sidepanel-items > ul > li{
+    padding: 20px 0px;
+  }
+  .navigation-sidepanel-items > ul > li > a{
+    font-size: 1.7rem;
+
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .navigation-sidepanel-items > ul > li > a{
+    font-size: 1.2rem;
+  }
 }

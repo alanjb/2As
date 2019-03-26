@@ -11,7 +11,7 @@ const AddToPortalButton = () => {
                 onClick={context.toggleInviteToPortalModal}
                 className="form-button button-blue button-fullWidth"
                 name="addToPortal">
-                Add this user to your portals
+                Invite this user to your portals
               </button>
             </div>
           </header>
