@@ -21,7 +21,7 @@ class App extends React.Component<{}, IState> {
 
   toggleSidePanel = () => {
     let screenWidth = window.screen.width;
-    if(screenWidth<=992){
+    if(screenWidth<=1200){
       this.setState((prevState: any) => {
         return {
           isSidePanelOpen: !prevState.isSidePanelOpen
