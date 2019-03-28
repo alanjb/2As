@@ -20,16 +20,20 @@ class App extends React.Component<{}, IState> {
   }
 
   toggleSidePanel = () => {
-    console.log('clicked side');
-    this.setState((prevState: any) => {
-      return {
-        isSidePanelOpen: !prevState.isSidePanelOpen
-      }
-    });
+    let screenWidth = window.screen.width;
+    if(screenWidth<=992){
+      this.setState((prevState: any) => {
+        return {
+          isSidePanelOpen: !prevState.isSidePanelOpen
+        }
+      });
+    }
+    else{
+      window.location.href = '/';
+    }
   }
 
   toggleInviteToPortalModal = () => {
-    console.log('clicked invite modal');
     this.setState((prevState: any) => {
       return {
         isAddToPortalModalOpen: !prevState.isAddToPortalModalOpen

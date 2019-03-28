@@ -50,36 +50,53 @@ body {
   box-shadow: none !important;
   z-index: 11000 !important;
   display: flex !important;
-  align-items: center !important;
   border-bottom: 1px solid #2A2B29 !important;
-  padding: 10px 20px; }
+  padding: 10px 20px;
+  margin: 0 auto;
+  align-items: stretch; }
 
 .SearchBar-Component {
   position: relative !important;
-  margin-left: 30px !important; }
+  margin-left: 30px !important;
+  width: 100%;
+  display: flex;
+  flex-grow: 8; }
 
 input.SearchBar-Input {
-  background-size: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-image: url("../../assets/search.svg");
+  background-repeat: no-repeat;
+  background-size: 18px;
   border: 1px solid #2A2B29 !important;
   border-radius: 4px !important;
   height: 45px;
   overflow: auto;
-  padding-left: 15px !important; }
+  padding-left: 36px !important;
+  background-position: 9px 13px;
+  box-sizing: border-box;
+  display: flex;
+  position: relative !important;
+  flex: 1;
+  box-sizing: border-box; }
 
 ::placeholder {
-  font-size: 15px;
+  font-size: 15px !important;
   color: #656664 !important;
   opacity: 1;
   /* Firefox */
-  font-weight: 200; }
+  font-weight: 500;
+  position: relative;
+  top: 1px; }
 
-@media only screen and (min-width: 150px) and (max-width: 780px) {
-  .SearchBar-Component {
-    width: 95%;
-    margin: 0 auto; }
-
+/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 600px and down) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
   input.SearchBar-Input {
-    width: 95%; } }
+    width: 460px !important; } }
 .navigation-sidepanel {
   border: 0.5px solid #eaeaea;
   position: fixed !important;
@@ -144,25 +161,40 @@ input.SearchBar-Input {
   transform: rotate(180deg);
   transition: transform 300ms ease; }
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .caret {
+    visibility: hidden !important; } }
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .caret {
+    visibility: hidden !important; } }
 .PiX-Icon {
   height: 3em;
   position: relative;
   top: 2px; }
 
-.pixchat-area {
-  margin-left: 20px; }
+.PiXChatIcon-Component {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 0;
+  flex: 1; }
 
 .pixchaticon {
   position: relative;
-  top: 2px;
-  height: 43px !important; }
+  height: 43px !important;
+  display: inline-block;
+  float: right !important;
+  text-align: right !important; }
 
+/* Extra small devices (phones, 600px and down) */
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .pixchaticon {
-    visibility: hidden !important; } }
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+    visibility: hidden !important; }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */ }
+@media only screen and (min-width: 992px) and (min-width: 1200px) {
   .pixchaticon {
     visibility: hidden !important; } }
 .article-container {
@@ -502,5 +534,9 @@ select::-ms-expand {
 @media only screen and (min-width: 1200px) {
   .FilterBar-Input {
     width: 45% !important; } }
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .PiX-Icon {
+    cursor: pointer !important; } }
 
 /*# sourceMappingURL=App.css.map */
