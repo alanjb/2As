@@ -57,15 +57,6 @@ export default class PortalInviteModal extends React.Component<IProps, {}> {
                 <Card/>
                 <Card/>
                 <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
               </div>
             </React.Fragment>
 

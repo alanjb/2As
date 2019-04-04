@@ -25,7 +25,7 @@ export default class Home extends React.Component<IProps, {}> {
         <div className="Input-Area">
           <h2 className="input-header">Citizenship</h2>
           <select className="multiselect" required>
-            <option value="" disabled selected hidden>Select a citizenship</option>
+            <option value="" disabled selected hidden>Select a citizenship...</option>
             <option value="none">None</option>
             <option value="admin">Admin</option>
             <option value="writer">Writer</option>
@@ -35,27 +35,27 @@ export default class Home extends React.Component<IProps, {}> {
 
         <div className="Input-Area">
           <h2 className="input-header">First Name</h2>
-          <input className="form-input" id="first-name-input" type="text" name="firstName" placeholder="First Name"/>
+          <input className="form-input" id="first-name-input" type="text" name="firstName"/>
         </div>
 
         <div className="Input-Area">
           <h2 className="input-header">Last Name</h2>
-          <input className="form-input" type="text" name="lastName" placeholder="Last Name"/>
+          <input className="form-input" type="text" name="lastName"/>
         </div>
 
         <div className="Input-Area">
           <h2 className="input-header">Email</h2>
-          <input className="form-input" type="text" name="email" placeholder="Email"/>
+          <input className="form-input" type="text" name="email"/>
         </div>
 
         <div className="Input-Area">
           <h2 className="input-header">Sponsor's Name</h2>
-          <input className="form-input" type="text" name="sponsorsName" placeholder="Sponsor's Name"/>
+          <input className="form-input" type="text" name="sponsorsName"/>
         </div>
 
         <div className="Input-Area">
           <h2 className="input-header">Sponsor's Email</h2>
-          <input className="form-input" type="text" name="sponsorsEmail" placeholder="Sponsor's Email"/>
+          <input className="form-input" type="text" name="sponsorsEmail"/>
         </div>
 
         <div className="Input-Area">

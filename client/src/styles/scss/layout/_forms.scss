@@ -35,6 +35,18 @@
   cursor: pointer;
 }
 
+.button-small{
+  border: 1px solid $white;
+  padding: 2px 15px !important;
+  background-color: $light-blue;
+  font-size: 13px;
+  position: relative;
+  bottom: 7px;
+  float: right !important;
+  display: inline-block;
+  height: 28px;
+}
+
 .form-exitButton{
   text-align: right !important;
   padding: 1px;
@@ -155,7 +167,12 @@ input:focus, select.multiselect:focus {
   padding: 25px 0 100px 0;
 }
 
+select{
+
+}
+
 select.multiselect{
+
   background-color: $white !important;
   background-size: 20px;
   border: 1px solid $light-grey !important;
@@ -184,7 +201,9 @@ select.multiselect{
 
 select:invalid { color: gray; }
 
-select::-ms-expand { display: block; }
+select::-ms-expand {	display: block; }
+
+// select::-ms-expand { display: block; }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

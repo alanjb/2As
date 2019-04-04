@@ -2,7 +2,7 @@
 
 .caret {
   left: 65px !important;
-  top: 27px !important;
+  top: 28px !important;
   position: fixed !important;
   height: 10px !important;
   display:inline-block;
@@ -14,15 +14,9 @@
   transition: transform 300ms ease;
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .caret{
     visibility: hidden !important;
   }
-
 }

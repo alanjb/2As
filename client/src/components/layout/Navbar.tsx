@@ -21,7 +21,6 @@ export default class Navbar extends React.Component<IProps,{}>{
           <Caret isSidePanelOpen={this.props.isSidePanelOpen}/>
           <SearchBar/>
           <PiXChatIcon/>
-
         </div>
       </header>
     );

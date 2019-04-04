@@ -20,14 +20,17 @@ class App extends React.Component<{}, IState> {
   }
 
   toggleSidePanel = () => {
-    let screenWidth = screen.width;
-    console.log(screenWidth);
-    if(screenWidth<1200){
+    let screenWidth = window.screen.width;
+    let innerWidth = window.innerWidth;
+    if(screenWidth<1200 || innerWidth<1200){
       this.setState((prevState: any) => {
         return {
           isSidePanelOpen: !prevState.isSidePanelOpen
         }
       });
+    }
+    else{
+      window.location.href = '/';
     }
   }
 

@@ -21,7 +21,8 @@ class App extends React.Component<{}, IState> {
 
   toggleSidePanel = () => {
     let screenWidth = window.screen.width;
-    if(screenWidth<=1200){
+    let innerWidth = window.innerWidth;
+    if(screenWidth<1200 || innerWidth<1200){
       this.setState((prevState: any) => {
         return {
           isSidePanelOpen: !prevState.isSidePanelOpen
@@ -69,9 +70,10 @@ class App extends React.Component<{}, IState> {
             <SidePanel isOpen={this.state.isSidePanelOpen}/>
 
           <div className={bodyClasses}>
-            <InviteNewUser isAddToPortalModalOpen={this.state.isAddToPortalModalOpen}/>
+          <Article/>
+        {/*<InviteNewUser isAddToPortalModalOpen={this.state.isAddToPortalModalOpen}/>*/}
           </div>
-          <PortalInviteModal isOpen={this.state.isAddToPortalModalOpen}/>
+            <PortalInviteModal isOpen={this.state.isAddToPortalModalOpen}/>
           </div>
         </div>
       </Context.Provider>

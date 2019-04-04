@@ -2,6 +2,9 @@
 
 .article-container{
   display: grid;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 150px;
 }
 
 .article-image{
@@ -19,26 +22,17 @@
   padding-bottom: 20px !important;
 }
 
-.breadcrumbs{
-  padding-left: 20px;
-  color: $grey;
-  font-style: italic;
-  font-weight: 400;
-  margin-bottom: 5px;
-  position: relative;
-  bottom: 5px;
-  font-size: 16px;
-}
 
 .caret-breaker{
   font-size: 12px;
   padding:0px 5px;
   position: relative;
   bottom: 1px;
+  text-decoration: none !important;
 }
 
 hr.Title-LineBreak{
-  border-top: 1px solid $dark-grey;
+  border-top: 1px solid $grey;
 }
 
 .ImageArea{
@@ -53,7 +47,7 @@ hr.Title-LineBreak{
 }
 
 .SectionArea{
-  padding-top: 15px;
+  padding-top: 5px;
 }
 
 .section-title{
@@ -61,4 +55,12 @@ hr.Title-LineBreak{
   font-size: 20px;
   font-family: $article-titles;
   padding-bottom: 5px !important;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .article-container{
+    margin-left: 80px;
+    margin-right: 80px;
+  }
 }

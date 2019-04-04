@@ -1,6 +1,14 @@
 @import './abstract/variables';
 
+.IndexButton-Component{
+  background-color: $white;
+  z-index: 8000;
+}
+
 .indexbutton{
   // padding-left: 15px;
   height: 1.5em;
+  position: fixed;
+  z-index: 9000;
+  
 }

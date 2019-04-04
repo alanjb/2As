@@ -2,7 +2,9 @@ import React from 'react';
 import indexButton from '../../assets/index-button.svg';
 
 const IndexButton = () => (
-  <img src={indexButton} className="indexbutton" alt="cart" />
+  <div className="IndexButton-Component">
+    <img src={indexButton} className="indexbutton" alt="cart" />
+  </div>
 );
 
 export default IndexButton;
