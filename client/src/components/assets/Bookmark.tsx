@@ -3,7 +3,7 @@ import Bookmark from '../../assets/bookmark.svg';
 
 const BookmarkComponent = () => (
   <div className="NewArticleComponent-Component">
-    <img src={Bookmark} className="editArticle" alt="humanitarian" />
+    <img src={Bookmark} className="bookmark" alt="humanitarian" />
   </div>
 );
 

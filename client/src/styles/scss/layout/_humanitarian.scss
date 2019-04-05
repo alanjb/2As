@@ -6,3 +6,12 @@
   bottom: 1px;
   display:inline-block;
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 568px) {
+  .humanitarian{
+    top: 0px;
+    height: 43px !important;
+    right: 6px;
+  }
+}

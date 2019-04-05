@@ -29,3 +29,14 @@
   top: 0px;
   padding-right: 20px;
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 568px) {
+  .ArticleIndexBar-Component{
+    top: 117px !important;
+  }
+
+  .breadcrumbs{
+    padding-left: 60px;
+  }
+}

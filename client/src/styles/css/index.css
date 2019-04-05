@@ -113,33 +113,47 @@ input.SearchBar-Input {
   width: 100%;
   height: 100% !important;
   padding: 5px 20px;
-  text-align: left;
   background-color: #FFFFFF;
   z-index: 10000;
   background-size: auto;
   list-style-type: none;
-  overflow-x: hidden !important;
-  overflow-y: auto !important;
   transform: translateX(-100vh);
-  -webkit-transition: transform 0.5s ease-out !important;
+  -webkit-transition: transform 0.3s ease-out !important;
   visibility: hidden; }
-  .navigation-sidepanel .navigation-sidepanel-items {
-    display: grid; }
-  .navigation-sidepanel .navigation-sidepanel-items > ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-decoration: none; }
-  .navigation-sidepanel .navigation-sidepanel-items > ul > li {
-    list-style-type: none;
-    margin: 0;
-    padding-top: 18px;
-    padding-bottom: 15px;
-    text-decoration: none; }
-  .navigation-sidepanel .navigation-sidepanel-items > ul > li > a {
-    color: #3c3d3b !important;
-    display: block !important;
-    text-decoration: none !important; }
+
+.item {
+  display: flex;
+  vertical-align: middle;
+  align-items: center; }
+
+.item-icon {
+  margin-left: auto;
+  display: inline-block; }
+
+.sidepanel-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+.sidemenu-items-div {
+  display: flex; }
+
+.item-icon {
+  margin-left: auto; }
+
+.sidepanel-ul > li {
+  list-style-type: none;
+  margin: 0;
+  padding-top: 18px;
+  padding-bottom: 15px;
+  text-decoration: none; }
+
+.sidepanel-ul > li > a {
+  color: #3c3d3b !important;
+  display: inline-block !important;
+  text-decoration: none !important;
+  font-size: 16px; }
 
 .navigation-sidepanel.open {
   transform: translateX(0vh) !important;
@@ -174,18 +188,13 @@ input.SearchBar-Input {
 .PiXChatIcon-Component {
   position: relative;
   margin-left: 20px;
-  margin-right: 0;
-  flex: 1; }
+  margin-right: 0; }
 
 .pixchaticon {
   position: relative;
   height: 43px !important;
-  display: inline-block;
-  float: right !important;
-  text-align: right !important; }
+  display: block; }
 
-/* Extra small devices (phones, 600px and down) */
-/* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .pixchaticon {
@@ -230,17 +239,39 @@ hr.Title-LineBreak {
 .SectionArea {
   padding-top: 5px; }
 
+.section-paragraph {
+  font-size: 16px; }
+
 .section-title {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 22px;
   font-family: Georgia, serif;
   padding-bottom: 5px !important; }
+
+.title-divider {
+  position: relative;
+  color: #eaeaea;
+  font-size: 30px;
+  padding: 0 10px;
+  font-weight: 100; }
+
+.TitleArea {
+  display: flex; }
+
+.article-title {
+  flex: 1; }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .article-container {
     margin-left: 80px;
-    margin-right: 80px; } }
+    margin-right: 80px;
+    margin-top: 180px; }
+
+  .article-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 20px 0px !important; } }
 .IndexButton-Component {
   background-color: #FFFFFF;
   z-index: 8000; }
@@ -415,6 +446,7 @@ select:invalid {
 select::-ms-expand {
   display: block; }
 
+/* MEDIA QUERIES */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .button-fullWidth {
@@ -562,17 +594,30 @@ select::-ms-expand {
   align-items: stretch;
   white-space: nowrap; }
 
-.breadcrumbs {
-  padding-left: 40px;
-  color: #A2A2A2;
-  font-style: italic;
-  font-weight: 500;
-  margin-bottom: 5px;
-  position: relative;
-  font-size: 16px;
-  top: 0px;
-  padding-right: 20px; }
+/* SUPER small devices (iphone 5) */
+@media only screen and (max-width: 340px) {
+  .newArticle {
+    margin-left: 35px !important; }
 
+  .editArticle {
+    margin-left: 35px !important; }
+
+  .editArticle {
+    margin-left: 35px !important; } }
+/* SUPER small devices (iphone 5) */
+@media only screen and (min-width: 425px) {
+  .newArticle {
+    margin-left: 50px !important; }
+
+  .editArticle {
+    margin-left: 50px !important; }
+
+  .editArticle {
+    margin-left: 50px !important; } }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 568px) {
+  .ArticleToolbar-Component {
+    visibility: hidden; } }
 .ArticleBanner-Component {
   margin: 0 auto;
   color: #FFFFFF;
@@ -611,12 +656,36 @@ a:hover {
   position: relative;
   float: right !important; }
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 568px) {
+  .ArticleBanner-Component {
+    height: 55px !important; }
+
+  .Banner-Title {
+    font-size: 20px;
+    margin-left: 1%;
+    top: 10px; }
+
+  .button-small {
+    height: 35px;
+    bottom: 3px;
+    margin-right: 60px !important;
+    padding: 2px 15px !important; }
+    .button-small:hover {
+      background-color: #FFFFFF;
+      color: #2ca9e1; } }
 .humanitarian {
   height: 30px !important;
   position: relative;
   bottom: 1px;
   display: inline-block; }
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 568px) {
+  .humanitarian {
+    top: 0px;
+    height: 43px !important;
+    right: 6px; } }
 .ArticleIndexBar-Component {
   overflow: auto;
   position: fixed !important;
@@ -645,6 +714,13 @@ a:hover {
   top: 0px;
   padding-right: 20px; }
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 568px) {
+  .ArticleIndexBar-Component {
+    top: 117px !important; }
+
+  .breadcrumbs {
+    padding-left: 60px; } }
 .info {
   height: 42px !important;
   position: relative;
@@ -656,20 +732,29 @@ a:hover {
   position: relative;
   bottom: 7px;
   display: inline-block;
-  margin-left: 50px; }
+  margin-left: 55px; }
 
 .editArticle {
   height: 42px !important;
   position: relative;
   bottom: 7px;
   display: inline-block;
-  margin-left: 53px; }
+  margin-left: 55px; }
 
-.editArticle {
+.bookmark {
   height: 42px !important;
   position: relative;
   bottom: 7px;
   display: inline-block;
-  margin-left: 50px; }
+  margin-left: 49px; }
+
+.HomeIcon-Component {
+  margin-left: auto;
+  align-items: center !important; }
+
+.homeicon {
+  height: 40px !important;
+  position: relative;
+  vertical-align: middle; }
 
 /*# sourceMappingURL=index.css.map */

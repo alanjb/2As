@@ -17,7 +17,7 @@ export default class ArticleToolbar extends React.Component {
       <header className="Navbar" role="banner">
         <div className="ArticleBanner-Component">
           <Humanitarian/>
-          <a href="/" className="Banner-Title">USCENTCOM Me...</a>
+          <a href="/" className="Banner-Title">USCENTCOM Med...</a>
           <ArticlesButton/>
         </div>
       </header>

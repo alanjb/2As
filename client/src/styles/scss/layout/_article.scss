@@ -50,11 +50,31 @@ hr.Title-LineBreak{
   padding-top: 5px;
 }
 
+.section-paragraph{
+  font-size: 16px;
+}
+
 .section-title{
   font-weight: 400;
-  font-size: 20px;
+  font-size: 22px;
   font-family: $article-titles;
   padding-bottom: 5px !important;
+}
+
+.title-divider{
+  position: relative;
+  color: $light-grey;
+  font-size: 30px;
+  padding: 0 10px;
+  font-weight: 100;
+}
+
+.TitleArea{
+  display: flex;
+}
+
+.article-title{
+  flex: 1;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -62,5 +82,11 @@ hr.Title-LineBreak{
   .article-container{
     margin-left: 80px;
     margin-right: 80px;
+    margin-top: 180px;
+  }
+  .article-title{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 20px 0px !important;
   }
 }

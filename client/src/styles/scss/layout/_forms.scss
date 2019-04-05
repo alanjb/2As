@@ -143,8 +143,6 @@ input:focus, select.multiselect:focus {
   margin-bottom: -50px;
 }
 
-
-
 .select-portal-permission{
   margin: 10px;
   font-size: 14px;
@@ -161,14 +159,9 @@ input:focus, select.multiselect:focus {
     font-weight: 200;
 }
 
-
 .large-textarea{
   height: 100px !important;
   padding: 25px 0 100px 0;
-}
-
-select{
-
 }
 
 select.multiselect{
@@ -204,6 +197,12 @@ select:invalid { color: gray; }
 select::-ms-expand {	display: block; }
 
 // select::-ms-expand { display: block; }
+
+
+
+/* MEDIA QUERIES */
+
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

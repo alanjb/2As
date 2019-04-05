@@ -1,4 +1,6 @@
 import React, {Component, createRef} from 'react';
+import HomeIcon from '../../components/assets/HomeIcon';
+
 
 interface IProps{
   isOpen: boolean
@@ -20,21 +22,12 @@ const SidePanel = (props: any) => {
         <header className="SidePanel">
           <div className="SidePanel-Component">
             <nav className={sidePanelClasses} id="navigation-sidepanel">
-              <div className="navigation-sidepanel-items">
                 <ul className="sidepanel-ul">
-                    <li><a href="/html/">Home</a> </li>
-                    <li><a href="/html/">Communities</a> </li>
-                    <li><a href="/html/">Portals</a></li>
-                    <li><a href="/html/">RFIs</a></li>
-                    <li><a href="/html/">Invite New User</a></li>
-                    <li><a href="/html/">External Applications</a></li>
-                    <li><a href="/html/">Email</a></li>
-                    <li><a href="/html/">Profile</a></li>
-                    <li><a href="/html/">Help</a></li>
-                    <li><a href="/html/">Send Feedback</a></li>
-                    <li><a href="/html/">Sign Out</a></li>
+                  <li className="item">
+                    <a href="/html/">Home</a>
+                    <a className="item-icon" href="/html/"><HomeIcon/></a>
+                  </li>
                 </ul>
-              </div>
             </nav>
           </div>
         </header>

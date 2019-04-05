@@ -4,25 +4,14 @@
   position: relative;
   margin-left: 20px;
   margin-right:0;
-  flex: 1;
+  // display: flex;
+
 }
 
 .pixchaticon{
   position: relative;
   height: 43px !important;
-  display: inline-block;
-  float: right !important;
-  text-align: right !important;
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
+  display: block;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

@@ -43,3 +43,25 @@ a:hover{
   position: relative;
   float: right !important;
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 568px) {
+  .ArticleBanner-Component{
+      height: 55px !important;
+  }
+  .Banner-Title{
+    font-size: 20px;
+    margin-left: 1%;
+    top: 10px;
+  }
+  .button-small{
+    height: 35px;
+    bottom: 3px;
+    margin-right: 60px !important;
+    padding: 2px 15px !important;
+    &:hover{
+      background-color: $white;
+      color: $light-blue;
+    }
+  }
+}

@@ -19,14 +19,43 @@
   white-space: nowrap;
 }
 
-.breadcrumbs{
-  padding-left: 40px;
-  color: $grey;
-  font-style: italic;
-  font-weight: 500;
-  margin-bottom: 5px;
-  position: relative;
-  font-size: 16px;
-  top: 0px;
-  padding-right: 20px;
+
+/* SUPER small devices (iphone 5) */
+@media only screen and (max-width: 340px) {
+  .newArticle {
+    margin-left: 35px !important;
+  }
+
+  .editArticle {
+    margin-left: 35px !important;
+  }
+
+  .editArticle {
+    margin-left: 35px !important;
+  }
+
+}
+
+/* SUPER small devices (iphone 5) */
+@media only screen and (min-width: 425px) {
+  .newArticle {
+    margin-left: 50px !important;
+  }
+
+  .editArticle {
+    margin-left: 50px !important;
+  }
+
+  .editArticle {
+    margin-left: 50px !important;
+  }
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 568px) {
+  .ArticleToolbar-Component{
+    visibility: hidden;
+  }
 }

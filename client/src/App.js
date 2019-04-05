@@ -70,8 +70,8 @@ class App extends React.Component<{}, IState> {
             <SidePanel isOpen={this.state.isSidePanelOpen}/>
 
           <div className={bodyClasses}>
-          <Article/>
-        {/*<InviteNewUser isAddToPortalModalOpen={this.state.isAddToPortalModalOpen}/>*/}
+        {/*<Article/>*/}
+        <InviteNewUser isAddToPortalModalOpen={this.state.isAddToPortalModalOpen}/>
           </div>
             <PortalInviteModal isOpen={this.state.isAddToPortalModalOpen}/>
           </div>
