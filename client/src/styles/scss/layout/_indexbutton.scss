@@ -3,6 +3,7 @@
 .IndexButton-Component{
   background-color: $white;
   z-index: 8000;
+  cursor: pointer;
 }
 
 .indexbutton{
@@ -10,5 +11,5 @@
   height: 1.5em;
   position: fixed;
   z-index: 9000;
-  
+
 }

@@ -4,18 +4,26 @@
   display: grid;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 150px;
+  margin-top: 130px;
 }
 
 .article-image{
   max-width: 100%;
 }
 
-.article-title{
+h1.article-title{
   font-weight: 570;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   font-family: $article-titles;
+  padding-left: 0px !important;
+  margin-left: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
 }
+
+
 
 .TopArea{
   text-align: left;
@@ -61,28 +69,33 @@ hr.Title-LineBreak{
   padding-bottom: 5px !important;
 }
 
-.title-divider{
+span.divider{
   position: relative;
-  color: $light-grey;
-  font-size: 30px;
-  padding: 0 10px;
-  font-weight: 100;
+  font-size: 15px;
+  color: $grey;
+  border-left: 1px solid $grey;
+  height: 20px;
 }
 
 .TitleArea{
-  display: flex;
+  display: grid !important;
+  position: relative;
+  grid-column-gap: 0px;
 }
 
-.article-title{
-  flex: 1;
-}
+// /* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 570px) {
+//   .article-container{
+//     margin-top: 150px;
+//   }
+// }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .article-container{
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 180px;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 130px;
   }
   .article-title{
     font-size: 1.8rem;

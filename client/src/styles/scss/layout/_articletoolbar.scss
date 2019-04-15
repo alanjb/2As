@@ -12,50 +12,30 @@
   box-shadow: 1px 1px 3px $light-grey !important;
   z-index: 8000 !important;
   display: flex !important;
-  // border-top: 1px solid $light-grey !important;
-  // border-bottom: 1px solid $light-grey !important;
+  border-top: 1px solid $dark-black !important;
   padding: 13px 20px;
   align-items: stretch;
   white-space: nowrap;
 }
 
-
-/* SUPER small devices (iphone 5) */
-@media only screen and (max-width: 340px) {
-  .newArticle {
-    margin-left: 35px !important;
-  }
-
-  .editArticle {
-    margin-left: 35px !important;
-  }
-
-  .editArticle {
-    margin-left: 35px !important;
-  }
-
+.ArticleToolbar-Component.space-between{
+  justify-content: space-between;
 }
 
-/* SUPER small devices (iphone 5) */
-@media only screen and (min-width: 425px) {
-  .newArticle {
-    margin-left: 50px !important;
-  }
-
-  .editArticle {
-    margin-left: 50px !important;
-  }
-
-  .editArticle {
-    margin-left: 50px !important;
-  }
-
+.article-toolbar{
+  position: fixed;
+  transform: translateY(90px) !important;
+  transform: translateX(-60px) !important;
+  margin-top: 8px;
+  visibility: hidden;
 }
-
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 568px) {
   .ArticleToolbar-Component{
     visibility: hidden;
+  }
+  .article-toolbar{
+    visibility: visible;
   }
 }

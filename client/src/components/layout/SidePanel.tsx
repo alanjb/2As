@@ -27,6 +27,10 @@ const SidePanel = (props: any) => {
                     <a href="/html/">Home</a>
                     <a className="item-icon" href="/html/"><HomeIcon/></a>
                   </li>
+                  <li className="item">
+                    <a href="/html/">Portals</a>
+                    <a className="item-icon" href="/html/"><HomeIcon/></a>
+                  </li>
                 </ul>
             </nav>
           </div>

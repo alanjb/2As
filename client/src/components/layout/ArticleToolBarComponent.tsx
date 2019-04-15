@@ -2,7 +2,7 @@ import React from 'react';
 import Info from '../../components/assets/InfoButton';
 import NewArticle from '../../components/assets/NewArticle';
 import EditArticle from '../../components/assets/EditArticle';
-import Bookmark from '../../components/assets/Bookmark';
+import BookmarkMobile from '../../components/assets/BookmarkMobile';
 
 
 export default class ArticleToolbarComponent extends React.Component {
@@ -16,11 +16,11 @@ export default class ArticleToolbarComponent extends React.Component {
   render() {
     return (
       <header className="Navbar" role="banner">
-        <div className="ArticleToolbar-Component">
+        <div className="ArticleToolbar-Component space-between">
           <Info/>
           <NewArticle/>
           <EditArticle/>
-          <Bookmark/>
+          <BookmarkMobile/>
         </div>
       </header>
     );

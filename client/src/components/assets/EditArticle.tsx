@@ -2,7 +2,7 @@ import React from 'react';
 import EditArticle from '../../assets/editPencil.svg';
 
 const EditArticleComponent = () => (
-  <div className="NewArticleComponent-Component">
+  <div className="EditArticleComponent-Component">
     <img src={EditArticle} className="editArticle" alt="humanitarian" />
   </div>
 );

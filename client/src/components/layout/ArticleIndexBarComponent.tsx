@@ -1,5 +1,10 @@
 import React from 'react';
 import IndexButton from '../../components/assets/IndexButton';
+import Info from '../../components/assets/InfoButton';
+import NewArticle from '../../components/assets/NewArticle';
+import EditArticle from '../../components/assets/EditArticle';
+import Bookmark from '../../components/assets/Bookmark';
+
 
 export default class ArticleToolbar extends React.Component {
   constructor(props: any) {
@@ -14,7 +19,14 @@ export default class ArticleToolbar extends React.Component {
       <header className="Navbar" role="banner">
         <div className="ArticleIndexBar-Component">
           <IndexButton/>
-          <a className="breadcrumbs">Portal <span className="caret-breaker"> > </span>USCENTCOM Medical Security Cooperation (MSC) Exchange</a>
+          <a className="breadcrumbs">JIDO Details<span className="caret-breaker"> > </span>Homepage</a>
+          {/*
+          <span className="divider"></span>
+            <EditArticle/>
+            <Info/>
+            <NewArticle/>
+            <Bookmark/>
+          */}
         </div>
       </header>
     );
