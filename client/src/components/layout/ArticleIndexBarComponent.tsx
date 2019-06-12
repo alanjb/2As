@@ -19,7 +19,7 @@ export default class ArticleToolbar extends React.Component {
       <header className="Navbar" role="banner">
         <div className="ArticleIndexBar-Component">
           <IndexButton/>
-          <a className="breadcrumbs">JIDO Details<span className="caret-breaker"> > </span>Homepage</a>
+          <a className="breadcrumbs">USCENTCOM Medical Security Cooperation (MSC) Exchange Details<span className="caret-breaker"> > </span>Homepage</a>
           {/*
           <span className="divider"></span>
             <EditArticle/>

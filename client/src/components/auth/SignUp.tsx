@@ -4,7 +4,7 @@ import {Form, FormGroup, Input} from 'reactstrap';
 import {Container} from 'reactstrap';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
-import ActionButton from '../layout/ActionButton';
+// import ActionButton from '../layout/ActionButton';
 
 interface IState {
   isSubmitButtonDisabled: boolean;
@@ -76,7 +76,7 @@ export default class SignUp extends React.Component<{},IState> {
           <br></br>
           </FormGroup>
           <FormGroup>
-          <ActionButton isSubmitButtonDisabled={isSubmitButtonDisabled}/>
+          {/* <ActionButton isSubmitButtonDisabled={isSubmitButtonDisabled}/> */}
         </FormGroup>
         </Form>
       </Container>

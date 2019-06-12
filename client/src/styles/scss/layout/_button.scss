@@ -1,0 +1,39 @@
+@import './abstract/variables';
+
+// base class
+.button {
+    border-radius: 4px !important;
+    padding: 15px 30px !important;
+    color: $white;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 7px 0px !important;
+    cursor: pointer;
+}
+
+// colors
+.success-button {
+    background-color: $green;
+}
+
+.danger-button {
+    background-color: $red;
+}
+
+// sizes
+.button-large {
+    padding: 15px 30px;
+    min-width: 60px;
+}
+
+.button-medium {
+    padding: 15px 30px;
+    min-width: 40px;
+}
+
+
+// To do: 
+// 1. size based on screen 
+// 2. color based on utility
+// 3. button name based on props passed down? 

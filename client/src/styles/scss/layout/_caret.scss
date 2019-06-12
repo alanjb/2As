@@ -1,8 +1,8 @@
 @import './abstract/variables';
 
 .caret {
-  left: 65px !important;
-  top: 32px !important;
+  left: 70px;
+  top: 36px !important;
   position: fixed !important;
   height: 10px !important;
   display:inline-block;
@@ -18,5 +18,13 @@
 @media only screen and (min-width: 1200px) {
   .caret{
     visibility: hidden !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 575px) {
+  .caret{
+    left: 60px
+
   }
 }

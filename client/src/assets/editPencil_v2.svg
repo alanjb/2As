@@ -3,21 +3,20 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 172.9 167" style="enable-background:new 0 0 172.9 167;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;}
-	.st1{fill:#FFFFFF;}
-	.st2{font-family:'HelveticaNeue-Bold';}
-	.st3{font-size:30px;}
-	.st4{fill:#FFFFFF;stroke:#3C3D3B;stroke-width:0.25;stroke-miterlimit:10;}
-	.st5{fill:#FFFFFF;stroke:#3C3D3B;stroke-width:1.4312;stroke-miterlimit:10;}
+	.st0{fill:#FFFFFF;stroke:#3C3D3B;stroke-miterlimit:10;}
+	.st1{fill:#C1C1C1;stroke:#3C3D3B;stroke-miterlimit:10;}
+	.st2{fill:#3C3D3B;stroke:#3C3D3B;stroke-miterlimit:10;}
+	.st3{fill:#E5E5E5;stroke:#3C3D3B;stroke-miterlimit:10;}
 </style>
-<rect x="-1.5" y="141.1" class="st0" width="173.9" height="34.5"/>
-<text transform="matrix(1 0 0 1 6.9359 166.8098)" class="st1 st2 st3">Edit Article</text>
-<text transform="matrix(1 0 0 1 6.9359 166.8098)" class="st4 st2 st3">Edit Article</text>
-<polygon class="st5" points="129.1,42.5 68,113.5 47.3,95.6 81.6,55.7 81.6,55.7 89.2,46.8 108.4,24.6 "/>
-<path class="st5" d="M127.6,12.6l10.6,9c2.7,2.3,3.1,6.8,0.6,9.5l-6.7,7.9l-20.7-17.9l6.7-7.9C120.4,10.5,124.6,10,127.6,12.6
-	L127.6,12.6z"/>
-<polygon class="st5" points="37.4,128 44.5,100.2 63.9,117.1 "/>
-<polygon class="st5" points="113.8,18.3 134.7,35.9 132.1,39.1 111.4,21.1 "/>
-<polygon class="st5" points="47.3,95.6 44.5,100.2 63.9,117.1 68,113.5 "/>
-<rect x="118" y="18.2" transform="matrix(0.6539 -0.7566 0.7566 0.6539 17.5308 102.0205)" class="st5" width="4.6" height="27.4"/>
+<g>
+	<polygon class="st0" points="122,68.1 71.2,127.1 54,112.3 82.5,79 82.5,79 88.8,71.6 104.8,53.1 	"/>
+	<path class="st1" d="M120.7,43.2l8.8,7.5c2.2,1.9,2.6,5.6,0.5,7.9l-3.3,4l-17.4-14.7l3.5-4.2C114.8,41.5,118.3,41,120.7,43.2
+		L120.7,43.2z"/>
+	<polygon class="st0" points="48,136.8 54.2,112.7 70.9,127 	"/>
+	<polygon class="st0" points="109.3,47.9 126.7,62.6 124.5,65.2 107.2,50.3 	"/>
+	<polygon class="st2" points="49.9,129.5 55.7,133.6 48,136.8 	"/>
+	
+		<rect x="112.7" y="47.8" transform="matrix(0.6539 -0.7566 0.7566 0.6539 -5.1147 107.2395)" class="st0" width="3.8" height="22.8"/>
+</g>
+<line class="st3" x1="61.7" y1="112.7" x2="104.8" y2="62.6"/>
 </svg>

@@ -1,0 +1,82 @@
+@import "./abstract/variables";
+
+.articledetails-container {
+  display: grid;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 90px;
+}
+
+h1.details-tab-title {
+  color: $black;
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 600 !important;
+}
+h2.details-tab-subtitle {
+  color: $black;
+  font-size: 0.9rem;
+  font-weight: 600 !important;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+h2.details-articles-tab-subtitle {
+  color: $dark-grey;
+  font-size: 0.6rem;
+  font-weight: 500;
+  margin-top: 3px !important;
+  margin-bottom: 3px !important;
+  text-align: left !important;
+}
+
+//tabs
+.tab {
+  margin: 15px 0;
+}
+
+h3.tab-option {
+  margin: 0 10px;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.tab-option.tab-selected {
+  font-weight: 600;
+}
+
+.tab-underline {
+  width: 80px;
+  height: 2px;
+  background-color: $black;
+  position: relative;
+  margin: 0 !important;
+  padding: 0 !important;
+  top: 7px;
+}
+
+.tab-line {
+  position: relative;
+  bottom: 10px;
+}
+
+p.details-tab-paragraph {
+  margin-top: 0 !important;
+  margin-bottom: 10px !important;
+  font-size: .8rem;
+}
+
+@media only screen and (max-width: 600px) {
+  h1.article-title {
+    font-size: 1.7rem !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  // .article-title {
+  //   font-size: 1.8rem;
+  //   font-weight: 500;
+  //   margin: 20px 0px !important;
+  // }
+}

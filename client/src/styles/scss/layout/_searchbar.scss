@@ -11,40 +11,39 @@
 input.SearchBar-Input {
   white-space: nowrap;
   text-overflow: ellipsis;
-  background-image: url('../../assets/search.svg');
-  background-repeat: no-repeat;
-  background-size: 18px;
+  // background-image: url('../../assets/search.svg');
+  // background-repeat: no-repeat;
+  // background-size: 18px;
   border: 1px solid #2A2B29 !important;
   border-radius: 4px !important;
   height: 45px;
   overflow: auto;
-  padding-left: 36px !important;
-  background-position: 9px 13px;
+  padding-left: 15px !important;
+  padding-right: 10px;
+  // background-position: 9px 13px;
   box-sizing: border-box;
   display: flex;
   position: relative !important;
   flex: 1;
   box-sizing: border-box;
+}
 
+input.SearchBar-Input:focus { 
+  // padding-left: 16px !important;
+
+  input.SearchBar-Input::placeholder {
+    // color: transparent !important;
+    // -webkit-transition: color 0.2s ease;
+    // transition: color 0.2s ease;
+  }
 }
 
 ::placeholder {
-  font-size: 15px !important;
+  font-size: 14px !important;
   color: $dark-grey !important;
   opacity: 1; /* Firefox */
   font-weight: 500;
   position: relative;
-  top: 1px;
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 340px) {
-
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 370px) {
-
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -68,5 +67,35 @@ input.SearchBar-Input {
 
   .SearchBar-Component {
     display: block !important;
+  }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 360px) {
+  input.SearchBar-Input{
+    width: 450px !important;
+    position: relative;
+    right: 5px;
+  }
+
+  .SearchBar-Component {
+    width: 55%;
+    margin-left: 35px !important;
+  }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 340px) {
+  input.SearchBar-Input{
+    width: 450px !important;
+    position: relative;
+    right: 10px;
+  }
+
+  .SearchBar-Component {
+    width: 50%;
+    margin-left: 40px !important;
   }
 }

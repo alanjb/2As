@@ -1,13 +1,24 @@
 import React from 'react';
-import AddToPortalButton from './AddToPortalButton';
+// import AddToPortalButton from './AddToPortalButton';
+// import FilterBar from "./FilterBar";
+// import Card from "./Card";
+import { connect } from "react-redux";
+// import {Button} from "./Buttons/Button";
 
 interface IProps{
   isAddToPortalModalOpen: boolean
 }
 
-export default class Home extends React.Component<IProps, {}> {
+interface IState{
+
+}
+
+class InviteNewUser extends React.Component<IProps, {}> {
   constructor(props: any) {
     super(props);
+    this.state = {
+
+    }
   };
 
   render() {
@@ -64,14 +75,9 @@ export default class Home extends React.Component<IProps, {}> {
         </div>
 
         <div className="Input-Area">
-            <AddToPortalButton />
-        </div>
-
-        <div className="Input-Area">
           <hr className="divider-line"/>
-          <button type="button" className="form-button" name="SendInvite">
-            Send invite
-          </button>
+          {/* <Button /> */}
+
           <a href="/" className="form-link">View invitation list</a>
         </div>
       <div>
@@ -79,4 +85,28 @@ export default class Home extends React.Component<IProps, {}> {
   </div>
   );
   }
+
 }
+
+//get store state to this component everytime it updates 
+
+// const mapStateToProps = state => {
+//   return {
+//     //used for selecting the part of the data from the store that the connected component needs
+//     age: state.age
+//   };
+// };
+
+const mapDispachToProps = (dispatch: any) => {
+  return {
+    invitenewuser: () => dispatch(
+      { type: "INVITE_NEW_USER_REQUEST"}
+    ),
+  };
+};
+
+export default connect(
+  null,
+  mapDispachToProps
+)(InviteNewUser);
+

@@ -22,20 +22,29 @@
   justify-content: space-between;
 }
 
-.article-toolbar{
+.article-toolbar-largescreens{
   position: fixed;
-  transform: translateY(90px) !important;
-  transform: translateX(-60px) !important;
-  margin-top: 8px;
-  visibility: hidden;
+  // transform: translateY(100px) !important;
+  transform: translateX(12px) !important;
+  margin-top: 150px;
+  // visibility: hidden;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 568px) {
+@media only screen and (min-width: 576px) {
   .ArticleToolbar-Component{
     visibility: hidden;
   }
-  .article-toolbar{
+  .article-toolbar-largescreens{
     visibility: visible;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .ArticleToolbar-Component{
+    visibility: visible;
+  }
+  .article-toolbar-largescreens{
+    visibility: hidden !important;
   }
 }

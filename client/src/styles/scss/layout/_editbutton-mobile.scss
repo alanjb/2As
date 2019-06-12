@@ -1,0 +1,20 @@
+@import "./abstract/variables";
+
+.EditButtonMobile {
+  background-color: $white;
+  border-radius: 120px;
+  box-shadow: 1px 2px 5px $grey;
+  position: fixed;
+  width: 15%;
+  heigh: 15%;
+  bottom: 3%;
+  left: 81%;
+  text-align: center;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .EditButtonMobile {
+    visibility: hidden !important;
+  }
+}

@@ -1,35 +1,21 @@
 @import './abstract/variables';
 
-.article-container{
-  display: grid;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 130px;
-}
-
 .article-image{
   max-width: 100%;
 }
 
 h1.article-title{
-  font-weight: 570;
-  font-size: 1.7rem;
+  color: #181717;
+  font-weight: 500;
+  font-size: 40px;
   font-family: $article-titles;
   padding-left: 0px !important;
   margin-left: 0px !important;
   padding-top: 0px !important;
   padding-bottom: 0px !important;
-  margin-top: 0px !important;
+  margin-top: 140px !important;
   margin-bottom: 0px !important;
 }
-
-
-
-.TopArea{
-  text-align: left;
-  padding-bottom: 20px !important;
-}
-
 
 .caret-breaker{
   font-size: 12px;
@@ -39,23 +25,9 @@ h1.article-title{
   text-decoration: none !important;
 }
 
-hr.Title-LineBreak{
-  border-top: 1px solid $grey;
-}
-
-.ImageArea{
-  padding-top: 10px;
-  padding-bottom: 1px;
-}
-
-.image-caption{
-  position: relative;
-  font-size: 10px;
-  bottom: 5px;
-}
-
 .SectionArea{
   padding-top: 5px;
+  margin-top: 30px;
 }
 
 .section-paragraph{
@@ -75,31 +47,4 @@ span.divider{
   color: $grey;
   border-left: 1px solid $grey;
   height: 20px;
-}
-
-.TitleArea{
-  display: grid !important;
-  position: relative;
-  grid-column-gap: 0px;
-}
-
-// /* Medium devices (landscape tablets, 768px and up) */
-// @media only screen and (min-width: 570px) {
-//   .article-container{
-//     margin-top: 150px;
-//   }
-// }
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .article-container{
-    margin-left: 140px;
-    margin-right: 140px;
-    margin-top: 130px;
-  }
-  .article-title{
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin: 20px 0px !important;
-  }
 }

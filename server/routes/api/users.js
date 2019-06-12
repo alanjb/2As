@@ -15,9 +15,6 @@ router.get('/test', (req, res) => res.json({message: 'Users Works!'}));
 // import validation
 const validatorSignUpInput = require('../../validation/signup');
 
-
-
-
 //@route    POST api/users/signup
 //@desc     Register a user
 //@access   Public (non-registered user has to be able to register)

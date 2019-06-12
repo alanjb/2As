@@ -8,6 +8,11 @@ interface IProps{
 
 const SidePanel = (props: any) => {
   // private sidePanelRef: React.RefObject<HTMLDivElement>;
+ 
+  // state = {
+  //   isSidePanelOpen: false,
+  //   isAddToPortalModalOpen: false
+  // }
 
     let sidePanelClasses = 'navigation-sidepanel';
     const {isOpen} = props;

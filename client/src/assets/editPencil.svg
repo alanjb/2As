@@ -3,41 +3,25 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 172.9 167" style="enable-background:new 0 0 172.9 167;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#000000;stroke-width:1.2102;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#3C3D3B;stroke-width:1.5;stroke-miterlimit:10;}
-	.st2{fill:none;}
-	.st3{fill:#FFFFFF;}
-	.st4{font-family:'HelveticaNeue-Bold';}
-	.st5{font-size:30px;}
-	.st6{opacity:0;fill:none;stroke:#3C3D3B;stroke-width:0.25;stroke-miterlimit:10;enable-background:new    ;}
-	.st7{fill:#FFFFFF;stroke:#3C3D3B;stroke-width:1.5;stroke-miterlimit:10;}
+	.st0{fill:none;}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'HelveticaNeue-Bold';}
+	.st3{font-size:30px;}
+	.st4{fill:#FFFFFF;stroke:#3C3D3B;stroke-width:1.5;stroke-miterlimit:10;}
+	.st5{fill:#E5E5E5;stroke:#3C3D3B;stroke-width:1.5;stroke-miterlimit:10;}
+	.st6{fill:#3C3D3B;stroke:#3C3D3B;stroke-width:1.5;stroke-miterlimit:10;}
+	.st7{fill:#E5E5E5;stroke:#3C3D3B;stroke-miterlimit:10;}
 </style>
-<g>
-	<path class="st0" d="M627.4-94.8c-7-7-18.4-7-25.4,0L530.3-23l-0.1,0.1c0,0-0.1,0.1-0.1,0.2c-0.1,0.1-0.2,0.3-0.2,0.5
-		c0,0.1,0,0.1-0.1,0.1c0,0,0,0,0,0.1l-7,29.6c0,0.1,0,0.3,0,0.4c0,0,0,0,0,0.1c0,0.2,0.1,0.4,0.1,0.7c0,0,0,0.1,0.1,0.1
-		c0.1,0.2,0.2,0.4,0.4,0.6s0.4,0.3,0.7,0.4c0.2,0.1,0.5,0.1,0.8,0.1c0.2,0,0.3,0,0.5-0.1l29.6-7c0.1,0,0.1,0,0.2-0.1
-		c0.1,0,0.1,0,0.2-0.1c0.1-0.1,0.3-0.1,0.4-0.2l0.1-0.1c0,0,0,0,0.1,0l71.8-71.8C634.4-76.4,634.4-87.8,627.4-94.8z"/>
-	<path class="st1" d="M627.4-94.8c-7-7-18.4-7-25.4,0L530.3-23l-0.1,0.1c0,0-0.1,0.1-0.1,0.2c-0.1,0.1-0.2,0.3-0.2,0.5
-		c0,0.1,0,0.1-0.1,0.1c0,0,0,0,0,0.1l-7,29.6c0,0.1,0,0.3,0,0.4c0,0,0,0,0,0.1c0,0.2,0.1,0.4,0.1,0.7c0,0,0,0.1,0.1,0.1
-		c0.1,0.2,0.2,0.4,0.4,0.6s0.4,0.3,0.7,0.4c0.2,0.1,0.5,0.1,0.8,0.1c0.2,0,0.3,0,0.5-0.1l29.6-7c0.1,0,0.1,0,0.2-0.1
-		c0.1,0,0.1,0,0.2-0.1c0.1-0.1,0.3-0.1,0.4-0.2l0.1-0.1c0,0,0,0,0.1,0l71.8-71.8C634.4-76.4,634.4-87.8,627.4-94.8z M624.6-92
-		c5,5,5.4,12.7,1.3,18.2l-19.5-19.5C611.9-97.4,619.7-96.9,624.6-92z M614.8-62.4l-19.7-19.7l2.8-2.8l19.7,19.7L614.8-62.4z
-		 M532.5,0.1c-0.8-0.8-2-0.8-2.8,0l-1.5,1.5l5.1-21.4l8.8-1L541-10.6c0,0.1,0,0.1,0,0.2s0,0.1,0,0.2s0,0.1,0.1,0.2
-		c0,0.1,0.1,0.2,0.1,0.3c0.1,0.1,0.1,0.2,0.2,0.4c0.1,0.1,0.1,0.2,0.2,0.3c0.1,0.1,0.2,0.2,0.3,0.3s0.2,0.1,0.3,0.2
-		c0.1,0.1,0.3,0.1,0.4,0.1s0.1,0.1,0.2,0.1c0.1,0,0.1,0,0.2,0l0,0l0,0l0,0l0,0c0.1,0,0.1,0,0.2,0l10.2-1.1l-1,8.8L531,4.5l1.5-1.5
-		C533.3,2.2,533.3,0.9,532.5,0.1z M557.5-10.8l44.6-44.6c0.8-0.8,0.8-2,0-2.8s-2-0.8-2.8,0l-44.6,44.6l-9.5,1.1l1.1-9.5l44.5-44.6
-		c0.8-0.8,0.8-2,0-2.8s-2-0.8-2.8,0l-44.6,44.5l-6.3,0.7l55.1-55.1L612-59.6L556.9-4.5L557.5-10.8z M620.4-68l-19.7-19.7l2.8-2.8
-		l19.7,19.6L620.4-68z"/>
-</g>
-<rect x="-1.5" y="141.1" class="st2" width="173.9" height="34.5"/>
-<text transform="matrix(1 0 0 1 6.9359 166.8098)" class="st3 st4 st5">Edit Article</text>
-<text transform="matrix(1 0 0 1 6.9359 166.8098)" class="st6 st4 st5">Edit Article</text>
-<polygon class="st7" points="134.2,37.9 70.2,112.3 48.5,93.6 84.4,51.7 84.4,51.7 92.4,42.4 112.5,19.1 "/>
-<path class="st7" d="M132.6,6.6l11.1,9.4c2.8,2.4,3.3,7.1,0.6,10l-7,8.3l-21.7-18.8l7-8.3C125.1,4.4,129.5,3.8,132.6,6.6L132.6,6.6z
+<rect x="-1.5" y="141.1" class="st0" width="173.9" height="34.5"/>
+<text transform="matrix(1 0 0 1 6.9359 166.8098)" class="st1 st2 st3">Edit Article</text>
+<text transform="matrix(1 0 0 1 -177.3014 3.9425)" class="st2 st3" style="opacity:0;fill:none;stroke:#3C3D3B;stroke-width:0.25;stroke-miterlimit:10;enable-background:new    ;">Edit Article</text>
+<polygon class="st4" points="134.2,37.9 70.2,112.3 48.5,93.6 84.4,51.7 84.4,51.7 92.4,42.4 112.5,19.1 "/>
+<path class="st5" d="M132.6,6.6l11.1,9.4c2.8,2.4,3.3,7.1,0.6,10l-7,8.3l-21.7-18.8l7-8.3C125.1,4.4,129.5,3.8,132.6,6.6L132.6,6.6z
 	"/>
-<polygon class="st7" points="38.1,127.5 45.5,98.4 65.9,116.1 "/>
-<polygon class="st7" points="118.2,12.5 140.1,31 137.3,34.3 115.6,15.5 "/>
-<polygon class="st7" points="40.4,118.7 47.4,123.7 38.1,127.5 "/>
-<polygon class="st7" points="48.5,93.6 45.5,98.4 65.9,116.1 70.2,112.3 "/>
-<rect x="122.5" y="12.4" transform="matrix(0.6539 -0.7566 0.7566 0.6539 23.0082 103.7899)" class="st7" width="4.8" height="28.7"/>
+<polygon class="st4" points="38.1,127.5 45.5,98.4 65.9,116.1 "/>
+<polygon class="st4" points="118.2,12.5 140.1,31 137.3,34.3 115.6,15.5 "/>
+<polygon class="st6" points="40.4,118.7 47.4,123.7 38.1,127.5 "/>
+<polygon class="st4" points="48.5,93.6 45.5,98.4 65.9,116.1 70.2,112.3 "/>
+<rect x="122.5" y="12.4" transform="matrix(0.6539 -0.7566 0.7566 0.6539 23.0082 103.7899)" class="st4" width="4.8" height="28.7"/>
+<line class="st7" x1="57.8" y1="93.6" x2="101" y2="43.5"/>
 </svg>

@@ -8,6 +8,13 @@ const PostSchema = new Schema({
       ref: 'users'
     },
     text: {
-
+      type: String, 
+      required: true
     }
+    likes: [
+      {
+        user
+      }
+
+    ]
 });
