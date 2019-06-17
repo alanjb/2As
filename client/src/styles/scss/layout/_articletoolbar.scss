@@ -18,6 +18,10 @@
   white-space: nowrap;
 }
 
+.article-toolbar-largescreens{
+  margin-right: 10px;
+}
+
 .ArticleToolbar-Component.space-between{
   justify-content: space-between;
 }
@@ -26,7 +30,7 @@
   position: fixed;
   // transform: translateY(100px) !important;
   transform: translateX(12px) !important;
-  margin-top: 150px;
+  margin-top: 70px;
   // visibility: hidden;
 }
 

@@ -1,15 +1,11 @@
 import React from 'react';
 import caretSVG from '../../assets/caret.svg';
 
-interface IProps{
-  isSidePanelOpen: boolean
-}
-
 const Caret = (props: any) => {
   let caretClasses = "caret";
-  const {isSidePanelOpen} = props;
+  const {isNavPanelOpen} = props;
 
-  if(isSidePanelOpen){
+  if(isNavPanelOpen){
     caretClasses = "caret open";
   }
   else{
@@ -18,6 +14,10 @@ const Caret = (props: any) => {
   return(
       <img src={caretSVG} className={caretClasses} id="caret" alt="caret-here" />
     )
+}
+
+interface IProps{
+  isNavPanelOpen: boolean
 }
 
 export default Caret;

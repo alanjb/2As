@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 172.9 167" style="enable-background:new 0 0 172.9 167;" xml:space="preserve">
 <style type="text/css">
@@ -9,8 +9,8 @@
 	.st3{font-size:30px;}
 	.st4{fill:#FFFFFF;stroke:#3C3D3B;stroke-width:1.5;stroke-miterlimit:10;}
 	.st5{fill:#E5E5E5;stroke:#3C3D3B;stroke-width:1.5;stroke-miterlimit:10;}
-	.st6{fill:#3C3D3B;stroke:#3C3D3B;stroke-width:1.5;stroke-miterlimit:10;}
-	.st7{fill:#E5E5E5;stroke:#3C3D3B;stroke-miterlimit:10;}
+	.st6{fill:#111111;stroke:#3C3D3B;stroke-width:1.5;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#3C3D3B;stroke-miterlimit:10;}
 </style>
 <rect x="-1.5" y="141.1" class="st0" width="173.9" height="34.5"/>
 <text transform="matrix(1 0 0 1 6.9359 166.8098)" class="st1 st2 st3">Edit Article</text>
@@ -22,6 +22,6 @@
 <polygon class="st4" points="118.2,12.5 140.1,31 137.3,34.3 115.6,15.5 "/>
 <polygon class="st6" points="40.4,118.7 47.4,123.7 38.1,127.5 "/>
 <polygon class="st4" points="48.5,93.6 45.5,98.4 65.9,116.1 70.2,112.3 "/>
-<rect x="122.5" y="12.4" transform="matrix(0.6539 -0.7566 0.7566 0.6539 23.0082 103.7899)" class="st4" width="4.8" height="28.7"/>
+<rect x="122.5" y="12.4" transform="matrix(0.6539 -0.7566 0.7566 0.6539 22.9725 103.7823)" class="st4" width="4.8" height="28.7"/>
 <line class="st7" x1="57.8" y1="93.6" x2="101" y2="43.5"/>
 </svg>

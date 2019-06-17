@@ -1,16 +1,19 @@
 @import './abstract/variables';
 
-.IndexButton-Component{
+.indexbutton {
   background-color: $white;
-  z-index: 8000;
-  cursor: pointer;
-
-}
-
-.indexbutton{
-  height: 1.4em;
+  height: .68em;
   position: fixed;
   z-index: 9000;
+  cursor: pointer !important;
+  margin-top: 6px;
+  left: 16px;
+}
+
+@media only screen and (min-width: 575px) {
+  .indexbutton{
+    left: 35px;
+  }
 }
 
 @media only screen and (max-width: 375px) {

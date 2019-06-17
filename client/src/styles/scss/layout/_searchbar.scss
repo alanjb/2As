@@ -6,6 +6,7 @@
   width: 100%;
   display: flex;
   flex-grow: 8;
+  z-index: 2px;
 }
 
 input.SearchBar-Input {
@@ -45,6 +46,7 @@ input.SearchBar-Input:focus {
   font-weight: 500;
   position: relative;
 }
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

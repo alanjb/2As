@@ -30,42 +30,6 @@ h2.details-articles-tab-subtitle {
   text-align: left !important;
 }
 
-//tabs
-.tab {
-  margin: 15px 0;
-}
-
-h3.tab-option {
-  margin: 0 10px;
-  font-weight: 400;
-  font-size: 0.9rem;
-}
-
-.tab-option.tab-selected {
-  font-weight: 600;
-}
-
-.tab-underline {
-  width: 80px;
-  height: 2px;
-  background-color: $black;
-  position: relative;
-  margin: 0 !important;
-  padding: 0 !important;
-  top: 7px;
-}
-
-.tab-line {
-  position: relative;
-  bottom: 10px;
-}
-
-p.details-tab-paragraph {
-  margin-top: 0 !important;
-  margin-bottom: 10px !important;
-  font-size: .8rem;
-}
-
 @media only screen and (max-width: 600px) {
   h1.article-title {
     font-size: 1.7rem !important;

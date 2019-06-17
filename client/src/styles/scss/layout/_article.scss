@@ -1,11 +1,11 @@
 @import './abstract/variables';
 
-.article-image{
-  max-width: 100%;
+.article{
+  margin-top: 60px;
 }
 
-h1.article-title{
-  color: #181717;
+.article-title{
+  color: $black;
   font-weight: 500;
   font-size: 40px;
   font-family: $article-titles;
@@ -13,7 +13,6 @@ h1.article-title{
   margin-left: 0px !important;
   padding-top: 0px !important;
   padding-bottom: 0px !important;
-  margin-top: 140px !important;
   margin-bottom: 0px !important;
 }
 
@@ -31,7 +30,7 @@ h1.article-title{
 }
 
 .section-paragraph{
-  font-size: 16px;
+  font-size: 16px;  
 }
 
 .section-title{
@@ -39,12 +38,4 @@ h1.article-title{
   font-size: 22px;
   font-family: $article-titles;
   padding-bottom: 5px !important;
-}
-
-span.divider{
-  position: relative;
-  font-size: 15px;
-  color: $grey;
-  border-left: 1px solid $grey;
-  height: 20px;
 }

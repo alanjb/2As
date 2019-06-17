@@ -7,6 +7,15 @@ html{
   box-sizing: border-box;
 }
 
+.app-body{
+  margin-top: 80px;
+}
+
+// #root{
+//   position: relative; 
+//   height: calc(100% - 80px);
+// }
+
 *, *::before, *::after {
   box-sizing: border-box !important;
   -moz-box-sizing: inherit;

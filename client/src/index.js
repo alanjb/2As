@@ -14,7 +14,7 @@ const sagaMiddleware = createSagaMiddleware();
 const store = createStore(rootReducer, applyMiddleware(sagaMiddleware));
 
 // sagaMiddleware.run(watchAgeUp);
-
+document.title = `PiX Design Guide`;
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <Provider store={store}>

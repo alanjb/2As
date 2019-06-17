@@ -1,12 +1,13 @@
 @import './abstract/variables';
 
 .caret {
-  left: 70px;
-  top: 36px !important;
+  left: 60px;
+  top: 40px !important;
   position: fixed !important;
-  height: 10px !important;
+  height: 5px !important;
   display:inline-block;
   transition: transform 300ms ease;
+  z-index: 5;
 }
 
 .open{
@@ -14,17 +15,15 @@
   transition: transform 300ms ease;
 }
 
+@media only screen and (min-width: 575px) {
+  .caret{
+    left: 70px;
+  }
+}
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .caret{
     visibility: hidden !important;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 575px) {
-  .caret{
-    left: 60px
-
   }
 }

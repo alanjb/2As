@@ -9,7 +9,7 @@
   height: 80px !important;
   background-color: $black !important;
   box-shadow: none !important;
-  z-index: 11000 !important;
+  z-index: 5000 !important;
   display: flex !important;
   border-bottom: 1px solid $dark-black !important;
   padding: 18px 25px;
@@ -17,13 +17,8 @@
   align-items: stretch;
 }
 
-.navigation{
-  margin-bottom: 80px;
-}
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 568px) {
-
   .article-toolbar-largescreens{
     visibility: visible;
   }
