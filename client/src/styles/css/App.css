@@ -47,7 +47,7 @@ body {
   height: 80px !important;
   background-color: #3c3d3b !important;
   box-shadow: none !important;
-  z-index: 5000 !important;
+  z-index: 2 !important;
   display: flex !important;
   border-bottom: 1px solid #2A2B29 !important;
   padding: 18px 25px;
@@ -278,9 +278,6 @@ input.SearchBar-Input {
 @media only screen and (min-width: 575px) {
   .indexbutton {
     left: 35px; } }
-@media only screen and (max-width: 375px) {
-  .indexbutton {
-    left: 15px; } }
 .Card-Area {
   display: grid; }
 
@@ -685,7 +682,7 @@ a:hover {
   height: 50px !important;
   background-color: #FFFFFF !important;
   box-shadow: 1px 1px 3px #eaeaea !important;
-  z-index: 0 !important;
+  z-index: 1 !important;
   display: flex !important;
   border-top: 1px solid #eaeaea !important;
   border-bottom: 1px solid #eaeaea !important;
@@ -694,6 +691,10 @@ a:hover {
   white-space: nowrap !important;
   opacity: 0.97;
   font-size: 16px; }
+
+.article-indexbar {
+  text-overflow: ellipsis !important;
+  white-space: nowrap; }
 
 .breadcrumbs {
   padding-left: 55px;

@@ -1,23 +1,26 @@
 import React from 'react';
 import caretSVG from '../../assets/caret.svg';
 
-const Caret = (props: any) => {
+const Caret = (Props: Props) => {
   let caretClasses = "caret";
-  const {isNavPanelOpen} = props;
+  const {isOpen} = Props;
 
-  if(isNavPanelOpen){
+  if(isOpen){
     caretClasses = "caret open";
   }
   else{
     caretClasses = "caret";
   }
+
   return(
       <img src={caretSVG} className={caretClasses} id="caret" alt="caret-here" />
     )
 }
 
-interface IProps{
-  isNavPanelOpen: boolean
-}
+type MyProps = {
+    isOpen: boolean;
+  };
+  
+type Props = MyProps;
 
 export default Caret;

@@ -1,11 +1,11 @@
 import React from 'react';
 import caretSVG from '../../assets/caret.svg';
 
-const Caret = (props: any) => {
+const Caret = (Props) => {
   let caretClasses = "caret";
-  const {isSidePanelOpen} = props;
+  const {isOpen} = Props;
 
-  if(isSidePanelOpen){
+  if(isOpen){
     caretClasses = "caret open";
   }
   else{
