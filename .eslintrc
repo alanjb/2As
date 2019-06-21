@@ -1,0 +1,33 @@
+{
+    "extends": [
+      "eslint:recommended"
+    ],
+    "rules": {
+      "no-template-curly-in-string": "error",
+      "curly": "error",
+      "dot-location": [
+        "error",
+        "property"
+      ],
+      "dot-notation": "error",
+      "no-alert": "error",
+      "block-scoped-var": "error",
+      "prefer-const": "error",
+      "no-var": "error",
+      "vars-on-top": "error",
+      "@typescript-eslint/no-unused-vars": [
+        2,
+        {
+          "args": "none"
+        }
+      ]
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "plugins": ["@typescript-eslint"],
+    "globals": {
+      "window": true
+    }
+  }

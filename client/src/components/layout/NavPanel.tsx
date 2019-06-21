@@ -11,38 +11,14 @@ const NavPanel = (Props: Props) => {
     navPanelClasses = 'navigation-navpanel '
   }
   return(
-    <header className="NavPanel">
-      <div className="NavPanel-Component">
-        <nav className={navPanelClasses} id="navigation-navpanel">
-            <ul className="navpanel-ul">
-              <li className="item">
-                <a href="/html/">Home</a>
-                <a className="item-icon" href="/html/"><HomeIcon/></a>
-              </li>
-              <li className="item">
-                <a href="/html/">Communities</a>
-                <a className="item-icon" href="/html/"><HomeIcon/></a>
-              </li>
-              <li className="item">
-                <a href="/html/">Portals</a>
-                <a className="item-icon" href="/html/"><HomeIcon/></a>
-              </li>
-              <li className="item">
-                <a href="/html/">RFIs</a>
-                <a className="item-icon" href="/html/"><HomeIcon/></a>
-              </li>
-              <li className="item">
-                <a href="/html/">Invite New User</a>
-                <a className="item-icon" href="/html/"><HomeIcon/></a>
-              </li>
-              <li className="item">
-                <a href="/html/">Partner Applications</a>
-                <a className="item-icon" href="/html/"><HomeIcon/></a>
-              </li>
-            </ul>
-        </nav>
-      </div>
-    </header>
+    <div className="NavPanel-Component">
+      <nav className={navPanelClasses} id="navigation-navpanel">
+          {/* <ul className="navpanel-ul">
+            
+          </ul> */}
+      </nav>
+    </div>
+
   );
 }
 
@@ -53,3 +29,33 @@ type MyProps = {
 type Props = MyProps;
 
 export default NavPanel;
+
+
+
+{/*
+
+<li className="item">
+              <a href="/html/">Home</a>
+              <a className="item-icon" href="/html/"><HomeIcon/></a>
+            </li>
+            <li className="item">
+              <a href="/html/">Communities</a>
+              <a className="item-icon" href="/html/"><HomeIcon/></a>
+            </li>
+            <li className="item">
+              <a href="/html/">Portals</a>
+              <a className="item-icon" href="/html/"><HomeIcon/></a>
+            </li>
+            <li className="item">
+              <a href="/html/">RFIs</a>
+              <a className="item-icon" href="/html/"><HomeIcon/></a>
+            </li>
+            <li className="item">
+              <a href="/html/">Invite New User</a>
+              <a className="item-icon" href="/html/"><HomeIcon/></a>
+            </li>
+            <li className="item">
+              <a href="/html/">Partner Applications</a>
+              <a className="item-icon" href="/html/"><HomeIcon/></a>
+            </li>
+*/}

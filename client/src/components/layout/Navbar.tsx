@@ -4,8 +4,9 @@ import SearchBar from '../layout/SearchBar';
 import NavPanel from '../layout/NavPanel';
 import Caret from '../assets/Caret';
 import PiXChatIcon from '../../components/assets/PiXChatIcon';
+// import { clarakmConfig, MenuItem as CKMMenuItem, Submenu as CKMSubmenu } from '@teslagov/clarakm-env-js';
 
-class Navbar extends React.Component<MyProps, State> {
+class Navbar extends React.Component<Props, State> {
   constructor(props: any){
     super(props);
     this.toggle = this.toggle.bind(this);
@@ -42,6 +43,7 @@ class Navbar extends React.Component<MyProps, State> {
         <PiXIcon toggleNavPanel={this.toggle}/>
         <Caret isOpen={isNavPanelOpen}/>
         <SearchBar/>
+        {/*Menu Items here*/}
         <PiXChatIcon/>
       </div>
     );
