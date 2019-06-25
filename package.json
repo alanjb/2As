@@ -1,0 +1,33 @@
+{
+  "name": "pix-ux",
+  "version": "1.0.0",
+  "description": "This project provides the base styles and React components for all PiX related software",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "@types/node": "^12.0.10",
+    "dotenv": "^8.0.0",
+    "if-env": "^1.0.4",
+    "lodash": "^4.17.11",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "reactstrap": "^8.0.0"
+  },
+  "devDependencies": {
+    "node-env-run": "^3.0.2",
+    "typescript": "^3.3.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanjb/pix-design-guide.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alanjb/pix-design-guide/issues"
+  },
+  "homepage": "https://github.com/alanjb/pix-design-guide#readme"
+}

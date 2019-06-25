@@ -8,7 +8,7 @@ import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import createSagaMiddleware from "redux-saga";
 // import { watchAgeUp } from "./sagas/saga";
-import rootReducer from "./reducers/index";
+import rootReducer from "./redux/reducers/index";
 
 const sagaMiddleware = createSagaMiddleware();
 const store = createStore(rootReducer, applyMiddleware(sagaMiddleware));

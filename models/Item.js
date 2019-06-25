@@ -1,0 +1,1 @@
+//https://codingsans.com/blog/mongoose-models-using-typescript-classes
