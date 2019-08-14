@@ -8,7 +8,7 @@ import NewArticle from "../../components/assets/NewArticle";
 import EditArticle from "../../components/assets/EditArticle";
 import Bookmark from "../../components/assets/Bookmark";
 import Card from "../../components/layout/Card";
-import EditButtonMobile from "../../components/layout/EditButtonMobile";
+import EditButtonMobile from "../assets/EditButtonMobile";
 import Table from "../../components/layout/Table";
 
 export default class Article extends React.Component {

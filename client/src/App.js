@@ -7,7 +7,7 @@ class App extends React.Component {
     return(
       <div className="">
         <div className="app-navigation">
-          <Navbar/>
+        <Navbar/>
         </div>
         <div className="container-fluid h-100 app-body"> 
           {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, 

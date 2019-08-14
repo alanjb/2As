@@ -7,13 +7,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import createSagaMiddleware from "redux-saga";
-// import { watchAgeUp } from "./sagas/saga";
-import rootReducer from "./redux/reducers/index";
+import rootReducer from "./store/reducers/index";
 
 const sagaMiddleware = createSagaMiddleware();
 const store = createStore(rootReducer, applyMiddleware(sagaMiddleware));
 
-// sagaMiddleware.run(watchAgeUp);
 document.title = `PiX Design Guide`;
 const rootElement = document.getElementById("root");
 ReactDOM.render(

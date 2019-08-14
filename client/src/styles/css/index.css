@@ -54,6 +54,65 @@ body {
   margin: 0 auto;
   align-items: stretch; }
 
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+ul.menu-navbar {
+  padding-left: 10px; }
+
+li {
+  list-style-type: none;
+  text-align: left;
+  float: left;
+  top: 10px;
+  text-decoration: none; }
+
+li a {
+  list-style-type: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif; }
+
+a.textitem {
+  color: white !important;
+  margin-top: -4px;
+  padding-right: 2px; }
+
+@media only screen and (max-width: 991px) {
+  .menu-navpanel {
+    visibility: visible; }
+
+  li {
+    list-style: none !important;
+    display: block !important;
+    float: none; }
+
+  a.textitem {
+    color: #3c3d3b !important; }
+
+  ul {
+    display: none; } }
+@media only screen and (max-width: 992px) {
+  a.textitem {
+    color: #3c3d3b !important; }
+
+  .menu-navbar {
+    visibility: visible; } }
+@media only screen and (min-width: 992px) {
+  .menu-navpanel {
+    display: none; }
+
+  a.textitem {
+    color: #FFFFFF !important; }
+
+  .menu-navbar {
+    visibility: visible; } }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 568px) {
   .article-toolbar-largescreens {
@@ -68,7 +127,6 @@ body {
 .SearchBar-Component {
   position: relative !important;
   margin-left: 30px !important;
-  width: 100%;
   display: flex;
   flex-grow: 8;
   z-index: 2px; }
@@ -99,14 +157,10 @@ input.SearchBar-Input {
 /* Extra small devices (phones, 600px and down) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 991px) {
   input.SearchBar-Input {
-    width: 450px !important;
     position: relative;
-    right: 10px; }
-
-  .SearchBar-Component {
-    display: block !important; } }
+    right: 10px; } }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 360px) {
   input.SearchBar-Input {
@@ -141,7 +195,7 @@ input.SearchBar-Input {
   height: 100% !important;
   padding: 5px 15px;
   background-color: #FFFFFF;
-  z-index: 1 !important;
+  z-index: 5 !important;
   background-size: auto;
   list-style-type: none;
   transform: translateY(-150vh);
@@ -152,13 +206,6 @@ input.SearchBar-Input {
   display: flex;
   vertical-align: middle;
   align-items: center; }
-
-.item-icon {
-  margin-left: auto;
-  display: inline-block;
-  position: relative;
-  bottom: 2px;
-  right: 5px; }
 
 .navpanel-ul {
   list-style-type: none;
@@ -189,8 +236,6 @@ input.SearchBar-Input {
 .navigation-navpanel.open {
   transform: translateX(0vh) !important; }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
 .caret {
   left: 60px;
   top: 40px !important;
@@ -208,7 +253,7 @@ input.SearchBar-Input {
   .caret {
     left: 70px; } }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 991px) {
   .caret {
     visibility: hidden !important; } }
 .PiXChatIcon-Component {
@@ -223,8 +268,9 @@ input.SearchBar-Input {
   display: block; }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 991px) {
   .pixchaticon {
+    display: none !important;
     visibility: hidden !important; } }
 @media only screen and (max-width: 350px) {
   .PiXChatIcon-Component {
@@ -572,7 +618,7 @@ select::-ms-expand {
   height: 55px !important;
   background-color: #3c3d3b !important;
   box-shadow: 1px 1px 3px #eaeaea !important;
-  z-index: 8000 !important;
+  z-index: 2 !important;
   display: flex !important;
   border-top: 1px solid #2A2B29 !important;
   padding: 13px 20px;
@@ -823,7 +869,7 @@ h2.details-articles-tab-subtitle {
 
 @media only screen and (max-width: 600px) {
   h1.article-title {
-    font-size: 1.7rem !important; } }
+    font-size: 2rem !important; } }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .EditButtonMobile {
   background-color: #FFFFFF;
@@ -875,5 +921,86 @@ h2.details-articles-tab-subtitle {
 .button-medium {
   padding: 15px 30px;
   min-width: 40px; }
+
+.Section-Component {
+  padding-top: 25px !important; }
+
+.section-title {
+  color: #3c3d3b;
+  font-weight: 500;
+  font-size: 25px;
+  font-family: Georgia, serif;
+  padding-left: 0px !important;
+  margin-left: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 5px !important;
+  margin-bottom: 0px !important; }
+
+.Tab-Component {
+  padding-top: 5px !important;
+  display: block;
+  width: 100%;
+  overflow: hidden; }
+
+a.nav-link {
+  font-size: .8rem;
+  color: #3c3d3b;
+  border-bottom: 3px;
+  cursor: pointer;
+  text-decoration: none !important;
+  padding: 10px -20px !important; }
+
+a.nav-link:hover {
+  cursor: pointer;
+  text-decoration: none !important;
+  border: none !important; }
+
+.nav-link.active {
+  font-weight: 600; }
+
+.nav-tabs {
+  border-bottom: 1px solid #656664 !important; }
+
+.nav-tabs .nav-item .nav-link.active {
+  border-bottom: 3px solid #3c3d3b !important;
+  color: #3c3d3b;
+  border: none;
+  cursor: pointer;
+  text-decoration: none !important; }
+
+p.tab-text {
+  padding-top: 10px !important; }
+
+@media only screen and (max-width: 991px) {
+  a.nav-link {
+    font-size: .7rem; } }
+@media only screen and (max-width: 556px) {
+  a.nav-link {
+    font-size: .5rem; } }
+.nav-tabs {
+  flex-wrap: nowrap; }
+
+.nav-right {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  float: right !important; }
+
+.upload-float {
+  margin-left: auto; }
+
+.uploadbutton {
+  height: 23px !important;
+  position: relative;
+  vertical-align: middle;
+  margin-top: 11px;
+  cursor: pointer;
+  float: right;
+  padding-right: 20px; }
+
+@media only screen and (max-width: 991px) {
+  .uploadbutton {
+    bottom: 3px; } }
 
 /*# sourceMappingURL=index.css.map */

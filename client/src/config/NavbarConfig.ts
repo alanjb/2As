@@ -1,28 +1,27 @@
 import { MenuItem } from './MenuItem';
-import { Submenu } from './Submenu';
+// import { Submenu } from './Submenu';
 
 export interface NavbarConfig {
-  logo: {
-    link: {
-      href: string;
-      title: string;
-    };
-  };
+  // logo: {
+  //   link: {
+  //     href: string;
+  //     title: string;
+  //   };
+  // };
   menu: {
     items: Array<NavItem>;
-    mail: {
-      visible: boolean;
+    // mail: {
+    //   visible: boolean;
+    // };
+    // user: {
+    //   help: MenuItem;
+    //   feedback: Pick<MenuItem, Exclude<keyof MenuItem, 'href'>> & {
+    //     visible: boolean;
+    //   };
     };
-    user: {
-      help: MenuItem;
-      feedback: Pick<MenuItem, Exclude<keyof MenuItem, 'href'>> & {
-        visible: boolean;
-      };
-    };
-  };
 }
 
-export type NavItem = MenuItem | Submenu;
+export type NavItem = MenuItem;
 
 //export function findNavItemByKey(items: Array<NavItem>, key: string): NavItem {
 export function findNavItemByKey(items: Array<NavItem>, key: string) {

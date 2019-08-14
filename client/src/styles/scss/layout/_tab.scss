@@ -1,0 +1,88 @@
+@import './abstract/variables';
+
+.nav{
+    
+}
+
+.Tab-Component {
+    padding-top: 5px !important;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+a.nav-link {
+    font-size: .8rem;
+    color: $black;
+    border-bottom: 3px;
+    cursor: pointer;
+    text-decoration: none !important;
+    padding: 10px -20px !important;
+}
+
+a.nav-link:hover {
+    cursor: pointer;
+    text-decoration: none !important;
+    border: none !important;
+}
+
+.nav-link.active {
+    font-weight: 600;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid $dark-grey !important;
+
+}
+
+.nav-tabs .nav-item .nav-link.active {
+    border-bottom: 3px solid $black !important;
+    color: $black;
+    border: none;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
+// .nav-link:hover {
+//     border: none !important;
+// }
+
+p.tab-text {
+    padding-top: 10px !important;
+}
+
+@media only screen and (max-width: 991px) {
+    a.nav-link {
+        font-size: .7rem;    
+    }
+}
+
+@media only screen and (max-width: 556px) {
+    a.nav-link {
+        font-size: .5rem;    
+    }
+
+    a.nav-link {
+        
+    }
+}
+
+.nav.nav-tabs .nav-right {
+
+}
+
+.nav-tabs {
+    flex-wrap: nowrap;
+}
+
+.nav-right{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    float: right !important;
+}
+
+.upload-float{
+    margin-left: auto;
+}

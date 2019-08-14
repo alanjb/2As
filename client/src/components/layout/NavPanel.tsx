@@ -1,61 +1,48 @@
-import React, {Component, createRef} from 'react';
-import HomeIcon from '../assets/HomeIcon';
+import React, {Component, useState} from 'react';
+import Menu from '../layout/Menu';
+const { getMenuItems } = require('../../config/ConfigFunctions');
+const menu = getMenuItems();
+const menuItems = menu.menu.items;
 
-const NavPanel = (Props: Props) => { 
-  let navPanelClasses = 'navigation-navpanel';
-  const {isOpen} = Props;
-  if(isOpen){
-    navPanelClasses = 'navigation-navpanel open';
+class NavPanel extends React.Component<Props, State>{
+  constructor(props: any){
+    super(props);
   }
-  else{
-    navPanelClasses = 'navigation-navpanel '
-  }
-  return(
-    <div className="NavPanel-Component">
-      <nav className={navPanelClasses} id="navigation-navpanel">
-          {/* <ul className="navpanel-ul">
-            
-          </ul> */}
-      </nav>
-    </div>
 
-  );
+  state: State = {
+    items: menuItems
+  };
+
+  render(){
+    let navPanelClasses = 'navigation-navpanel';
+    const { isOpen } = this.props;
+    if(isOpen){
+      navPanelClasses = 'navigation-navpanel open';
+    }
+    else{
+      navPanelClasses = 'navigation-navpanel '
+    }
+
+    return(
+      <div className="NavPanel-Component">
+        <nav className={navPanelClasses} id="navigation-navpanel">
+          <ul className="menu-navpanel">
+            <Menu items={this.state.items}/>
+          </ul>
+        </nav>
+      </div>
+    );
+  }
 }
 
 type MyProps = {
   isOpen: boolean;
 };
 
+type State = {
+  items: [];
+};
+
 type Props = MyProps;
 
 export default NavPanel;
-
-
-
-{/*
-
-<li className="item">
-              <a href="/html/">Home</a>
-              <a className="item-icon" href="/html/"><HomeIcon/></a>
-            </li>
-            <li className="item">
-              <a href="/html/">Communities</a>
-              <a className="item-icon" href="/html/"><HomeIcon/></a>
-            </li>
-            <li className="item">
-              <a href="/html/">Portals</a>
-              <a className="item-icon" href="/html/"><HomeIcon/></a>
-            </li>
-            <li className="item">
-              <a href="/html/">RFIs</a>
-              <a className="item-icon" href="/html/"><HomeIcon/></a>
-            </li>
-            <li className="item">
-              <a href="/html/">Invite New User</a>
-              <a className="item-icon" href="/html/"><HomeIcon/></a>
-            </li>
-            <li className="item">
-              <a href="/html/">Partner Applications</a>
-              <a className="item-icon" href="/html/"><HomeIcon/></a>
-            </li>
-*/}

@@ -14,7 +14,7 @@
   height: 100% !important;
   padding: 5px 15px;
   background-color: $white;
-  z-index: 1 !important;
+  z-index: 5 !important;
   background-size: auto;
   list-style-type: none;
   transform: translateY(-150vh);
@@ -26,14 +26,6 @@
   display: flex;
   vertical-align: middle;
   align-items : center;
-}
-
-.item-icon{
-  margin-left: auto;
-  display:inline-block;
-  position: relative;
-  bottom: 2px;
-  right: 5px;
 }
 
 .navpanel-ul {
@@ -69,22 +61,4 @@
 
 .navigation-navpanel.open {
   transform: translateX(0vh) !important;
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .navigation-navpanel-items > ul > li{
-
-  }
-  .navigation-navpanel-items > ul > li > a{
-    // font-size: 1.7rem;
-
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .navigation-navpanel-items > ul > li > a{
-
-  }
 }

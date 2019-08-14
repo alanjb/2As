@@ -5,6 +5,8 @@ import Info from '../../components/assets/InfoButton';
 import NewArticle from '../../components/assets/NewArticle';
 import EditArticle from '../../components/assets/EditArticle';
 import Bookmark from '../../components/assets/Bookmark';
+import Tab from '../../components/layout/Tab';
+import Section from '../../components/layout/Section';
 
 export default class Article extends React.Component {
   constructor(props: any) {
@@ -13,9 +15,9 @@ export default class Article extends React.Component {
 
   render() {
     return (
-      <div className="row h-100"> 
+      <div className="Article-Component row h-100"> 
         <ArticleIndexBarComponent/>
-        <div className="col-xs-1 col-sm-2 col-md-2 col-lg-1">
+        <div className="col-xs-1 col-sm-2 col-md-2 col-lg-2">
            <div className="article-toolbar-largescreens">
             <EditArticle/>
             <NewArticle/>
@@ -23,48 +25,35 @@ export default class Article extends React.Component {
             <Bookmark/>
           </div> 
         </div>  
-        <div className="article col-xs-10 col-sm-8 col-md-8 col-lg-10">
+        <div className="article col-xs-10 col-sm-8 col-md-8 col-lg-8">
           <h1 className="article-title">USCENTCOM Medical Security Cooperation (MSC) Exchange Details</h1>
-          <br/>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>  
-        <div className="col-xs-1 col-sm-2 col-md-2 col-lg-1"/> 
+          <Section/>
+          <div className="Section-Component"> 
+            <h3 className="section-title">USCENTCOM Command Surgeon Welcome Letter</h3>
+            <Tab/>
+        </div>
+        <div className="Section-Component"> 
+            <h3 className="section-title">Surgeon Welcome Letter</h3>
+            <Tab/>
+        </div>
+        <div className="Section-Component"> 
+            <h3 className="section-title">Surgeon Letter</h3>
+            <Tab/>
+        </div>
+        <div className="Section-Component"> 
+            <h3 className="section-title">Security Cooperation (MSC)</h3>
+            <Tab/>
+        </div>
+        <div className="Section-Component"> 
+            <h3 className="section-title">S4knd</h3>
+            <Tab/>
+        </div>
+        <div className="Section-Component"> 
+            <h3 className="section-title">dgjand</h3>
+            <Tab/>
+        </div>
+        </div> 
+        <div className="col-xs-1 col-sm-2 col-md-2 col-lg-2"/> 
         <ArticleToolBar/> 
       </div>   
     );

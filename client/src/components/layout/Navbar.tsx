@@ -2,10 +2,14 @@ import React from 'react';
 import PiXIcon from '../../components/assets/PiXIcon';
 import SearchBar from '../layout/SearchBar';
 import NavPanel from '../layout/NavPanel';
+import Menu from '../layout/Menu';
 import Caret from '../assets/Caret';
 import PiXChatIcon from '../../components/assets/PiXChatIcon';
-// import { clarakmConfig, MenuItem as CKMMenuItem, Submenu as CKMSubmenu } from '@teslagov/clarakm-env-js';
 
+const { getMenuItems }= require('../../config/ConfigFunctions');
+const menu = getMenuItems();
+const menuItemsArray = menu.menu.items;
+const maxScreenWidthForNavPanel = 991;
 class Navbar extends React.Component<Props, State> {
   constructor(props: any){
     super(props);
@@ -14,13 +18,14 @@ class Navbar extends React.Component<Props, State> {
 
   state: State = {
     isNavPanelOpen: false,
-    isFeedbackOpen: false
+    isFeedbackOpen: false, 
+    items: menuItemsArray
   };
 
   public toggle() {
     let screenWidth = window.screen.width;
     let innerWidth = window.innerWidth;
-    if(screenWidth<1200 || innerWidth<1200){
+    if(screenWidth<maxScreenWidthForNavPanel || innerWidth<maxScreenWidthForNavPanel ){
       this.setState((prevState) => {
         return {
           isNavPanelOpen: !prevState.isNavPanelOpen
@@ -37,13 +42,16 @@ class Navbar extends React.Component<Props, State> {
 
   render(){
     const { isNavPanelOpen } = this.state;
+    const { items } = this.state;
     return(
       <div className="Navbar-Component">
         <NavPanel isOpen={isNavPanelOpen}/>
         <PiXIcon toggleNavPanel={this.toggle}/>
         <Caret isOpen={isNavPanelOpen}/>
         <SearchBar/>
-        {/*Menu Items here*/}
+        <ul className="menu-navbar">
+          <Menu items={items}/>
+        </ul>
         <PiXChatIcon/>
       </div>
     );
@@ -66,6 +74,7 @@ type Props = MyProps;
 type State = {
   isNavPanelOpen: boolean;
   isFeedbackOpen: boolean;
+  items: [];
 };
 
 export default Navbar;

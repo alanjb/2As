@@ -1,8 +1,7 @@
 import React from 'react';
-import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
-import { Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
-import SignUpForm from '../components/forms/SignUpForm';
+import UploadButton from '../../components/assets/UploadButton';
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -22,23 +21,16 @@ export default class Example extends React.Component {
     }
   }
 
-  handleSignUpSumbit(e){
-    //need to gather user information by creating a userProfile object
-
-
-  }
-
   render() {
     return (
-      <div>
-        <Nav tabs>
+      <div className="Tab-Component"> 
+        <Nav tabs className="Tabs-Div">
           <NavItem>
             <NavLink
-              //className is a prop
               className={classnames({ active: this.state.activeTab === '1' })}
               onClick={() => { this.toggle('1'); }}
             >
-              Log in
+              Content
             </NavLink>
           </NavItem>
           <NavItem>
@@ -46,33 +38,92 @@ export default class Example extends React.Component {
               className={classnames({ active: this.state.activeTab === '2' })}
               onClick={() => { this.toggle('2'); }}
             >
-              Sign Up
+              File Library
             </NavLink>
           </NavItem>
+          <NavItem>
+            <NavLink
+              className={classnames({ active: this.state.activeTab === '3' })}
+              onClick={() => { this.toggle('3'); }}
+            >
+              Images
+            </NavLink>
+          </NavItem>
+            <div className="upload-float">
+              <UploadButton/>
+            </div>
         </Nav>
+
         <TabContent activeTab={this.state.activeTab}>
           <TabPane tabId="1">
             <Row>
               <Col sm="12">
-                {/* <h4>Tab 1 Contents</h4> */}
-                <FormGroup>
-                  <Label htmlFor="email" for="exampleEmail">Email</Label>
-                  <Input type="email" name="email" id="exampleEmail" placeholder="Enter your email" />
-                  <Label for="exampleEmail">Password</Label>
-                  <Input type="password" name="password" id="examplePassword" placeholder="Enter your password" />
-
-                  <Button color="primary" type="submit" onClick={this.handleFormSubmit}>Log In</Button>{' '}
-                  <Button color="secondary" onClick={this.toggle}>Cancel</Button>
-               </FormGroup>
+                <p className="tab-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a  
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a    
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a    
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a    
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a  
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a  
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a    
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a    
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a    
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a            
+                 </p>
               </Col>
             </Row>
           </TabPane>
           <TabPane tabId="2">
             <Row>
               <Col sm="12">
-                {/* <h4>Tab 1 Contents</h4> */}
-                <SignUpForm />
-                
+              <p className="tab-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a  
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a    
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a    
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a    
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a    
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a            
+                 </p>
+            </Col>
+
+            </Row>
+          </TabPane>
+          <TabPane tabId="3">
+            <Row>
+              <Col sm="12">
+              <p className="tab-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a  
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a    
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a    
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a    
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a  
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a  
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                 </p>
             </Col>
 
             </Row>
