@@ -87,12 +87,7 @@ export default class Example extends React.Component {
             <Row>
               <Col sm="12">
               <p className="tab-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a  
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a    
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim a    
+                 lore magna aliqua. Ut enim a    
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                   
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
@@ -110,7 +105,7 @@ export default class Example extends React.Component {
             <Row>
               <Col sm="12">
               <p className="tab-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                  onsectetur adipiscing elit, sed do eiusmod 
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim a  
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim a    

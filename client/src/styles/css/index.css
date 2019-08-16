@@ -26,18 +26,6 @@ body {
   margin: 0 !important;
   padding: 0 !important; }
 
-.backdrop-modal:after {
-  margin: 0 !important;
-  overflow: hidden !important;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
-  content: '';
-  height: 100% !important; }
-
 .Navbar-Component {
   overflow: hidden !important;
   position: fixed !important;
@@ -680,7 +668,8 @@ select::-ms-expand {
   top: 6px; }
 
 a:hover {
-  text-decoration: underline !important; }
+  text-decoration: underline !important;
+  cursor: pointer !important; }
 
 .ArticlesButton-Component {
   flex: 1;
@@ -925,6 +914,9 @@ h2.details-articles-tab-subtitle {
 .Section-Component {
   padding-top: 25px !important; }
 
+.Section-Component:last-child {
+  padding-bottom: 100px; }
+
 .section-title {
   color: #3c3d3b;
   font-weight: 500;
@@ -976,7 +968,7 @@ p.tab-text {
     font-size: .7rem; } }
 @media only screen and (max-width: 556px) {
   a.nav-link {
-    font-size: .5rem; } }
+    font-size: .6rem; } }
 .nav-tabs {
   flex-wrap: nowrap; }
 
@@ -991,7 +983,7 @@ p.tab-text {
   margin-left: auto; }
 
 .uploadbutton {
-  height: 23px !important;
+  height: 21px !important;
   position: relative;
   vertical-align: middle;
   margin-top: 11px;
@@ -1001,6 +993,24 @@ p.tab-text {
 
 @media only screen and (max-width: 991px) {
   .uploadbutton {
-    bottom: 3px; } }
+    height: 18px !important;
+    margin-top: 10px; } }
+@media only screen and (max-width: 556px) {
+  .uploadbutton {
+    height: 15px !important;
+    margin-top: 11px; } }
+.article-banner {
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  background-color: #FFFFFF;
+  border: 1px solid #3c3d3b;
+  color: #3c3d3b;
+  padding: 10px 10px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  z-index: 5; }
 
 /*# sourceMappingURL=index.css.map */

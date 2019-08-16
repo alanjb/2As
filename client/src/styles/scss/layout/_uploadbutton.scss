@@ -1,7 +1,7 @@
 @import './abstract/variables';
 
 .uploadbutton {
-    height: 23px !important;
+    height: 21px !important;
     position: relative;
     vertical-align: middle;
     margin-top: 11px;
@@ -12,6 +12,14 @@
 
 @media only screen and (max-width: 991px) {
     .uploadbutton {
-        bottom: 3px;
+        height: 18px !important;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 556px) {
+    .uploadbutton {
+        height: 15px !important;
+        margin-top: 11px;
     }
 }

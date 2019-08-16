@@ -26,6 +26,9 @@ export default class Article extends React.Component {
           </div> 
         </div>  
         <div className="article col-xs-10 col-sm-8 col-md-8 col-lg-8">
+          <div className="article-banner">
+            <span><a>USCENTCOM Medical Security Cooperation (MSC) Exchange</a></span>
+          </div>
           <h1 className="article-title">USCENTCOM Medical Security Cooperation (MSC) Exchange Details</h1>
           <Section/>
           <div className="Section-Component"> 

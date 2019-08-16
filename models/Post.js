@@ -1,3 +1,4 @@
+//https://codingsans.com/blog/mongoose-models-using-typescript-classes
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
@@ -11,10 +12,4 @@ const PostSchema = new Schema({
       type: String, 
       required: true
     }
-    likes: [
-      {
-        user
-      }
-
-    ]
 });
