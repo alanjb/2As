@@ -16,14 +16,14 @@
   z-index: 3 !important;
   background-size: auto;
   list-style-type: none;
-  transform: translateX(0vh);
-  -webkit-transition: transform 0.88s ease-out !important;
+  transform: translateX(-100vh);
+  -webkit-transition: transform 0.68s ease-out !important;
   overflow-y: scroll; 
-  box-shadow: 1px 1px 25px 1px $dark-grey;
+  box-shadow: 0px 1px 20px .5px $dark-grey;
 }
 
 .indexSidePanel.open {
-  transform: translateX(-100vh) !important;
+  transform: translateX(0vh) !important;
 }
 
 .index-header {
@@ -31,4 +31,15 @@
   margin-top: 4px;
   margin-left: 45px;
 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 376px) {
+  .indexSidePanel {
+    width: 60%;
+  }
+  .index-header {
+    margin-left: 25px;
+  
+  }
 }

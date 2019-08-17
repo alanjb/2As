@@ -7,12 +7,13 @@
   height: 5px !important;
   display:inline-block;
   transition: transform 300ms ease;
-  z-index: 5;
+  z-index: 99;
 }
 
-.open{
+.open {
   transform: rotate( 180deg );
   transition: transform 300ms ease;
+  background-color: $black;
 }
 
 @media only screen and (min-width: 575px) {

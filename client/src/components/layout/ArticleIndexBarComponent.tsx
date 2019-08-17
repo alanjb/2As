@@ -29,7 +29,7 @@ class ArticleIndexBarComponent extends React.Component<{}, State>  {
         
         <IndexButton toggleIndexSidePanel={this.toggle}/>
         <IndexSidePanel isOpen={isIndexSidePanelOpen}/>
-            <a className="breadcrumbs">USCENTCOM Medical Security Cooperation (MSC) Exchange Details</a> <span className="caret-breaker"> > </span> <a>Homepage</a>
+            <a className="breadcrumbs">USCENTCOM Medical Security Cooperation (MSC) Exchange Details</a> <span className=""> > </span> <a className="breadcrumbs last-breadcrumb">Homepage</a>
         </div>
       </div>
     );
