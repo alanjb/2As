@@ -1,17 +1,17 @@
 @import './abstract/variables';
 
-.indexbutton {
+.index-button {
   background-color: $white;
   height: .68em;
   position: fixed;
-  z-index: 9000;
+  z-index: 9;
   cursor: pointer !important;
   margin-top: 6px;
   left: 16px;
 }
 
 @media only screen and (min-width: 575px) {
-  .indexbutton{
-    left: 35px;
+  .index-button{
+    left: 30px;
   }
 }

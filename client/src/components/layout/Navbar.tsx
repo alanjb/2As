@@ -34,12 +34,6 @@ class Navbar extends React.Component<Props, State> {
     }
   }
 
-  public toggleFeedBack = () => {
-    this.setState((prevState) => { 
-      isFeedbackOpen: !prevState.isFeedbackOpen 
-    });
-  };
-
   render(){
     const { isNavPanelOpen } = this.state;
     const { items } = this.state;

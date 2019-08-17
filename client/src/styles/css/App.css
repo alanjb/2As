@@ -300,18 +300,18 @@ input.SearchBar-Input {
   font-family: Georgia, serif;
   padding-bottom: 5px !important; }
 
-.indexbutton {
+.index-button {
   background-color: #FFFFFF;
   height: .68em;
   position: fixed;
-  z-index: 9000;
+  z-index: 9;
   cursor: pointer !important;
   margin-top: 6px;
   left: 16px; }
 
 @media only screen and (min-width: 575px) {
-  .indexbutton {
-    left: 35px; } }
+  .index-button {
+    left: 30px; } }
 .Card-Area {
   display: grid; }
 
@@ -614,7 +614,7 @@ select::-ms-expand {
   white-space: nowrap; }
 
 .article-toolbar-largescreens {
-  margin-right: 10px; }
+  margin-right: 5px; }
 
 .ArticleToolbar-Component.space-between {
   justify-content: space-between; }
@@ -912,7 +912,7 @@ h2.details-articles-tab-subtitle {
   min-width: 40px; }
 
 .Section-Component {
-  padding-top: 25px !important; }
+  padding-top: 10px !important; }
 
 .Section-Component:last-child {
   padding-bottom: 100px; }
@@ -1005,12 +1005,63 @@ p.tab-text {
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 100%;
-  background-color: #FFFFFF;
-  border: 1px solid #3c3d3b;
-  color: #3c3d3b;
+  background-color: #2ca9e1;
+  border: none;
+  color: #FFFFFF;
   padding: 10px 10px;
   margin-top: 5px;
   margin-bottom: 30px;
   z-index: 5; }
+
+.article-tag {
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #FFFFFF;
+  border: 1px solid #3c3d3b;
+  color: #3c3d3b;
+  padding: .8%;
+  z-index: 5;
+  border-radius: 30px;
+  cursor: pointer;
+  width: auto;
+  margin: 1.8% 1%;
+  vertical-align: super;
+  display: inline-block;
+  font-size: 50%;
+  font-weight: 800;
+  text-transform: uppercase; }
+
+.first-tag {
+  margin-left: 0%; }
+
+.indexSidePanel {
+  border-left: none;
+  border-right: none;
+  position: fixed !important;
+  margin-top: 80px !important;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 28%;
+  height: 100% !important;
+  padding: 5px 15px;
+  background-color: #FFFFFF;
+  z-index: 3 !important;
+  background-size: auto;
+  list-style-type: none;
+  transform: translateX(0vh);
+  -webkit-transition: transform 0.88s ease-out !important;
+  overflow-y: scroll;
+  box-shadow: 1px 1px 25px 1px #656664; }
+
+.indexSidePanel.open {
+  transform: translateX(-100vh) !important; }
+
+.index-header {
+  font-size: 1rem;
+  margin-top: 4px;
+  margin-left: 45px; }
 
 /*# sourceMappingURL=App.css.map */

@@ -8,7 +8,7 @@ import Bookmark from '../../components/assets/Bookmark';
 import Tab from '../../components/layout/Tab';
 import Section from '../../components/layout/Section';
 
-export default class Article extends React.Component {
+class Article extends React.Component {
   constructor(props: any) {
     super(props);
   };
@@ -30,6 +30,15 @@ export default class Article extends React.Component {
             <span><a>USCENTCOM Medical Security Cooperation (MSC) Exchange</a></span>
           </div>
           <h1 className="article-title">USCENTCOM Medical Security Cooperation (MSC) Exchange Details</h1>
+          <div className="article-tag first-tag">
+            <span><a>Middle East &amp; Central Asia</a></span>
+          </div>
+          <div className="article-tag">
+            <span><a>Infrastructure</a></span>
+          </div>
+          <div className="article-tag">
+            <span><a>Syria</a></span>
+          </div>
           <Section/>
           <div className="Section-Component"> 
             <h3 className="section-title">USCENTCOM Command Surgeon Welcome Letter</h3>
@@ -62,3 +71,5 @@ export default class Article extends React.Component {
     );
   }
 }
+
+export default Article;

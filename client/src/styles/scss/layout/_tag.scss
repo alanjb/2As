@@ -1,0 +1,25 @@
+@import './abstract/variables';
+
+.article-tag {
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    background-color: $white;
+    border: 1px solid $black;
+    color: $black;
+    padding: .8%; 
+    z-index: 5;
+    border-radius: 30px;
+    cursor: pointer;
+    width: auto;
+    margin: 1.8% 1%;
+    vertical-align: super;
+    display: inline-block;
+    font-size: 50%;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.first-tag{
+    margin-left: 0%;
+}

@@ -1,0 +1,34 @@
+@import './abstract/variables';
+
+.indexSidePanel {
+  border-left: none; 
+  border-right: none;
+  position: fixed !important;
+  margin-top: 80px !important;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 28%;
+  height: 100% !important;
+  padding: 5px 15px;
+  background-color: $white;
+  z-index: 3 !important;
+  background-size: auto;
+  list-style-type: none;
+  transform: translateX(0vh);
+  -webkit-transition: transform 0.88s ease-out !important;
+  overflow-y: scroll; 
+  box-shadow: 1px 1px 25px 1px $dark-grey;
+}
+
+.indexSidePanel.open {
+  transform: translateX(-100vh) !important;
+}
+
+.index-header {
+  font-size: 1rem;
+  margin-top: 4px;
+  margin-left: 45px;
+
+}
