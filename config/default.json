@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://alan1:alan1@pixdesignguide-ktfbv.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "secret"
+  }

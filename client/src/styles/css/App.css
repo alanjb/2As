@@ -301,11 +301,11 @@ input.SearchBar-Input {
 
 .index-button {
   background-color: #FFFFFF;
-  height: .68em;
+  height: .69em;
   position: fixed;
   z-index: 9;
   cursor: pointer !important;
-  margin-top: 6px;
+  margin-top: 5px;
   left: 16px; }
 
 @media only screen and (min-width: 575px) {
@@ -548,16 +548,6 @@ select::-ms-expand {
   margin-top: 10px;
   height: 25px; }
 
-.Backdrop-Component {
-  width: 100%;
-  height: auto;
-  z-index: 4000;
-  background-color: #656664;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-  /* For IE8 and earlier */
-  position: absolute; }
-
 .FilterBar-Input {
   padding: 10px;
   border: none;
@@ -591,7 +581,7 @@ select::-ms-expand {
   .FilterBar-Input {
     width: 45% !important; } }
 .PiX-Icon {
-  height: 2.7em !important;
+  height: 3.2em !important;
   position: relative;
   cursor: pointer !important;
   z-index: 99; }
@@ -721,7 +711,7 @@ a:hover {
   display: flex !important;
   border-top: 1px solid #eaeaea !important;
   border-bottom: 1px solid #eaeaea !important;
-  padding: 18px 30px;
+  padding: 19px 25px !important;
   align-items: stretch;
   white-space: nowrap !important;
   opacity: 0.97;
@@ -739,8 +729,11 @@ a:hover {
   margin-bottom: 5px;
   position: relative;
   font-size: 16px;
-  bottom: 1px;
-  padding-right: 5px; }
+  padding-right: 5px;
+  text-overflow: ellipsis !important; }
+
+.breadcrumb-caret {
+  margin-bottom: 5px !important; }
 
 .last-breadcrumb {
   padding-left: 5px !important; }
@@ -1023,17 +1016,24 @@ p.tab-text {
   background-color: #FFFFFF;
   border: 1px solid #3c3d3b;
   color: #3c3d3b;
-  padding: .8%;
+  padding: .3rem .5rem;
   z-index: 5;
   border-radius: 30px;
   cursor: pointer;
   width: auto;
-  margin: 1.8% 1%;
+  margin: 1% .5%;
   vertical-align: super;
   display: inline-block;
-  font-size: 50%;
+  font-size: 75%;
   font-weight: 800;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-decoration: none !important; }
+
+.article-tag a {
+  text-decoration: none !important; }
+
+.tag-area {
+  padding: 10px 0px; }
 
 .first-tag {
   margin-left: 0%; }
@@ -1047,15 +1047,15 @@ p.tab-text {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  width: 28%;
+  width: 40%;
   height: 100% !important;
   padding: 5px 15px;
   background-color: #FFFFFF;
   z-index: 3 !important;
   background-size: auto;
   list-style-type: none;
-  transform: translateX(-100vh);
-  -webkit-transition: transform 0.68s ease-out !important;
+  transform: translateX(-150vh);
+  -webkit-transition: transform 0.88s ease-out !important;
   overflow-y: scroll;
   box-shadow: 0px 1px 20px 0.5px #656664; }
 
@@ -1064,15 +1064,35 @@ p.tab-text {
 
 .index-header {
   font-size: 1rem;
-  margin-top: 4px;
-  margin-left: 45px; }
+  margin-top: 4.4px !important;
+  margin-left: 30px;
+  font-weight: 800; }
 
+@media only screen and (max-width: 575px) {
+  .indexSidePanel {
+    width: 60%; } }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 376px) {
   .indexSidePanel {
     width: 60%; }
 
   .index-header {
-    margin-left: 25px; } }
+    margin-left: 30px; } }
+@media only screen and (min-width: 575px) {
+  .indexSidePanel {
+    width: 60%; }
+
+  .index-header {
+    margin-left: 50px; } }
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 991px) {
+  .indexSidePanel {
+    width: 25%; }
+
+  .index-header {
+    margin-top: 5px !important; } }
+.Register-Component {
+  height: 100%;
+  width: 100%; }
 
 /*# sourceMappingURL=App.css.map */

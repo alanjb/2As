@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import MenuItem from './MenuItem';
 //should be as MenuItem interface
 const Menu = (props: any) => {
