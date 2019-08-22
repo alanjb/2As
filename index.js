@@ -1,5 +1,5 @@
 const express = require("express");
-const connectDB = require('./config/db.js');
+const connectDB = require('./config/database/db.js');
 const path = require('path');
 
 // create an express application object
