@@ -1106,6 +1106,7 @@ img.search-button {
   margin-right: -3rem !important;
   padding: 0 !important;
   z-index: 35;
-  font-size: 0; }
+  font-size: 0;
+  cursor: pointer !important; }
 
 /*# sourceMappingURL=App.css.map */
