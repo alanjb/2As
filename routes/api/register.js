@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-// const gravatar = require('gravatar');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const config = require('config');
@@ -8,33 +7,42 @@ const { check, validationResult } = require('express-validator');
 
 const User = require('../../models/User');
 
-//@route    POST api/users/signup
+//@route    GET api/register
+//@desc     Test register a user route
+//@access   Public 
+router.get('/', (req, res) => res.send('Register User'));
+
+//@route    POST api/register
 //@desc     Register a user
-//@access   Public (non-registered user has to be able to register for the first time)
+//@access   Public 
 router.post(
   '/', 
   [
-    check('name', 'Name is required')
+    check('firstName', 'First name is required!')
       .not()
       .isEmpty(),
-    check('email', 'Email must be valid')
+    check('lastName', 'Last name is required!')
       .not()
-      .isEmpty()
+      .isEmpty(),
+    check('email', 'Email must be valid!')
       .isEmail(),
-    check('password', 'Must be a valid password')
-      .isLength({min: 6})
-      .isEmpty(),
-    check('citizenship', 'You must have a citizenship selected')
-    
+    check('password', 'Must be a valid password!')
+      .isLength({min: 5})
+      .withMessage('must be at least 5 chars long!')
+      .matches(/\d/).withMessage('must contain a number'),
   ],
   async (req,res) => {
+    console.log("testing....1");
     const errors = validationResult(req);
     if(!errors.isEmpty()){
       return res.status(400).json({errors: errors.array()})
     }
-    const { name, email, password, citizenship } = req.body;
-
+    console.log("testing....2");
+    
+    //get user data from request body
+    const { firstName, lastName, email, password, citizenship } = req.body;
     try {
+      //find if user exists in database
       let existingUser = await User.findOne({ email}); 
       if(existingUser){
         return res
@@ -42,18 +50,23 @@ router.post(
           .json({ errors: [{ msg: 'User already exists' }] });
       }
       const user = new User({
-        name,
+        firstName,
+        lastName,
         email,
         citizenship,
         password
       });
-      console.log("new user created - server side");
+      console.log("testing....3");
+      
       // generate salt
       const salt = await bcrypt.genSalt(10);
       //create hashed password
       user.password = await bcrypt.hash(password, salt);
-      //save user to database with newly hashed password
+      //free object so it cannot be altered
+      // Object.freeze(user);
+       //save user to database with newly hashed password
       await user.save();
+      //create payload object for web token
       const payload = {
         user: {
           id: user.id //get id from mongodb
@@ -69,9 +82,11 @@ router.post(
           res.json({ token });
         }
       );
+      console.log("user saved to database with token");
+      res.send('Welcome, ' + user.firstName);
     }
     catch(err){
-      console.log(err.message);
+      console.log('CAUGHT ERRORS: ' + err.message);
       res.status(500).send('Server error');
     }
   }

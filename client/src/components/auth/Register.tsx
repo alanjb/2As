@@ -1,7 +1,5 @@
 import * as React from 'react';
-import {Button} from 'reactstrap';
-import {Form, FormGroup, Input} from 'reactstrap';
-import {Container} from 'reactstrap';
+import {Button, Container, Form, FormGroup, Input} from 'reactstrap';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
 
@@ -29,7 +27,21 @@ export default class Register extends React.Component<{},IState> {
     };
   }
 
-  public handleSubmit = (event: React.FormEvent<HTMLInputElement>) : void =>   {
+  public handleChange = (event: React.ChangeEvent<HTMLInputElement>) : void => {
+    //www.pluralsight.com/guides/handling-multiple-inputs-with-single-onchange-handler-react
+    const value = event.target.value;
+    this.setState({
+      ...this.state,
+      [event.target.name]: value
+    });
+  } 
+
+  public handleDisableSubmitButton = () => {
+    // if validation doesn't pass, keep button isSubmitButtonDisabled
+    // if it does pass, remove disabled attribute
+  }
+
+  private handleSubmit = async(event: React.FormEvent<HTMLFormElement>): Promise<void> => {
     event.preventDefault();
     // create a new user object 
     const newUser = {
@@ -40,36 +52,29 @@ export default class Register extends React.Component<{},IState> {
       confirmPassword: this.state.confirmPassword, 
       citizenship: this.state.citizenship
     }
-    //ajax request 
-    axios.post('api/users/register', newUser)
-    .then(res => alert("Thank you for creating an account, " + res.data.firstName))
-    .catch(err => console.log(err))
-  }
-
-  public handleChange = (event: React.ChangeEvent<HTMLInputElement>) : void => {
-    this.setState({
-       
-    }); 
-    console.log('change dected at: ' + event.target.name);
-  }
-
-  public handleDisableSubmitButton = () => {
-    // if validation doesn't pass, keep button isSubmitButtonDisabled
-    // if it does pass, remove disabled attribute
+    axios.post('/api/register', newUser)
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
+      })
+      .catch(function (error) {
+        console.log("CLIENT ERROR IS: ");
+        console.log(error);
+      });
   }
 
   public render(): React.ReactNode {
     const {firstName, lastName, password, email, citizenship, isSubmitButtonDisabled} = this.state;
-
     return (
     <div className="Register-Component">
       <Container>
-        <Form handleSubmit={this.handleSubmit}>
+        <Form onSubmit={this.handleSubmit}>
           {/* <Link to="/">
             <Button>
               back
             </Button>
           </Link> */}
+          <br/>
           <h1>Register for PiX</h1>
           <br></br>
           <FormGroup>
@@ -85,18 +90,28 @@ export default class Register extends React.Component<{},IState> {
             <br></br>
           </FormGroup>
           <FormGroup>
-            <Input type="text" name="citizenship" id="citizenship" value={citizenship} onChange={(e) => this.handleChange(e)} placeholder="Citizenship"/>
+            <Input type="select" name="citizenship" value={citizenship} onChange={(e) => this.handleChange(e)} id="citizenship-multiselect" placeholder="Select your citizenship...">
+       
+              <option>Select a citizenship...</option>
+              <option>United States</option>
+              <option>Great Britain</option>
+              <option>French</option>
+              <option>German</option>
+              <option>Italian</option>
+    
+            </Input>            
             <br></br>
           </FormGroup>
           <FormGroup>
-            <Input password="password" name="password" id="password" value={password} onChange={(e) => this.handleChange(e)} placeholder="Password"/>
+            <Input type="password" name="password" id="password" value={password} onChange={(e) => this.handleChange(e)} placeholder="Password"/>
             <br></br>
           </FormGroup>
           <FormGroup>
-            <Input password="confirmPassword" name="password" id="password" onChange={(e) => this.handleChange(e)} placeholder="Confrim Password"/>
+            <Input type="password" name="confirmPassword" id="confirmPassword" onChange={(e) => this.handleChange(e)} placeholder="Confrim Password"/>
             <br></br>
           </FormGroup>
-          <Button color="success" label="Register" handleSubmit={this.handleSubmit}>Register</Button>
+          <Button color="success" label="Register">Register</Button>
+          <br/>
         </Form>
       </Container>
     </div>);

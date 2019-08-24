@@ -14,6 +14,11 @@ class Article extends React.Component {
   };
 
   render() {
+    let articleComponentClasses = 'Article-Component';
+    // const { isOpen } = this.props;
+    // if(!isOpen){
+    //   articleComponentClasses  = 'indexSidePanel open';
+    // }
     return (
       <div className="Article-Component row h-100"> 
         <ArticleIndexBarComponent/>

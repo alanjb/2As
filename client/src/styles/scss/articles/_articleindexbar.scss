@@ -21,10 +21,7 @@
   white-space: nowrap !important;
   opacity: 0.97;
   font-size: 16px;
-
-}
-
-
+} d
 
 .article-indexbar{
   text-overflow: ellipsis !important;
@@ -34,6 +31,7 @@
 }
 
 .breadcrumbs{
+  margin-left: 25%;
   padding-left: 55px;
   color: $grey;
   font-style: italic;
@@ -47,6 +45,14 @@
 
 .breadcrumb-caret {
   margin-bottom: 5px !important;
+  color: $grey;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 5px;
+  position: relative;
+  font-size: 16px;
+  padding-right: 5px;
+  text-overflow: ellipsis !important;
 }
 
 .last-breadcrumb{

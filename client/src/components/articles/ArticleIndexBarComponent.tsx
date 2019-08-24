@@ -1,6 +1,6 @@
 import React from 'react';
 import IndexButton from '../assets/IndexButton';
-import IndexSidePanel from '../layout/IndexSidePanel';
+import IndexSidePanel from './IndexSidePanel';
 
 class ArticleIndexBarComponent extends React.Component<{}, State>  {
   constructor(props: any) {
@@ -20,7 +20,7 @@ class ArticleIndexBarComponent extends React.Component<{}, State>  {
     });
   }
 
-  render() {
+  public render() {
     const { isIndexSidePanelOpen } = this.state;
 
     return (
@@ -29,7 +29,7 @@ class ArticleIndexBarComponent extends React.Component<{}, State>  {
         
         <IndexButton toggleIndexSidePanel={this.toggle}/>
         <IndexSidePanel isOpen={isIndexSidePanelOpen}/>
-            <a className="breadcrumbs">USCENTCOM Medical Security Cooperation (MSC) Exchange Details</a> <span className="breadcrumb-caret"> > </span> <a className="breadcrumbs last-breadcrumb">Homepage</a>
+            <a className="breadcrumbs">USCENTCOM Medical Security Cooperation (MSC) Exchange Details</a> <span className="breadcrumb-caret"> > </span> <a className="last-breadcrumb">Homepage</a>
         </div>
       </div>
     );

@@ -1,4 +1,5 @@
 import React from 'react';
+import SearchButton from '../assets/SearchButton';
 
 const SearchBar:React.FC<Props> = (props:any) => {
   return (
@@ -9,8 +10,11 @@ const SearchBar:React.FC<Props> = (props:any) => {
       placeholder="Search"
       id="example-search-input"
       />
+      <SearchButton/>
     </div>
+    
   )
+  
 }
 
 type Props = {};

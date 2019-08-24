@@ -1,5 +1,13 @@
 @import './abstract/variables';
 
+.Article-Component {
+  margin-left: 260px;
+}
+
+.Article-Component.fullScreen {
+  margin-left: 0px;
+}
+
 .article{
   margin-top: 60px;
 }

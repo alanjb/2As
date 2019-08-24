@@ -18,13 +18,13 @@ class App extends React.Component {
       <Provider store={store}>
         <Router>
           <React.Fragment>
-            {/* <div className="app-navigation">
+            <div className="app-navigation">
               <Navbar />
-            </div> */}
-            {/* <div className="container-fluid h-100 app-body">  */}
+            </div>
+            <div className="container-fluid h-100 app-body"> 
               <Register/>
-              {/* <Article/> */}
-            {/* </div> */}
+              {/* <Article/>  */}
+            </div>
             <Switch>
               <Route exact path='/' component={Home} />
               {/* <Route component={Routes} /> */}
