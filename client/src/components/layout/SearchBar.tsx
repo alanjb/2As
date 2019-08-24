@@ -11,10 +11,8 @@ const SearchBar:React.FC<Props> = (props:any) => {
       id="example-search-input"
       />
       <SearchButton/>
-    </div>
-    
+    </div> 
   )
-  
 }
 
 type Props = {};

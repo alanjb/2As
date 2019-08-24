@@ -112,6 +112,8 @@ export default class Register extends React.Component<{},IState> {
           </FormGroup>
           <Button color="success" label="Register">Register</Button>
           <br/>
+          <br/>
+          <br/>
         </Form>
       </Container>
     </div>);
