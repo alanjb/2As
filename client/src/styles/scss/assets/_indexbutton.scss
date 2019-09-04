@@ -1,13 +1,14 @@
 @import './abstract/variables';
 
 .index-button {
-  height: 1.3rem;
-  position: fixed;
-  z-index: 999;
+  z-index: 999999 !important;
+  height: 1.7rem;
   cursor: pointer !important;
-  transform: translate(145px, -26px);
+  margin-left: -5.5px;
+  margin-top: -3.8px;
+  position: fixed;
 }
 
-.index-button:hover{
+// .index-button:hover{
 
-}
+// }

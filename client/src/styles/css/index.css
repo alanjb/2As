@@ -251,7 +251,7 @@ input.SearchBar-Input {
   .PiXChatIcon-Component {
     margin-left: 5px; } }
 .article-content {
-  margin-top: 2rem;
+  margin-top: 1.8rem;
   width: 100%; }
 
 .article-title {
@@ -278,27 +278,22 @@ input.SearchBar-Input {
   border: 1px solid #eaeaea;
   padding: 7px 25px;
   background-color: #fdfdfd;
-  list-style-type: none; }
+  list-style-type: none;
+  z-index: 0 !important; }
+
+.sidebar.close {
+  display: none;
+  width: 12rem;
+  border: 1px solid #eaeaea;
+  padding: 7px 25px;
+  background-color: #fdfdfd;
+  list-style-type: none;
+  z-index: 0 !important; }
 
 .main {
   width: 100%;
   overflow-x: hidden; }
 
-.column {
-  margin-left: -15px;
-  margin-right: -15px;
-  border-right: 1px solid #999;
-  display: flex;
-  flex-direction: column;
-  flex: 1; }
-
-.column > div {
-  background: red; }
-
-.column:nth-child(2) > div {
-  height: auto; }
-
-/* All of these are just for this demo's design. */
 .header {
   text-align: center;
   color: #fff;
@@ -314,11 +309,12 @@ input.SearchBar-Input {
   background: #ddd; }
 
 .index-button {
-  height: 1.3rem;
-  position: fixed;
-  z-index: 999;
+  z-index: 999999 !important;
+  height: 1.7rem;
   cursor: pointer !important;
-  transform: translate(145px, -26px); }
+  margin-left: -5.5px;
+  margin-top: -3.8px;
+  position: fixed; }
 
 .Card-Area {
   display: grid; }
@@ -613,7 +609,7 @@ select::-ms-expand {
   white-space: nowrap; }
 
 .article-toolbar-largescreens {
-  transform: translateX(2.2rem) !important;
+  transform: translateX(1.2rem) !important;
   position: fixed;
   overflow-y: hidden !important; }
 
@@ -734,7 +730,7 @@ a:hover {
   white-space: nowrap !important;
   opacity: 0.97;
   font-size: .9rem;
-  z-index: 99 !important;
+  z-index: 8384781 !important;
   transform: none !important;
   flex-direction: row;
   overflow-x: scroll !important;
@@ -743,7 +739,8 @@ a:hover {
 .breadcrumbs-container {
   position: relative;
   margin-right: 1rem;
-  margin-left: 1rem; }
+  margin-left: 2rem;
+  z-index: 999999 !important; }
 
 .breadcrumbs {
   color: #A2A2A2;
@@ -1054,7 +1051,8 @@ p.tab-text {
   border: 1px solid #eaeaea;
   padding: 7px 25px;
   background-color: #fdfdfd;
-  list-style-type: none; }
+  list-style-type: none;
+  position: absolute; }
 
 .index-header {
   font-size: .79rem;

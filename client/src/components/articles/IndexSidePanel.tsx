@@ -26,7 +26,7 @@ class IndexSidePanel extends React.Component<Props,{}>{
       <React.Fragment>
         <div className={indexSidePanelClasses}>
          <h2 className="index-header">Table of Contents</h2>
-         <IndexButton/>
+         {/* <IndexButton/> */}
           {/* <nav className={indexSidePanelClasses } id="indexSidePanel"> */}   
         </div>
       </React.Fragment>

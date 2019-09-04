@@ -20,7 +20,7 @@
   white-space: nowrap !important;
   opacity: 0.97;
   font-size: .9rem;
-  z-index: 99 !important;
+  z-index: 8384781 !important;
   transform: none !important;
   flex-direction: row;
   overflow-x: scroll !important; 
@@ -30,7 +30,9 @@
 .breadcrumbs-container{
   position: relative;
   margin-right: 1rem;
-  margin-left: 1rem;
+  margin-left: 2rem;
+  z-index: 999999 !important;
+  // margin-left: 1rem;
 }
 
 .breadcrumbs{
