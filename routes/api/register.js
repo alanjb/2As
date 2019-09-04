@@ -32,18 +32,15 @@ router.post(
       .matches(/\d/).withMessage('must contain a number'),
   ],
   async (req,res) => {
-    console.log("testing....1");
     const errors = validationResult(req);
     if(!errors.isEmpty()){
       return res.status(400).json({errors: errors.array()})
     }
-    console.log("testing....2");
-    
     //get user data from request body
     const { firstName, lastName, email, password, citizenship } = req.body;
     try {
       //find if user exists in database
-      let existingUser = await User.findOne({ email}); 
+      let existingUser = await User.findOne({email}); 
       if(existingUser){
         return res
           .status(400)
@@ -56,15 +53,13 @@ router.post(
         citizenship,
         password
       });
-      console.log("testing....3");
-      
       // generate salt
       const salt = await bcrypt.genSalt(10);
       //create hashed password
       user.password = await bcrypt.hash(password, salt);
       //free object so it cannot be altered
-      // Object.freeze(user);
-       //save user to database with newly hashed password
+      Object.freeze(user);
+      //save user to database with newly hashed password
       await user.save();
       //create payload object for web token
       const payload = {

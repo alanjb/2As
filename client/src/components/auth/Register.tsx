@@ -91,14 +91,12 @@ export default class Register extends React.Component<{},IState> {
           </FormGroup>
           <FormGroup>
             <Input type="select" name="citizenship" value={citizenship} onChange={(e) => this.handleChange(e)} id="citizenship-multiselect" placeholder="Select your citizenship...">
-       
               <option>Select a citizenship...</option>
               <option>United States</option>
               <option>Great Britain</option>
               <option>French</option>
               <option>German</option>
               <option>Italian</option>
-    
             </Input>            
             <br></br>
           </FormGroup>

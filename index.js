@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const express = require("express");
 const connectDB = require('./config/database/db.js');
 const path = require('path');

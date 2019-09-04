@@ -1,19 +1,9 @@
 @import './abstract/variables';
 
 .info {
-  height: 42px !important;
+  height: 28px !important;
   position: relative;
-  bottom: 7px;
+  margin-bottom: 24px;
   display:inline-block;
-  float: right;
   cursor: pointer;
-}
-
-@media only screen and (min-width: 568px) {
-  img.info{
-    height: 43px !important;
-    margin: 0px !important;
-    bottom: 0px;
-    padding-top: 15px;
-  }
 }

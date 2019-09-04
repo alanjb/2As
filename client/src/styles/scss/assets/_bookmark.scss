@@ -1,18 +1,9 @@
 @import './abstract/variables';
 
 .bookmark {
-  height: 42px !important;
+  height: 28px !important;
   position: relative;
-  bottom: 7px;
+  margin-bottom: 24px;
   display:inline-block;
   cursor: pointer;
-}
-
-@media only screen and (min-width: 568px) {
-  img.bookmark{
-    height: 41px !important;
-    margin: 0px !important;
-    bottom: 0px;
-    padding-top: 15px;
-  }
 }

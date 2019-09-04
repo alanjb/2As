@@ -64,6 +64,7 @@
     "@types/react-dom": "^16.8.4",
     "awesome-typescript-loader": "^5.2.1",
     "babel-plugin-styled-components": "^1.10.0",
+    "case-sensitive-paths-webpack-plugin": "^2.2.0",
     "husky": "^2.4.1",
     "nodemon": "^1.18.9",
     "prettier": "1.15.1",

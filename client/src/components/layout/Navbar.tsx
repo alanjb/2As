@@ -59,7 +59,6 @@ type MyProps = {
     lastName: string;
     username: string;
   };
-  unreadMailCount: number;
   onLogout: () => any;
 };
 

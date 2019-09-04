@@ -4,7 +4,6 @@ import NewArticle from '../assets/NewArticle';
 import EditArticle from '../assets/EditArticle';
 import BookmarkMobile from '../assets/BookmarkMobile';
 
-
 export default class ArticleToolbarComponent extends React.Component {
   constructor(props: any) {
     super(props);

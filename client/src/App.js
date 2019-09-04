@@ -6,34 +6,21 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/layout/Home';
 import Navbar from './components/layout/Navbar';
 import Article from './components/articles/Article';
-
-// Redux
-import store from './store';
-// import { loadUser } from './actions/auth';
-// import setAuthToken from './utils/setAuthToken';
+import IndexSidePanel from './components/articles/IndexSidePanel';
+import IndexButton from './components/assets/IndexButton';
 
 class App extends React.Component {
   render(){
     return(
-      <Provider store={store}>
-        <Router>
-          <React.Fragment>
-            <div className="app-navigation">
-              <Navbar />
-            </div>
-            <div className="container-fluid h-100 app-body"> 
-              <Register/>
-              {/* <Article/>  */}
-            </div>
-            <Switch>
-              <Route exact path='/' component={Home} />
-              {/* <Route component={Routes} /> */}
-          </Switch>
-        </React.Fragment>
-      </Router>
-    </Provider>
+    <React.Fragment>
+      <Navbar/>
+      <div className="app-body">
+        <div className="article-container">
+          <Article/> 
+        </div>
+      </div>
+    </React.Fragment>
     );  
   }
 }
-
 export default App;

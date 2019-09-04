@@ -1,15 +1,13 @@
 import React from 'react';
-import indexButton from '../../assets/index-button.svg';
+import indexButton from '../../assets/index2svg-01.svg';
 
 const IndexButton = (Props: any) => {
   const {toggleIndexSidePanel} = Props;
   return (
     <React.Fragment>
-      <header className="PiXIcon">
-        <div className="PiXIcon-Component">
+        <div className="IndexButton-Component">
           <img className="index-button" src={indexButton} onClick={toggleIndexSidePanel} alt="index"/>
         </div>
-      </header>
     </React.Fragment>
   )
 }

@@ -1,6 +1,8 @@
 @import './abstract/variables';
 
 .ArticleBanner-Component{
+  // display: flex; 
+  // flex-direction: row;
   margin: 0 auto;
   color: $white;
   background-color: $light-blue;
@@ -21,6 +23,20 @@
   a:hover{
     text-decoration: underline !important;
   }
+}
+
+.article-banner {
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  background-color: $light-blue;
+  border: none;
+  color: $white;
+  padding: 10px 10px; 
+  margin-bottom: 30px;
+  z-index: 5;
 }
 
 .Banner-Title{

@@ -1,17 +1,13 @@
 @import './abstract/variables';
 
 .index-button {
-  background-color: $white;
-  height: .69em;
+  height: 1.3rem;
   position: fixed;
-  z-index: 9;
+  z-index: 999;
   cursor: pointer !important;
-  margin-top: 5px;
-  left: 16px;
+  transform: translate(145px, -26px);
 }
 
-@media only screen and (min-width: 575px) {
-  .index-button{
-    left: 35px;
-  }
+.index-button:hover{
+
 }

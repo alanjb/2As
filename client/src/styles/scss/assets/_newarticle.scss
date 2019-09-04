@@ -1,18 +1,9 @@
 @import './abstract/variables';
 
 .newArticle {
-  height: 42px !important;
+  height: 28px !important;
   position: relative;
-  bottom: 7px;
+  margin-bottom: 24px;
   display:inline-block;
   cursor: pointer;
-}
-
-@media only screen and (min-width: 568px) {
-  img.newArticle{
-    height: 42px !important;
-    margin: 0px;
-    bottom: 0px;
-    padding-top: 15px;
-  }
 }

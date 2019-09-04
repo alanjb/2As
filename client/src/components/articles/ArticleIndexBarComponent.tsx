@@ -1,8 +1,8 @@
 import React from 'react';
-import IndexButton from '../assets/IndexButton';
 import IndexSidePanel from './IndexSidePanel';
+import IndexButton from '../../components/assets/IndexButton';
 
-class ArticleIndexBarComponent extends React.Component<{}, State>  {
+class ArticleIndexBarComponent extends React.Component<Props, State>  {
   constructor(props: any) {
     super(props);
     this.toggle = this.toggle.bind(this);
@@ -18,6 +18,13 @@ class ArticleIndexBarComponent extends React.Component<{}, State>  {
         isIndexSidePanelOpen: !prevState.isIndexSidePanelOpen
       }
     });
+    this.handlePassingIndexSidePanelProps();
+  }
+
+  public handlePassingIndexSidePanelProps = () => {
+    console.log("handling passing state up to article...");
+    let {isIndexSidePanelOpen} = this.state;
+    this.props.getSidePanelProps(isIndexSidePanelOpen);
   }
 
   public render() {
@@ -26,10 +33,11 @@ class ArticleIndexBarComponent extends React.Component<{}, State>  {
     return (
       <div className="ArticleIndexBar-Component">
         <div className="article-indexbar">
-        
-        <IndexButton toggleIndexSidePanel={this.toggle}/>
-        <IndexSidePanel isOpen={isIndexSidePanelOpen}/>
-            <a className="breadcrumbs">USCENTCOM Medical Security Cooperation (MSC) Exchange Details</a> <span className="breadcrumb-caret"> > </span> <a className="last-breadcrumb">Homepage</a>
+        {/* <IndexButton toggleIndexSidePanel={this.toggle}/> */}
+        {/* <IndexSidePanel isOpen={isIndexSidePanelOpen}/> */}
+            <div className="breadcrumbs-container">
+              <a className="breadcrumbs">USCENTCOM Medical Security Cooperation (MSC) Exchange Details</a> <span className="breadcrumb-caret"> > </span> <a className="last-breadcrumb">Homepage</a> <span className="breadcrumb-caret"> > </span> <button className="breadcrumbs-button">...add more</button>  
+            </div>
         </div>
       </div>
     );
@@ -39,5 +47,11 @@ class ArticleIndexBarComponent extends React.Component<{}, State>  {
 type State = {
   isIndexSidePanelOpen: boolean;
 };
+
+type MyProps = {
+  getSidePanelProps: (isIndexSidePanelOpen:boolean) => any;
+};
+
+type Props = MyProps;
 
 export default ArticleIndexBarComponent;

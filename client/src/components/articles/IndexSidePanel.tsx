@@ -1,8 +1,10 @@
 import React, {Component, useState} from 'react';
 import Menu from '../layout/Menu';
+import IndexButton from '../assets/IndexButton';
 const { getMenuItems } = require('../../config/ConfigFunctions');
 const menu = getMenuItems();
 const menuItems = menu.menu.items;
+import { Container, Row, Col } from 'reactstrap';
 
 class IndexSidePanel extends React.Component<Props,{}>{
   constructor(props: any){
@@ -21,11 +23,13 @@ class IndexSidePanel extends React.Component<Props,{}>{
     }
 
     return(
-      <div className={indexSidePanelClasses}>
-        <h2 className="index-header">Index</h2>
-        {/* <nav className={indexSidePanelClasses } id="indexSidePanel"> */}
-       
-      </div>
+      <React.Fragment>
+        <div className={indexSidePanelClasses}>
+         <h2 className="index-header">Table of Contents</h2>
+         <IndexButton/>
+          {/* <nav className={indexSidePanelClasses } id="indexSidePanel"> */}   
+        </div>
+      </React.Fragment>
     );
   }
 }
