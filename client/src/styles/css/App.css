@@ -274,7 +274,7 @@ input.SearchBar-Input {
   display: flex; }
 
 .sidebar {
-  width: 12rem;
+  width: 13rem;
   border: 1px solid #eaeaea;
   padding: 7px 25px;
   background-color: #fdfdfd;
@@ -309,7 +309,7 @@ input.SearchBar-Input {
   background: #ddd; }
 
 .index-button {
-  z-index: 999999 !important;
+  z-index: 9 !important;
   height: 1.7rem;
   cursor: pointer !important;
   margin-left: -5.5px;
@@ -730,7 +730,7 @@ a:hover {
   white-space: nowrap !important;
   opacity: 0.97;
   font-size: .9rem;
-  z-index: 8384781 !important;
+  z-index: 1 !important;
   transform: none !important;
   flex-direction: row;
   overflow-x: scroll !important;
@@ -782,15 +782,9 @@ a:hover {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 376px) {
   .ArticleIndexBar-Component {
-    padding-right: 20px; }
-
-  .breadcrumbs {
-    padding-left: 15px; } }
+    padding-right: 20px; } }
 /* Medium devices (landscape tablets, 768px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-  .breadcrumbs-container {
-    margin-left: .5rem; } }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* Medium devices (landscape tablets, 768px and up) */

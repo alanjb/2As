@@ -46,12 +46,12 @@ class Article extends React.Component<Props, State>  {
             <div className="article-indexbar">
             <img className="index-button" src={indexButton} onClick={this.toggleIndexSidePanel} alt="index-button"/>
               <div className="breadcrumbs-container">
-                <a className="breadcrumbs">USCENTCOM Medical Security Cooperation (MSC) Exchange Details</a> <span className="breadcrumb-caret"> > </span> <a className="last-breadcrumb">Homepage</a> <span className="breadcrumb-caret"> > </span> <button className="breadcrumbs-button">...add more</button>  
+                <a className="breadcrumbs">Portal</a> <span className="breadcrumb-caret"> > </span> <a className="last-breadcrumb">USCENTCOM Medical Security Cooperation (MSC) Exchange Details</a> <span className="breadcrumb-caret"> > </span> <button className="breadcrumbs-button">...add more</button>  
               </div>
             </div>
           <div className="article-content">
             <div className="row">
-               <div className="col-xs-1 col-sm-2 col-md-2 col-lg-2">
+               <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2">
                <div className="article-toolbar-largescreens">
                 <Info/>
                 <NewArticle/>
@@ -59,7 +59,7 @@ class Article extends React.Component<Props, State>  {
                 <Bookmark/>
               </div>
                </div>
-               <div className="col-xs-10 col-sm-8 col-md-8 col-lg-8">
+               <div className="col-xs-8 col-sm-8 col-md-8 col-lg-8">
                   <div className="article-banner">
                     <span><a>USCENTCOM Medical Security Cooperation (MSC) Exchange</a></span>
                   </div>
@@ -85,7 +85,7 @@ class Article extends React.Component<Props, State>  {
                 <Section/>
                 <ArticleToolBar/> 
               </div>   
-                <div className="col-xs-1 col-sm-2 col-md-2 col-lg-2"></div>
+                <div className="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
               </div>
             </div>
           </div>
