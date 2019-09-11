@@ -85,7 +85,11 @@ class Article extends React.Component<Props, State>  {
                 <Section/>
                 <ArticleToolBar/> 
               </div>   
-                <div className="col-xs-2 col-sm-2 col-md-2 col-lg-3"></div>
+                <div className="col-xs-2 col-sm-2 col-md-2 col-lg-3">
+                  <div className="Artocle-List">
+
+                  </div>
+                </div>
               </div>
             </div>
           </div>
