@@ -593,11 +593,7 @@ select::-ms-expand {
   bottom: 1px; }
 
 .ArticleToolbar-Component {
-  overflow-y: hidden !important;
   width: 100% !important;
-  top: 0;
-  right: 0;
-  left: 0;
   bottom: 0;
   height: 55px !important;
   background-color: #3c3d3b !important;
@@ -606,7 +602,9 @@ select::-ms-expand {
   border-top: 1px solid #2A2B29 !important;
   padding: 13px 20px;
   align-items: stretch;
-  white-space: nowrap; }
+  white-space: nowrap;
+  position: fixed;
+  overflow: hidden; }
 
 .article-toolbar-largescreens {
   transform: translateX(1.2rem) !important;

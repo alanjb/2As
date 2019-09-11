@@ -16,7 +16,6 @@ class IndexSidePanel extends React.Component<Props,{}>{
     const { isOpen } = this.props;
     if(isOpen){
       indexSidePanelClasses  = 'indexSidePanel open';
-      
     }
     else{
       indexSidePanelClasses = 'indexSidePanel '

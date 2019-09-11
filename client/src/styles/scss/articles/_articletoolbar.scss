@@ -1,11 +1,7 @@
 @import './abstract/variables';
 
 .ArticleToolbar-Component{
-  overflow-y: hidden !important;
   width: 100% !important;
-  top: 0;
-  right: 0;
-  left: 0;
   bottom: 0;
   height: 55px !important;
   background-color: $black !important;
@@ -16,6 +12,8 @@
   padding: 13px 20px;
   align-items: stretch;
   white-space: nowrap;
+  position: fixed;
+  overflow: hidden;
 }
 
 .article-toolbar-largescreens{
