@@ -1,12 +1,12 @@
 @import './abstract/variables';
 
 .index-button {
-  z-index: 9 !important;
+  z-index: 999 !important;
   height: 1.7rem;
   cursor: pointer !important;
   margin-left: -5.5px;
   margin-top: -3.8px;
-  position: fixed;
+  // position: fixed;
 }
 
 // .index-button:hover{

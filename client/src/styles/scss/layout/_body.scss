@@ -1,43 +1,15 @@
 @import './abstract/variables';
 
-html,
 body {
-  height: 100%;
-  padding: 0;
   margin: 0;
-}
-
-body {
-  height: 100%;
   font-family: $font-stack;
   font-size: 14px;
   line-height: 1.42;
   color: $black !important;
   -webkit-font-smoothing: antialiased;
   padding:0 !important;
-  margin: 0 auto;
-  // position: relative;
 }
 
-// // .main{
-// //   flex: 1;
-// //   display: flex;
-// //   flex-direction: column;
-// //   // border: 2px solid black;
-// //   transform: translatey(4.7rem);
-// // }
-
-// html{
-//   -moz-box-sizing: border-box;
-//   -webkit-box-sizing: border-box;
-//   -ms-box-sizing: border-box;
-//   box-sizing: border-box;
-// }
-
-// *, *::before, *::after {
-//   box-sizing: border-box !important;
-//   -moz-box-sizing: inherit;
-//   -webkit-box-sizing: inherit;
-//   -ms-box-sizing: inherit;
-//   box-sizing: inherit;
-// }
+.app-body{
+  margin-top:80px;
+}

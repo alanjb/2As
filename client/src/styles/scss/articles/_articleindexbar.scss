@@ -6,7 +6,7 @@
   text-overflow: ellipsis !important;
   white-space: nowrap; 
   width: 100% !important;
-  top: 0 !important;
+  top: 80px !important;
   bottom: 0 !important;
   left: 0 !important;
   right: 0 !important;
@@ -30,7 +30,7 @@
 .breadcrumbs-container{
   position: relative;
   margin-right: 1rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
   z-index: 999999 !important;
   // margin-left: 1rem;
 }
@@ -42,7 +42,10 @@
   margin-bottom: 5px;
   font-size: 16px;
   padding-right: 5px;
-  text-overflow: ellipsis !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
 }
 
 .breadcrumbs-button {
@@ -76,6 +79,10 @@
   color: $grey;
   font-style: italic;
   padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

@@ -1,13 +1,17 @@
 @import './abstract/variables';
 
-.indexSidePanel {
-  width: 12rem;
-  border: 1px solid $light-grey;
-  padding: 7px 25px;
-  background-color: #fdfdfd;
-  list-style-type: none;
-  position: absolute;
-}
+// .indexSidePanel {
+//   width: 12rem;
+//   border: 1px solid $light-grey;
+//   padding: 7px 25px;
+//   background-color: #fdfdfd;
+//   list-style-type: none;
+//   position: fixed;
+//   overflow: hidden !important;
+//   flex: 1; 
+//   flex-direction: column;
+//   margin-top: 80px;
+// }
 
 .indexSidePanel.open {
   // transform: translateX(-15rem) !important;
@@ -15,7 +19,7 @@
 
 .index-header {
   font-size: .79rem;
-  margin-top: 4.9px !important;
+  margin-top: 25px !important;
   font-weight: 800;
 }
 
