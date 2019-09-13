@@ -50,7 +50,6 @@ class Article extends React.Component<Props, State>  {
               <span className="banner-title">
                 USCENTCOM Medical Security Cooperation (MSC) Exchange Details
               </span>
-             
           </div>
         </div>
 
