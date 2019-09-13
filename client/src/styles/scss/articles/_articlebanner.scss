@@ -27,27 +27,29 @@
 
 .article-banner {
   overflow: hidden;
-  text-align: center;
-  text-overflow: ellipsis;
+  text-align: center !important;
+  text-overflow: ellipsis !important;
   white-space: nowrap;
-  width: 100%;
   background-color: $light-blue;
-  border: none;
+  border: 2px solid $light-blue !important;
   color: $white;
-  padding: 10px 10px; 
-  margin-bottom: 30px;
   z-index: 5;
+  margin-bottom: 0px !important;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  margin-left: 15px !important;
+  width: auto !important;
+  height: 100%;
 }
 
-.Banner-Title{
+.banner-title{
+  text-align: center;
   color: $white;
-  font-size: 13px;
+  font-size: 11px;
   overflow: hidden;
   text-decoration: none;
-  margin-left: 10px;
   position: relative;
-  top: 6px;
-
 }
 
 a:hover{

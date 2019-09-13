@@ -41,9 +41,16 @@ class Article extends React.Component<Props, State>  {
       <React.Fragment>
         <div className="article-container">
         <div className="article-indexbar">
-          <img className="index-button" src={indexButton} onClick={this.toggleIndexSidePanel} alt="index-button"/>
-          <div className="breadcrumbs-container">
-            <a className="breadcrumbs">Portal</a> <span className="breadcrumb-caret"> > </span> <a className="last-breadcrumb">USCENTCOM Medical Security Cooperation (MSC) Exchange Details</a> <span className="breadcrumb-caret"> > </span> <button className="breadcrumbs-button">...add more</button>  
+
+            <div className="breadcrumbs-div">
+              <img className="index-button" src={indexButton} onClick={this.toggleIndexSidePanel} alt="index-button"/>
+              <a className="breadcrumbs">Portal</a> <span className="breadcrumb-caret"> > </span> <a className="last-breadcrumb">USCENTCOM Medical Security Cooperation (MSC) Exchange Details</a> <span className="breadcrumb-caret"> > </span> <button className="breadcrumbs-button">...add more</button>  
+            </div>
+            <div className="article-banner">
+              <span className="banner-title">
+                USCENTCOM Medical Security Cooperation (MSC) Exchange Details
+              </span>
+             
           </div>
         </div>
 
@@ -62,7 +69,7 @@ class Article extends React.Component<Props, State>  {
             <Bookmark/>
           </div>
             </div>
-            <div className="col-xs-8 col-sm-8 col-md-6 col-lg-8">
+            <div className="col-xs-8 col-sm-8 col-md-8 col-lg-8">
               <h1 className="article-title">USCENTCOM Medical Security Cooperation (MSC) Exchange Details</h1> 
               <div className="tag-area">
               <div className="article-tag first-tag">
@@ -87,45 +94,29 @@ class Article extends React.Component<Props, State>  {
             </div>   
             <div className="col-xs-2 col-sm-2 col-md-1 col-lg-3">
               <div className="Article-List row">
-                <h2 className="recommended">Recommended</h2>
+                <h2 className="recommended">Related Articles</h2>
                 <div className="scrollable-area">
                   <div className="article-list-item">
                     <img className="recommended-image" src={sampleImage} />
-                    <span>Iron Maiden</span>
                   </div>
 
                   <div className="article-list-item">
                     <img className="recommended-image" src={sampleImage} />
-                    <span>Iron Maiden</span>
                   </div>
 
                   <div className="article-list-item">
                     <img className="recommended-image" src={sampleImage} />
-                    <span>Iron Maiden</span>
                   </div>
 
                   <div className="article-list-item">
                     <img className="recommended-image" src={sampleImage} />
-                    <span>Iron Maiden</span>
                   </div>
                   <div className="article-list-item">
                     <img className="recommended-image" src={sampleImage} />
-                    <span>Iron Maiden</span>
                   </div>
 
                   <div className="article-list-item">
                     <img className="recommended-image" src={sampleImage} />
-                    <span>Iron Maiden</span>
-                  </div>
-
-                  <div className="article-list-item">
-                    <img className="recommended-image" src={sampleImage} />
-                    <span>Iron Maiden</span>
-                  </div>
-
-                  <div className="article-list-item">
-                    <img className="recommended-image" src={sampleImage} />
-                    <span>Iron Maiden</span>
                   </div>
                 </div>
               </div> 
