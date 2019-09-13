@@ -60,7 +60,7 @@ class Article extends React.Component<Props, State>  {
           
           <div className="main">
           <div className="article-content row">
-            <div className="col-xs-2 col-sm-2 col-md-1 col-lg-1">
+            <div className="col-xs-2 col-sm-1 col-md-1 col-lg-1">
             <div className="article-toolbar-largescreens">
             <Info/>
             <NewArticle/>
@@ -68,7 +68,7 @@ class Article extends React.Component<Props, State>  {
             <Bookmark/>
           </div>
             </div>
-            <div className="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+            <div className="article-sections col-xs-7 col-sm-7 col-md-8 col-lg-8">
               <h1 className="article-title">USCENTCOM Medical Security Cooperation (MSC) Exchange Details</h1> 
               <div className="tag-area">
               <div className="article-tag first-tag">
@@ -91,7 +91,7 @@ class Article extends React.Component<Props, State>  {
               <Section/>
               <ArticleToolBar/> 
             </div>   
-            <div className="col-xs-2 col-sm-2 col-md-1 col-lg-3">
+            <div className="col-xs-2 col-sm-1 col-md-1 col-lg-3">
               <div className="Article-List row">
                 <h2 className="recommended">Related Articles</h2>
                 <div className="scrollable-area">

@@ -169,12 +169,14 @@
   align-items: center;
   margin-left: 15px !important;
   width: auto !important;
-  margin-right: 10px;
+  margin-right: 15px !important;
+  
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 991px) {
   .article-banner {
     overflow: visible !important;
+
   }
 }
