@@ -3,17 +3,18 @@
 .ArticleToolbar-Component{
   width: 100% !important;
   bottom: 0;
-  height: 55px !important;
+  height: 45px !important;
   background-color: $black !important;
   box-shadow: 1px 1px 3px $light-grey !important;
-  z-index: 99 !important;
+  z-index: 1 !important;
   // display: flex !important;
   border-top: 1px solid $dark-black !important;
-  padding: 13px 20px;
+  padding: 8px 20px;
   align-items: stretch;
   white-space: nowrap;
   position: fixed;
   overflow: hidden;
+  display: flex;
 }
 
 .article-toolbar-largescreens{

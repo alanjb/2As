@@ -33,8 +33,6 @@ class ArticleIndexBarComponent extends React.Component<Props, State>  {
     return (
       <div className="ArticleIndexBar-Component">
         <div className="article-indexbar">
-        {/* <IndexButton toggleIndexSidePanel={this.toggle}/> */}
-        {/* <IndexSidePanel isOpen={isIndexSidePanelOpen}/> */}
             <div className="breadcrumbs-container">
               <a className="breadcrumbs">USCENTCOM Medical Security Cooperation (MSC) Exchange Details</a> <span className="breadcrumb-caret"> > </span> <a className="last-breadcrumb">Homepage</a> <span className="breadcrumb-caret"> > </span> <button className="breadcrumbs-button">...add more</button>  
             </div>

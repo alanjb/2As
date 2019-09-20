@@ -7,7 +7,7 @@ const PiXIcon = (Props: any) => {
     <React.Fragment>
       <header className="PiXIcon">
         <div className="PiXIcon-Component">
-          <img className="PiX-Icon" src={icon} onClick={toggleNavPanel} alt="icon"/>
+          <img className="PiX-Icon-Discover" src={icon} onClick={toggleNavPanel} alt="icon"/>
         </div>
       </header>
     </React.Fragment>

@@ -12,7 +12,8 @@ import IndexSidePanel from '../articles/IndexSidePanel';
 import { Container, Row, Col } from 'reactstrap';
 import IndexButton from '../assets/IndexButton';
 import indexButton from '../../assets/index2svg-01.svg';
-import sampleImage from '../../assets/sampleImage.jpg';
+import sampleImage2 from '../../assets/sampleImage2.png';
+import sampleImage3 from '../../assets/sampleImage3.png';
 
 class Article extends React.Component<Props, State>  {
   constructor(props: any) {
@@ -44,11 +45,11 @@ class Article extends React.Component<Props, State>  {
 
             <div className="breadcrumbs-div">
               <img className="index-button" src={indexButton} onClick={this.toggleIndexSidePanel} alt="index-button"/>
-              <a className="breadcrumbs">Portal</a> <span className="breadcrumb-caret"> > </span> <a className="last-breadcrumb">USCENTCOM Medical Security Cooperation (MSC) Exchange Details</a> <span className="breadcrumb-caret"> > </span> <button className="breadcrumbs-button">...add more</button>  
+              <a className="breadcrumbs">Portal</a> <span className="breadcrumb-caret"> > </span> <a className="last-breadcrumb">USCENTCOM</a> <span className="breadcrumb-caret"> > </span> <button className="breadcrumbs-button">...add more</button>  
             </div>
             <div className="article-banner">
               <span className="banner-title">
-                USCENTCOM Medical Security Cooperation (MSC) Exchange Details
+                USCENTCOM 
               </span>
           </div>
         </div>
@@ -69,7 +70,7 @@ class Article extends React.Component<Props, State>  {
           </div>
             </div>
             <div className="article-sections col-xs-7 col-sm-7 col-md-8 col-lg-8">
-              <h1 className="article-title">USCENTCOM Medical Security Cooperation (MSC) Exchange Details</h1> 
+              <h1 className="article-title">USCENTCOM </h1> 
               <div className="tag-area">
               <div className="article-tag first-tag">
                 <span><a>Middle East &amp; Central Asia</a></span>
@@ -89,38 +90,39 @@ class Article extends React.Component<Props, State>  {
               <Section/>
               <Section/>
               <Section/>
-              <ArticleToolBar/> 
+       
             </div>   
             <div className="col-xs-2 col-sm-1 col-md-1 col-lg-3">
               <div className="Article-List row">
                 <h2 className="recommended">Related Articles</h2>
                 <div className="scrollable-area">
                   <div className="article-list-item">
-                    <img className="recommended-image" src={sampleImage} />
+                    <img className="recommended-image" src={sampleImage2} />
                   </div>
 
                   <div className="article-list-item">
-                    <img className="recommended-image" src={sampleImage} />
+                    <img className="recommended-image" src={sampleImage3} />
                   </div>
 
                   <div className="article-list-item">
-                    <img className="recommended-image" src={sampleImage} />
+                    <img className="recommended-image" src={sampleImage2} />
                   </div>
 
                   <div className="article-list-item">
-                    <img className="recommended-image" src={sampleImage} />
+                    <img className="recommended-image" src={sampleImage3} />
                   </div>
                   <div className="article-list-item">
-                    <img className="recommended-image" src={sampleImage} />
+                    <img className="recommended-image" src={sampleImage2} />
                   </div>
 
                   <div className="article-list-item">
-                    <img className="recommended-image" src={sampleImage} />
+                    <img className="recommended-image" src={sampleImage3} />
                   </div>
                 </div>
               </div> 
             </div> 
            </div>
+           <ArticleToolBar/> 
           </div>
         </div>
       </div>

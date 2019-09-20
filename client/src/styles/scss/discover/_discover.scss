@@ -1,0 +1,115 @@
+@import './abstract/variables';
+
+.discover-main{
+    flex: 1;
+    display: flex;
+    overflow-x: hidden;
+    // height: 100vh;
+    flex-direction: row;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-top: 25px;
+    margin-left: 50px; 
+    margin-right: 50px;
+}
+
+.discover-toolbar{
+     display: flex;
+    overflow-x: hidden;
+    // height: 100vh;
+    flex-direction: row;
+}
+
+.discover-right-column{
+    border-left: 1px solid $light-grey;
+    flex-grow: 1;
+}
+
+.discover-article-spotlight{
+    display: flex; 
+    flex-direction: row; 
+    align-items: stretch;
+    border-bottom: 1px solid $light-grey;
+    padding-right: 0px;
+    padding-top: 0px;
+    height: auto;
+}
+
+.discover-article-spotlight-header{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    padding-right: 30px;
+    font-weight: 600;
+}
+
+.discover-article-spotlight-image{
+    max-width:80%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.discover-article-spotlight-subheader{
+    padding-right: 50px;
+}
+
+.discover-article-spotlight-metadata{
+    color: $grey;
+    font-size: 10px;
+}
+
+.communities-top{
+    display: flex; 
+    justify-content: center;
+    flex-direction: row; 
+    border-bottom: 1px solid $light-grey;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    width: 100%;
+    background: $white;
+}
+
+.communities-bottom{
+    display: flex; 
+    justify-content: center;
+    flex-direction: row; 
+    border-bottom: 1px solid $light-grey;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    width: 100%;
+    background: $white;
+}
+
+.community-item{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 10px;
+    white-space: nowrap;
+    // -webkit-flex: 1;  /* Safari 6.1+ */
+    // -ms-flex: 1;  /* IE 10 */  
+    // flex: 1;
+
+}
+
+.selected{
+    border-bottom: 1px solid $black !important;
+    font-weight: 600;
+}
+
+.discover-article-spotlight-rightcolumn{
+ 
+}
+
+.right-column{
+    display: flex; 
+    justify-content: center;
+    flex-direction: row; 
+    align-content: space-between;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    width: 100%; 
+}

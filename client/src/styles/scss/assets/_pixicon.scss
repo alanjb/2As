@@ -1,9 +1,20 @@
 @import './abstract/variables';
 
-.PiX-Icon{
-  height: 3.2em !important;
+.PiX-Icon {
+  height: 2.8em !important;
   position: relative;
   cursor: pointer !important;
   z-index: 99;
   bottom: 1px;
+  margin-right: 3px;
+}
+
+.PiX-Icon-Discover {
+  height: 3.1em !important;
+  cursor: pointer !important;
+  display: block;
+  margin:auto;
+  z-index: 99;
+  margin-right: 3px;
+  position: relative;
 }
