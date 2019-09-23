@@ -6,31 +6,33 @@ let getMenuItems = function getDefaultNavbarConfig(): NavbarConfig {
       items: [
         {
           key: "communities",
-          href: "/portal/coi",
+          to: "/portal/coi",
           text: "Communities",
         },
         {
           key: "portals",
-          href: "/portal",
+          to: "/portal",
           text: "Portals",
         },
         {
           key: "rfis",
-          href: "/rfi",
+          to: "/rfi",
           text: "RFIs",
         },
         {
           key: "invite-user",
-          href: "/invitations/invite",
+          to: "/invitations/invite",
           text: "Invite New User",
         },
         {
           key: "external-applications",
+          to: "/partnerapps",
           text: "Partner Applications",
+          
         },
       ],
     }
   }
 }
 
-export {getMenuItems}; 
+export { getMenuItems}; 

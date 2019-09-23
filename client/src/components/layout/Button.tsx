@@ -1,15 +1,16 @@
 import React, { FC } from 'react';
 
 interface IProps {
-  type: string,
-  label: string,
-  isButtonDisabled?: boolean
+  type: String,
+  label: String,
+  isButtonDisabled?: boolean;
+  styles: String
 }
 
 const Button:React.FC<IProps> = (props: any) => {
   return(
     <button 
-      style= {props.style} 
+      className= {props.styles} 
       onClick= {props.action}
       disabled= {props.isButtondDisabled}
     >    

@@ -1,9 +1,6 @@
 import React from 'react';
-// import AddToPortalButton from './AddToPortalButton';
-// import FilterBar from "./FilterBar";
-// import Card from "./Card";
+import Button from '../layout/Button';
 import { connect } from "react-redux";
-// import {Button} from "./Buttons/Button";
 
 interface IProps{
   isAddToPortalModalOpen: boolean
@@ -75,10 +72,9 @@ class InviteNewUser extends React.Component<IProps, {}> {
         </div>
 
         <div className="Input-Area">
-          <hr className="divider-line"/>
-          {/* <Button /> */}
+          <Button type="submit" styles="button success-button"  label="Invite new user" isButtonDisabled></Button>
 
-          <a href="/" className="form-link">View invitation list</a>
+          {/* <a href="/" className="form-link">View invitation list</a> */}
         </div>
       <div>
     </div>
@@ -97,16 +93,17 @@ class InviteNewUser extends React.Component<IProps, {}> {
 //   };
 // };
 
-const mapDispachToProps = (dispatch: any) => {
-  return {
-    invitenewuser: () => dispatch(
-      { type: "INVITE_NEW_USER_REQUEST"}
-    ),
-  };
-};
+// const mapDispachToProps = (dispatch: any) => {
+//   return {
+//     invitenewuser: () => dispatch(
+//       { type: "INVITE_NEW_USER_REQUEST"}
+//     ),
+//   };
+// };
 
-export default connect(
-  null,
-  mapDispachToProps
-)(InviteNewUser);
+// export default connect(
+//   null,
+//   mapDispachToProps
+// )(InviteNewUser);
 
+export default InviteNewUser;

@@ -13,14 +13,12 @@
 }
 
 .form-container{
-  margin:0 !important;
-  padding-top: 80px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
   height: 100%;
   width: 100%;
-  margin:0 !important;
+  margin-top: 95px;
+  padding: 0 15px;
+  
+
 }
 
 // .form-button{
@@ -221,12 +219,6 @@ select::-ms-expand {	display: block; }
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
-
-
 @media only screen and (min-width : 601px) and (max-width : 767px){
   .Card-Area{
     display: grid !important;
@@ -253,7 +245,22 @@ select::-ms-expand {	display: block; }
     grid-gap: 5px;
   }
 
+  .form-container{
+    padding: 0 25px;
+    
+  
+  }
+
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 667px) {
+  .form-container{
+    padding: 0 25px;
+
+  }
+}
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {

@@ -6,7 +6,7 @@ import Menu from '../layout/Menu';
 import Caret from '../assets/Caret';
 import PiXChatIcon from '../../components/assets/PiXChatIcon';
 
-const { getMenuItems }= require('../../config/ConfigFunctions');
+const { getMenuItems } = require('../../config/ConfigFunctions');
 const menu = getMenuItems();
 const menuItemsArray = menu.menu.items;
 const maxScreenWidthForNavPanel = 991;

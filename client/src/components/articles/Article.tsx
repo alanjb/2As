@@ -69,7 +69,7 @@ class Article extends React.Component<Props, State>  {
             <Bookmark/>
           </div>
             </div>
-            <div className="article-sections col-xs-7 col-sm-7 col-md-8 col-lg-8">
+            <div className="article-sections col-xs-7 col-sm-7 col-md-8 col-lg-9">
               <h1 className="article-title">USCENTCOM </h1> 
               <div className="tag-area">
               <div className="article-tag first-tag">
@@ -92,7 +92,7 @@ class Article extends React.Component<Props, State>  {
               <Section/>
        
             </div>   
-            <div className="col-xs-2 col-sm-1 col-md-1 col-lg-3">
+            <div className="col-xs-2 col-sm-1 col-md-1 col-lg-2">
               <div className="Article-List row">
                 <h2 className="recommended">Related Articles</h2>
                 <div className="scrollable-area">

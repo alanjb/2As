@@ -30,10 +30,10 @@ body {
   overflow: hidden; }
 
 ul.menu-navbar {
-  padding-left: 10px; }
+  margin-top: -2px; }
 
 li {
-  list-style-type: none;
+  list-style-type: none !important;
   text-align: left;
   float: left;
   top: 10px;
@@ -422,14 +422,10 @@ input.SearchBar-Input {
   border: 0.5px solid #eaeaea; }
 
 .form-container {
-  margin: 0 !important;
-  padding-top: 80px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
   height: 100%;
   width: 100%;
-  margin: 0 !important; }
+  margin-top: 95px;
+  padding: 0 15px; }
 
 .button-small {
   border: 1px solid #FFFFFF;
@@ -576,7 +572,6 @@ select::-ms-expand {
     height: 25px;
     bottom: 2px;
     left: 88px; } }
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 601px) and (max-width: 767px) {
   .Card-Area {
     display: grid !important;
@@ -593,7 +588,14 @@ select::-ms-expand {
   .Card-Area {
     display: grid !important;
     grid-template-columns: auto auto;
-    grid-gap: 5px; } }
+    grid-gap: 5px; }
+
+  .form-container {
+    padding: 0 25px; } }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 667px) {
+  .form-container {
+    padding: 0 25px; } }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .Card-Area {
@@ -1013,6 +1015,11 @@ h2.details-articles-tab-subtitle {
   padding-bottom: 5px !important;
   margin-bottom: 0px !important; }
 
+.nav-tabs .nav-link {
+  border: none !important;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem; }
+
 .Tab-Component {
   padding-top: 5px !important;
   display: block;
@@ -1030,10 +1037,17 @@ a.nav-link {
 a.nav-link:hover {
   cursor: pointer;
   text-decoration: none !important;
-  border: none !important; }
+  border: 1px solid #FFFFFF !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important; }
 
 .nav-link.active {
   font-weight: 600; }
+
+.nav-link.active:hover {
+  font-weight: 600;
+  border-top: none !important; }
 
 .nav-tabs {
   border-bottom: 1px solid #656664 !important; }
