@@ -1,5 +1,6 @@
 import React from 'react';
 import nytimes_image from '../../assets/nytimes_image.jpg';
+import DiscoverNav from './DiscoverNav';
 
 class Discover extends React.Component<Props, State>  {
   constructor(props: any) {
@@ -14,6 +15,7 @@ class Discover extends React.Component<Props, State>  {
     return (
       <React.Fragment>
         <div className="Discover-Component">
+        {/* <DiscoverNav/> */}
            <div className="communities-top">
            <div className="community-item selected">World</div> 
             <div className="community-item">Afghanistan</div> 
@@ -97,16 +99,9 @@ class Discover extends React.Component<Props, State>  {
                     </p>
                   </div>
             </div>
-
-
-
-
-
-
           </div>
         {/* </div> */}
-        </React.Fragment>
-         
+        </React.Fragment> 
     );
   }
 }

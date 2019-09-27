@@ -5,26 +5,15 @@
   "description": "This project provides the base styles and React components for all PiX related software",
   "main": "server.ts",
   "dependencies": {
-    "@types/express": "^4.17.0",
-    "axios": "^0.19.0",
-    "bcryptjs": "^2.4.3",
-    "body-parser": "^1.19.0",
     "config": "^3.1.0",
-    "dotenv": "^8.1.0",
-    "express": "^4.17.1",
-    "express-validator": "^6.0.1",
     "if-env": "^1.0.4",
-    "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.14",
-    "mongoose": "^5.6.10",
     "node-env-run": "^3.0.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "reactstrap": "^8.0.0",
     "reflect-metadata": "^0.1.13",
-    "socket.io": "^2.3.0",
     "ts-node": "^8.3.0",
-    "typegoose": "^5.7.2",
     "typescript": "^3.5.2"
   },
   "devDependencies": {
@@ -41,12 +30,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/azlan64/pix-design-guide.git"
+    "url": "git+https://github.com/alanjb/pix-design-guide.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/azlan64/pix-design-guide/issues"
+    "url": "https://github.com/alanjb/pix-design-guide/issues"
   },
-  "homepage": "https://github.com/azlan64/pix-design-guide#readme"
+  "homepage": "https://github.com/alanjb/pix-design-guide#readme"
 }

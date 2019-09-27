@@ -22,14 +22,12 @@ class ArticleIndexBarComponent extends React.Component<Props, State>  {
   }
 
   public handlePassingIndexSidePanelProps = () => {
-    console.log("handling passing state up to article...");
     let {isIndexSidePanelOpen} = this.state;
     this.props.getSidePanelProps(isIndexSidePanelOpen);
   }
 
   public render() {
     const { isIndexSidePanelOpen } = this.state;
-
     return (
       <div className="ArticleIndexBar-Component">
         <div className="article-indexbar">

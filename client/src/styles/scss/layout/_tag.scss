@@ -7,12 +7,12 @@
     background-color: $white;
     border: 1px solid $black;
     color: $black;
-    padding: .3rem .5rem; 
+    padding: .25rem .5rem; 
     z-index: 5;
     border-radius: 30px;
     cursor: pointer;
     width: auto;
-    margin: 1% .5%;
+    margin: 1% 1%;
     vertical-align: super;
     display: inline-block;
     font-size: 75%;
@@ -23,10 +23,13 @@
 
 .article-tag a{
     text-decoration: none !important;
+    font-weight: 600;
+    color: $black !important;
+    font-size: 8px;
 }
 
 .tag-area{
-    padding: 10px 0px;
+    padding: 5px 0px;
 }
 
 .first-tag{

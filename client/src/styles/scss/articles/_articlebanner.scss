@@ -1,5 +1,22 @@
 @import './abstract/variables';
 
+.article-banner {
+  text-align: center !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap;
+  background-color: $light-blue;
+  border: 2px solid $light-blue !important;
+  color: $white;
+  z-index: 5;
+  margin-bottom: 0px !important;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  margin-left: 10px !important;
+  width: auto !important;
+  margin-right: 15px !important;
+}
+
 .banner-title{
   text-align: center;
   color: $white;

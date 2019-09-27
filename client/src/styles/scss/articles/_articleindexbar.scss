@@ -33,9 +33,11 @@
 .breadcrumbs-container {
   display: flex;
   justify-content: space-between;
-  margin-left: 10px;
+  margin-left: 20px;
   margin-right: 10px;
   z-index: 999999 !important;
+  margin-top: .2px;
+  
 }
 
 .breadcrumbs {
@@ -49,7 +51,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width:150px;
+  max-width:100px;
 }
 
 .breadcrumbs-button {
@@ -58,7 +60,7 @@
   border-radius: 4px;
   background-color: $white;
   margin-left: 8px;
-  transform: translateY(-.9px);
+  transform: translateY(-2.6px);
   
 }
 
@@ -74,6 +76,7 @@
   margin-bottom: 5px;
   position: relative;
   font-size: 16px;
+  margin-left: 3px;
   padding-right: 5px;
   text-overflow: ellipsis !important;
 }
@@ -86,7 +89,8 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 25px;
+  max-width: 80px;
+  margin-top: .8px;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

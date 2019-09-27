@@ -33,7 +33,6 @@
   display: none;
 }
 
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 1150px) {
   .sidebar {
@@ -166,24 +165,6 @@
   white-space: nowrap;
   height: 80vh;
   margin-bottom: 25px;
-}
-
-.article-banner {
-  text-align: center !important;
-  text-overflow: ellipsis !important;
-  white-space: nowrap;
-  background-color: $light-blue;
-  border: 2px solid $light-blue !important;
-  color: $white;
-  z-index: 5;
-  margin-bottom: 0px !important;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  margin-left: 15px !important;
-  width: auto !important;
-  margin-right: 15px !important;
-  
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
