@@ -20,13 +20,11 @@ describe('Article Component', () => {
   beforeEach(() => {
     component = setUp();
   });
+  
 
   it('should render without errors', () => {
     const attr = 'Article-Component';
     const wrapper = findByTestAttr(component, attr);
     expect(wrapper.length).toBe(1);
   }); 
-
-
-
 });
