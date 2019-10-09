@@ -79,7 +79,7 @@ class Article2 extends React.Component<Props, State>  {
               <div className={sectionitemsClasses}>
                 <div className="section-toc itemSelected">
                   <ArticleIcon/>
-                  <h2 className="tableofcontents-header-text-sections">2019 Civil Unrest in Iraq Overview</h2>
+                  <h2 className="tableofcontents-header-text-sections">Baltics Training Center</h2>
                 </div>
 
                 <div className="section-toc">
