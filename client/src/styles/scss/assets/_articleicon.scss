@@ -1,0 +1,9 @@
+@import './abstract/variables';
+
+.article-icon {
+  z-index: 999 !important;
+  height: 1.7rem;
+  cursor: pointer !important;
+  margin-left: -7px;
+  position: fixed;
+}

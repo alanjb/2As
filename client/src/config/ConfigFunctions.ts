@@ -5,6 +5,11 @@ let getMenuItems = function getDefaultNavbarConfig(): NavbarConfig {
     menu: {
       items: [
         {
+          key: "bookmarks",
+          to: "/bookmarks",
+          text: "Bookmarks",
+        },
+        {
           key: "communities",
           to: "/portal/coi",
           text: "Communities",
@@ -21,7 +26,7 @@ let getMenuItems = function getDefaultNavbarConfig(): NavbarConfig {
         },
         {
           key: "invite-user",
-          to: "/invitations/invite",
+          to: "/invitenewuser",
           text: "Invite New User",
         },
         {

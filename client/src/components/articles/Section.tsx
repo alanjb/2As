@@ -10,7 +10,7 @@ export default class Article extends React.Component {
   render() {
     return (
         <div className="Section-Component"> 
-            <h3 className="section-title">Davis Conference Center, MacDill AFB, FL - 1-5 April 2019</h3>
+            <h3 className="section-title">2019 Civil Unrest in Iraq Overview</h3>
             <Tab/>
         </div>
     );

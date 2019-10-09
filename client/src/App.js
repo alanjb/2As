@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Discover from './components/discover/Discover';
 import Navbar from './components/layout/Navbar';
 import Article from './components/articles/Article';
+import Article2 from './components/articles/Article2';
 import InviteNewUser from './components/invite/InviteNewUser';
 
 class App extends React.Component {
@@ -20,8 +21,9 @@ class App extends React.Component {
         <div className="app-body">
           <Switch>
             <Route path="/article" component={Article} />
+            <Route path="/article2" component={Article2} />
             <Route exact path="/" component={Discover} />    
-            <Route path="/invitations/invite" component={InviteNewUser} />    
+            <Route path="/invitenewuser" component={InviteNewUser} />    
           </Switch>
         </div>
       </React.Fragment>

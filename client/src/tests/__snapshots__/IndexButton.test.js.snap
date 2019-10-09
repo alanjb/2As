@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IndexButton Component should render a hamburger button 1`] = `
+<Fragment>
+  <div
+    className="IndexButton-Component"
+  >
+    <img
+      alt="index"
+      className="index-button"
+      src="index2svg-01.svg"
+    />
+  </div>
+</Fragment>
+`;

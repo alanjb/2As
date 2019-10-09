@@ -28,20 +28,75 @@
   overflow-y: hidden;
   display: flex;
   justify-content: space-between;
+
+}
+
+.article-indexbar-article2{
+  display: flex !important;
+  flex: 1 1;
+  overflow-x: hidden;
+  flex-direction: column;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #F7F7F7;
+  text-overflow: ellipsis !important;
+  white-space: nowrap; 
+  // width: 100% !important;
+  margin-top: 80px !important;
+  height: 45px !important;
+  // box-shadow: 1px 1px 3px $light-grey !important; 
+
+  // border: 1px solid $light-grey !important;
+  // border-left: none !important;
+  padding: 10px 25px !important;
+  align-items: stretch;
+  white-space: nowrap !important;
+  font-size: .9rem;
+  z-index: 1 !important;
+  transform: none !important;
+  flex-direction: row;
+  overflow-x: scroll !important; 
+  position: sticky !important;
+  overflow-y: hidden;
+  justify-content: space-between;
+  border-bottom: 1px solid #EFEFEF;
 }
 
 .breadcrumbs-container {
   display: flex;
   justify-content: space-between;
-  margin-left: 20px;
+  margin-left: 50px;
   margin-right: 10px;
   z-index: 999999 !important;
-  margin-top: .2px;
+  margin-top: 1px;
+  
+}
+
+.breadcrumbs-container-article2 {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+  z-index: 999999 !important;
+  margin-top: 2.5px;
   
 }
 
 .breadcrumbs {
   margin-left: 10px;
+  color: $grey;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 16px;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width:160px;
+}
+
+.breadcrumbs-article2 {
   color: $grey;
   font-style: italic;
   font-weight: 500;
@@ -89,7 +144,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 80px;
+  max-width: 200px;
   margin-top: .8px;
 }
 
@@ -108,6 +163,14 @@
   .breadcrumbs-div {
     margin-left: -10px;
   }
+
+  .breadcrumbs-container {
+    margin-left: 30px;
+
+    
+  }
+
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
