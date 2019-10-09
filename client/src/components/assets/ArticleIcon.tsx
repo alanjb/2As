@@ -1,20 +1,10 @@
 import React from 'react';
-import articleIcon from '../../assets/article.svg';
+import ArticleIcon from '../../assets/article.svg';
 
-const IndexButton = (Props: any) => {
-  return (
-    <React.Fragment>
-        <div className="ArticleIcon-Component">
-          <img className="article-icon" src={articleIcon} alt="article-icon"/>
-        </div>
-    </React.Fragment>
-  )
-}
+const ArticleIconComponent = () => (
+  <div className="ArticleIcon-Component">
+    <img src={ArticleIcon} className="article-icon" alt="article" title="article"/>
+  </div>
+);
 
-type MyProps = {
-  toggleIndexSidePanel: () => any;
-};
-
-type Props = MyProps;
-
-export default IndexButton;
+export default ArticleIconComponent;
