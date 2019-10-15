@@ -1,0 +1,207 @@
+@import './abstract/variables';
+
+//mobile view
+.article-indexbar{
+  background: $white;
+  text-overflow: ellipsis !important;
+  white-space: nowrap; 
+  width: 100% !important;
+  margin-top: 80px !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 45px !important;
+  box-shadow: 1px 1px 3px $light-grey !important; 
+  display: flex !important;
+  border: 1px solid $light-grey !important;
+  border-left: none !important;
+  padding: 10px 25px !important;
+  align-items: stretch;
+  white-space: nowrap !important;
+  opacity: 0.97;
+  font-size: .9rem;
+  z-index: 1 !important;
+  transform: none !important;
+  flex-direction: row;
+  overflow-x: scroll !important; 
+  position: sticky !important;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.article-indexbar-article2{
+  display: flex !important;
+  flex: 1 1;
+  overflow-x: hidden;
+  flex-direction: column;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #F7F7F7;
+  text-overflow: ellipsis !important;
+  white-space: nowrap; 
+  // width: 100% !important;
+  margin-top: 80px !important;
+  height: 45px !important;
+  // box-shadow: 1px 1px 3px $light-grey !important; 
+
+  // border: 1px solid $light-grey !important;
+  // border-left: none !important;
+  padding: 10px 25px !important;
+  align-items: stretch;
+  white-space: nowrap !important;
+  font-size: .9rem;
+  z-index: 1 !important;
+  transform: none !important;
+  flex-direction: row;
+  overflow-x: scroll !important; 
+  position: sticky !important;
+  overflow-y: hidden;
+  justify-content: space-between;
+  border-bottom: 1px solid #EFEFEF;
+}
+
+.breadcrumbs-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 10px;
+  z-index: 999999 !important;
+  margin-top: 1px;
+  
+}
+
+.breadcrumbs-container-article2 {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+  z-index: 999999 !important;
+  margin-top: 2.5px;
+  
+}
+
+.breadcrumbs {
+  margin-left: 10px;
+  color: $grey;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 16px;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width:160px;
+}
+
+.breadcrumbs-article2 {
+  color: $grey;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 16px;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width:100px;
+}
+
+.breadcrumbs-button {
+  font-size: .85rem;
+  color: $black;
+  border-radius: 4px;
+  background-color: $white;
+  margin-left: 8px;
+  transform: translateY(-2.6px);
+  
+}
+
+.breadcrumbs-button:hover {
+  box-shadow: 1px 2px 3px $light-grey !important; 
+}
+
+.breadcrumb-caret {
+  margin-bottom: 5px !important;
+  color: $black;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 5px;
+  position: relative;
+  font-size: 16px;
+  margin-left: 3px;
+  padding-right: 5px;
+  text-overflow: ellipsis !important;
+}
+
+.last-breadcrumb{
+  padding-left: 5px !important; 
+  color: $grey;
+  font-style: italic;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  margin-top: 1px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 376px) {
+  .ArticleIndexBar-Component{
+    padding-right: 20px;
+  }
+  // .breadcrumbs{
+  //   padding-left: 15px;
+  // }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 568px) {
+  .breadcrumbs-div {
+    margin-left: -10px;
+  }
+
+  .breadcrumbs-container {
+    margin-left: 30px;
+
+    
+  }
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  // .breadcrumbs-container{
+  //   margin-left: .5rem;
+  // }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  // .breadcrumbs{
+  //   padding-left: 55px;
+  // }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  // .breadcrumbs{
+  //   padding-left: 65px;
+  // }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 575px) {
+  .ArticleIndexBar-Component{
+    padding: 18px 15px;
+  }
+
+  .breadcrumbs{
+    
+  }
+}

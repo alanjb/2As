@@ -1,0 +1,23 @@
+@import './abstract/variables';
+
+.index-button {
+  z-index: 1 !important;
+  height: 1.7rem;
+  cursor: pointer !important;
+  margin-left: -5.5px;
+  margin-top: -4px;
+  position: fixed;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 568px) {
+  .index-button {
+    z-index: 1 !important;
+    height: 1.7rem;
+    cursor: pointer !important;
+    margin-left: -13.5px;
+    margin-top: -3.6px;
+    position: fixed;
+  }
+  
+}
