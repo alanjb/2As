@@ -45,7 +45,6 @@ class Article2 extends React.Component<Props, State>  {
       sidePanelClasses = 'sidebar-article2 close';
       tableofcontentsHeaderTextClasses = 'tableofcontents-header-text close'; // hide Table of Contents text
       tableofcontentsheaderClasses = 'tableofcontents-header close';
-      // sectionitemsClasses = 'sectionitems closed';
     }
 
     return (
@@ -80,7 +79,10 @@ class Article2 extends React.Component<Props, State>  {
               <div className={sectionitemsClasses}>
                 <div className="section-toc itemSelected">
                   <ArticleIcon/>
-                  <h2 className="tableofcontents-header-text-sections">Planning and Admininstration</h2>
+                  <h2 className="tableofcontents-header-text-sections">Planning</h2>
+                  <h2 className="tableofcontents-header-text-subsections">Subsection 1</h2>
+                  <h2 className="tableofcontents-header-text-subsections">Subsection 2</h2>
+                  <h2 className="tableofcontents-header-text-subsections">Subsection 3</h2>
                 </div>
 
                 <div className="section-toc">
@@ -103,7 +105,7 @@ class Article2 extends React.Component<Props, State>  {
             <div className="main">
 
             <div className="article-content-article2 row">
-              <div className="col-xs-2 col-sm-1 col-md-1 col-lg-1">
+              <div className="col-xs-2 col-sm-2 col-md-1 col-lg-1">
               <div className="article-toolbar-largescreens">
               <Info/>
               <NewArticle/>
@@ -112,7 +114,7 @@ class Article2 extends React.Component<Props, State>  {
               <Bookmark/>
             </div>
               </div>
-              <div className="article-sections col-xs-7 col-sm-7 col-md-8 col-lg-9">
+              <div className="article-sections col-xs-7 col-sm-8 col-md-10 col-lg-10">
                 <h1 className="article-title">Baltics Training Center</h1> 
                 <div className="tag-area">
                 <div className="article-tag first-tag">
@@ -131,8 +133,8 @@ class Article2 extends React.Component<Props, State>  {
                 <Section/>
                 <Section/>
               </div>   
-              <div className="col-xs-3 col-sm-1 col-md-1 col-lg-2">
-                <div className="Article-List row">
+              <div className="col-xs-3 col-sm-2 col-md-1 col-lg-1">
+                {/* <div className="Article-List row">
                   <h2 className="recommended">Related Articles</h2>
                   <div className="scrollable-area">
                     <div className="article-list-item">
@@ -158,7 +160,7 @@ class Article2 extends React.Component<Props, State>  {
                       <img className="recommended-image" src={sampleImage3} />
                     </div>
                   </div>
-                </div> 
+                </div>  */}
               </div> 
             </div>
             <ArticleToolBar/> 

@@ -16,8 +16,8 @@ export default class ArticleToolbarComponent extends React.Component {
         <Info/>
         <NewArticle/>
         <EditArticle/>
-        <BookmarkMobile/>
         <DuplicateArticle/>
+        <BookmarkMobile/>
       </div>
     );
   }

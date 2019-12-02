@@ -1,9 +1,9 @@
 import React from 'react';
-import DuplicateArticle from '../../assets/duplicatearticle.svg';
+import Duplicate from '../../assets/duplicate_v2.svg';
 
 const DuplicateArticleComponent = () => (
   <div className="DuplicateArticle-Component">
-    <img src={DuplicateArticle} className="editArticle" alt="Duplicate" title="Duplicate article"/>
+    <img src={Duplicate} className="editArticle" alt="Duplicate" title="Duplicate article"/>
   </div>
 );
 

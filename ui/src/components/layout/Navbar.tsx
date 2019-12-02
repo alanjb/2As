@@ -10,6 +10,7 @@ const { getMenuItems } = require('../../config/ConfigFunctions');
 const menu = getMenuItems();
 const menuItemsArray = menu.menu.items;
 const maxScreenWidthForNavPanel = 991;
+
 class Navbar extends React.Component<Props, State> {
   constructor(props: any){
     super(props);

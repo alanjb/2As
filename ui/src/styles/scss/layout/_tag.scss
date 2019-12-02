@@ -7,12 +7,12 @@
     background-color: $white;
     border: 1px solid $black;
     color: $black;
-    padding: .25rem .5rem; 
+    padding: .15rem .55rem; 
     z-index: 5;
     border-radius: 30px;
     cursor: pointer;
     width: auto;
-    margin: 1% 1%;
+    margin: 1% .5%;
     vertical-align: super;
     display: inline-block;
     font-size: 75%;
@@ -26,15 +26,8 @@
     color: $white;
 }
 
-.article-tag a{
+a:hover{
     text-decoration: none !important;
-    font-weight: 600;
-    color: $black !important;
-    font-size: 8px;
-}
-
-.article-tag a:hover{
-    color: $white !important;
 }
 
 .tag-area{
