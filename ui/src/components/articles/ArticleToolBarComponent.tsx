@@ -12,6 +12,7 @@ export default class ArticleToolbarComponent extends React.Component {
 
   render() {
     return (
+      // <div className="ArticleToolbar-Component space-between"  justify-content: center;>
       <div className="ArticleToolbar-Component space-between">
         <Info/>
         <NewArticle/>
