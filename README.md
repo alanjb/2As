@@ -1,8 +1,15 @@
 # pix design guide
-This project currents has components 
+This project currently has designs for the following components:
 - Navigation Menu 
-- Pages (article)
+- Pages (articles)
 - Sections
+- Modals
+- Buttons
+- Forms
+- Cards
+
+In the works:
+- Discover 
 
 To start the react application, run
 
