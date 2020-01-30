@@ -1,10 +1,4 @@
 module.exports = {
-    entry: "index.js",
-    output: {
-        filename: "bundle.js",
-        path: __dirname + "/dist"
-    },
-
     // Enable sourcemaps for debugging webpack's output.
     devtool: "source-map",
 

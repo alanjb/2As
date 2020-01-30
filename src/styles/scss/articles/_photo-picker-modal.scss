@@ -1,0 +1,71 @@
+@import './abstract/variables';
+
+.insert-button {
+    background-color: #3B60D8 !important;
+    padding: 8px 15px;
+}
+
+.cancel-link {
+    color: #3B60D8 !important;
+    margin-left: 10px !important;
+}
+
+.photoPicker-modal {
+
+}
+
+.modal-body {
+    padding-top: 10px;
+}
+
+.modal-backdrop {
+    background-color: #06153C !important;
+}
+
+.modal {
+    visibility: visible !important;
+    background-color: transparent !important;
+}
+
+.modal-footer {
+    border: none !important;
+    justify-content: flex-start !important;
+}
+
+.modal-header{
+    border-bottom: none !important;
+    padding: 5px 15px !important;
+}
+
+.modal-title {
+    font-weight: 500;
+}
+
+.modal-input {
+    width: 75%;
+    height: calc(1em + .75rem + 2px);
+}
+
+.modal.fade .modal-dialog {
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+    -webkit-transform: translate(0, 150px);
+    transform: translate(0, 150px);
+}
+
+.modal-content {
+    position: relative;
+    padding: 15px 10px 25px 15px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}

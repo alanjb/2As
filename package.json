@@ -1,41 +1,76 @@
 {
-  "name": "pix-ux",
-  "bin": "./index.js",
-  "version": "1.0.0",
-  "description": "This project provides the base styles and React components for all PiX related software",
-  "main": "server.ts",
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "config": "^3.1.0",
-    "if-env": "^1.0.4",
-    "lodash": "^4.17.14",
-    "node-env-run": "^3.0.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "reactstrap": "^8.0.0",
-    "reflect-metadata": "^0.1.13",
-    "ts-node": "^8.3.0",
-    "typescript": "^3.5.2"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
-    "concurrently": "^4.1.1",
-    "nodemon": "^1.19.1"
+    "@babel/runtime": "^7.8.4",
+    "@types/node": "^11.15.5",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/reactstrap": "^7.1.6",
+    "availity-reactstrap-validation": "^2.6.1",
+    "axios": "^0.19.2",
+    "bcrypt": "^3.0.7",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.4.1",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "moment": "^2.24.0",
+    "mongoose": "^5.8.10",
+    "node-sass": "^4.13.1",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-moment": "^0.9.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.8",
+    "react-test-renderer": "^16.12.0",
+    "reactstrap": "^8.4.1",
+    "typesafe-actions": "^4.2.0",
+    "validator": "^10.10.0"
   },
   "scripts": {
-    "start": "nodemon server.ts --exec babel-node --presets babel-preset-env",
-    "server": "nodemon server.ts",
-    "build": "babel index.js -d dist"
+    "start": "react-scripts start",
+    "build": "npm sass:build && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "sass": "sass --watch src/styles/scss:src/styles/css",
+    "sass: build": "sass - update src/styles/scss:src/styles/css"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alanjb/pix-design-guide.git"
+  "proxy": "http://localhost:5000",
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alanjb/pix-design-guide/issues"
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@testing-library/react": "^9.4.0",
+    "@types/jest": "^24.9.1",
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-plugin-styled-components": "^1.10.7",
+    "case-sensitive-paths-webpack-plugin": "^2.3.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "husky": "^2.4.1",
+    "jest-enzyme": "^7.1.2",
+    "nodemon": "^1.19.4",
+    "prettier": "1.15.1",
+    "rollup-plugin-node-resolve": "^5.0.3",
+    "source-map-loader": "^0.2.4",
+    "typescript": "^3.7.5"
   },
-  "homepage": "https://github.com/alanjb/pix-design-guide#readme"
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  }
 }
