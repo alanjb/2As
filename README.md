@@ -15,9 +15,4 @@ To start the react application, run
 
 ```bash
 # In the project root folder
-<<<<<<< HEAD
 npm run start
-
-=======
-npm run start
->>>>>>> styles for photopickermodal
