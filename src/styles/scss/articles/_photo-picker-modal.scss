@@ -1,8 +1,20 @@
 @import './abstract/variables';
 
+.form-check:not(:first-child)  {
+    margin-left: 10px;
+}
+
+.captioned-image-checkbox {
+    margin-left: 0px !important;
+}
+
+.alignment-area{
+    display: flex;
+}
+
 .insert-button {
     background-color: #3B60D8 !important;
-    padding: 8px 15px;
+    padding: 8px 20px;
 }
 
 .cancel-link {
@@ -19,12 +31,13 @@
 }
 
 .modal-backdrop {
-    background-color: #06153C !important;
+    background-color: #121929 !important;
 }
 
 .modal {
     visibility: visible !important;
     background-color: transparent !important;
+    overflow: hidden !important;
 }
 
 .modal-footer {
@@ -38,7 +51,8 @@
 }
 
 .modal-title {
-    font-weight: 500;
+   
+
 }
 
 .modal-input {
@@ -50,8 +64,8 @@
     transition: -webkit-transform .3s ease-out;
     transition: transform .3s ease-out;
     transition: transform .3s ease-out,-webkit-transform .3s ease-out;
-    -webkit-transform: translate(0, 150px);
-    transform: translate(0, 150px);
+    -webkit-transform: translate(0, 40%);
+    transform: translate(0, 40%);
 }
 
 .modal-content {
