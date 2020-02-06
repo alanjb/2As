@@ -52,7 +52,6 @@ class PhotoPickerModal extends Component<Props, any> {
             </FormGroup>
 
           </div>
-
           <br></br>
           <FormGroup check className="captioned-image-checkbox">
             <Label check>
@@ -60,7 +59,6 @@ class PhotoPickerModal extends Component<Props, any> {
               Captioned Image
             </Label>
           </FormGroup>
-          
         </ModalBody>
         <ModalFooter>
           <Button color="primary insert-button" onClick={toggle}>Insert</Button>{' '}

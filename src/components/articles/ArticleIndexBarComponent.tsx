@@ -1,6 +1,4 @@
 import React from 'react';
-import IndexSidePanel from './IndexSidePanel';
-import IndexButton from '../assets/IndexButton';
 
 class ArticleIndexBarComponent extends React.Component<Props, State>  {
   constructor(props: any) {

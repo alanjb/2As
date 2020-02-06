@@ -2,36 +2,6 @@
 
 //mobile view
 .article-indexbar{
-  background: $white;
-  text-overflow: ellipsis !important;
-  white-space: nowrap; 
-  width: 100% !important;
-  margin-top: 80px !important;
-  bottom: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  height: 45px !important;
-  box-shadow: 1px 1px 3px $light-grey !important; 
-  display: flex !important;
-  border: 1px solid $light-grey !important;
-  border-left: none !important;
-  padding: 10px 25px !important;
-  align-items: stretch;
-  white-space: nowrap !important;
-  opacity: 0.97;
-  font-size: .9rem;
-  z-index: 1 !important;
-  transform: none !important;
-  flex-direction: row;
-  overflow-x: scroll !important; 
-  position: sticky !important;
-  overflow-y: hidden;
-  display: flex;
-  justify-content: space-between;
-
-}
-
-.article-indexbar-article2{
   display: flex !important;
   flex: 1 1;
   overflow-x: hidden;
@@ -39,7 +9,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: #F7F7F7;
+  background: $black;
   text-overflow: ellipsis !important;
   white-space: nowrap; 
   // width: 100% !important;
@@ -60,7 +30,8 @@
   position: sticky !important;
   overflow-y: hidden;
   justify-content: space-between;
-  border-bottom: 1px solid #EFEFEF;
+  border-bottom: 1px solid $grey-border;
+
 }
 
 .breadcrumbs-container {

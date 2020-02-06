@@ -46,11 +46,11 @@ class Article extends React.Component<Props, State>  {
   };
 
   render() {
-    let { isSidePanelClosed } = this.state;
+    const { isSidePanelClosed } = this.state;
     let tableofcontentsheaderClasses = 'tableofcontents-header '
     let sidePanelClasses = 'sidebar-article2 ';
-    let tableofcontentsHeaderTextClasses = 'tableofcontents-header-text ';
-    let sectionitemsClasses = 'sectionitems ';
+    let  tableofcontentsHeaderTextClasses = 'tableofcontents-header-text ';
+    const sectionitemsClasses = 'sectionitems ';
     
     if(isSidePanelClosed){
       sidePanelClasses = 'sidebar-article2 close';
@@ -68,7 +68,7 @@ class Article extends React.Component<Props, State>  {
               <h2 className={tableofcontentsHeaderTextClasses}>Table of Contents</h2>
             </div>
 
-            <div className="article-indexbar-article2">
+            <div className="article-indexbar">
                 <div className="indexbar-container">
                   <div className="breadcrumbs-container-article2">
                     <a className="breadcrumbs-article2">Community</a> <span className="breadcrumb-caret"> > </span> <a className="last-breadcrumb">Iraq</a> <span className="breadcrumb-caret"> > </span> <button className="breadcrumbs-button">...add more</button>  
@@ -113,7 +113,7 @@ class Article extends React.Component<Props, State>  {
             
             <div className="main">
 
-            <div className="article-content-article2 row">
+            <div className="article-content row">
               <div className="col-xs-2 col-sm-2 col-md-2 col-lg-1">
             <div className="article-toolbar-largescreens">
               <Info/>
