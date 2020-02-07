@@ -1,7 +1,7 @@
 @import './abstract/variables';
 
-.nav{
-    
+.nav-link{
+    color: $white;
 }
 
 .nav-tabs .nav-link {
@@ -19,7 +19,7 @@
 
 a.nav-link {
     font-size: .8rem;
-    color: $black;
+    color: $white;
     border-bottom: 3px;
     cursor: pointer;
     text-decoration: none !important;

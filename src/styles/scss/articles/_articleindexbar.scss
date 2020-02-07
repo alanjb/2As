@@ -12,13 +12,8 @@
   background: $black;
   text-overflow: ellipsis !important;
   white-space: nowrap; 
-  // width: 100% !important;
   margin-top: 80px !important;
   height: 45px !important;
-  // box-shadow: 1px 1px 3px $light-grey !important; 
-
-  // border: 1px solid $light-grey !important;
-  // border-left: none !important;
   padding: 10px 25px !important;
   align-items: stretch;
   white-space: nowrap !important;
@@ -31,7 +26,6 @@
   overflow-y: hidden;
   justify-content: space-between;
   border-bottom: 1px solid $grey-border;
-
 }
 
 .breadcrumbs-container {
@@ -41,7 +35,6 @@
   margin-right: 10px;
   z-index: 999999 !important;
   margin-top: 1px;
-  
 }
 
 .breadcrumbs-container-article2 {
@@ -49,8 +42,7 @@
   justify-content: space-between;
   margin-right: 10px;
   z-index: 999999 !important;
-  margin-top: 2.5px;
-  
+  margin-top: 2.5px; 
 }
 
 .breadcrumbs {

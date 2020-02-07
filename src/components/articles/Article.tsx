@@ -135,7 +135,12 @@ class Article extends React.Component<Props, State>  {
                 </div>
                 </div>
                     <Section />
+                    <Section />
+                    <Section />
+                    <Section />
+                    <Section />
                     <Button onClick={this.togglePhotoPickerModal}>Insert photo</Button>
+
               </div>   
               <div className="col-xs-3 col-sm-2 col-md-2 col-lg-2">
                 <div className="Article-List row">
