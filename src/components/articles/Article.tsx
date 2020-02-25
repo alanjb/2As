@@ -16,7 +16,7 @@ import sampleImage2 from '../../assets/sampleImage2.png';
 import sampleImage3 from '../../assets/sampleImage3.png';
 import IndexButton from '../assets/IndexButton';
 import ArticleIcon from '../assets/ArticleIcon';
-import PhotoPickerModal from './sections/PhotoPickerModal.component';
+import PhotoPickerModal from '../modals/PhotoPickerModal.component';
 
 class Article extends React.Component<Props, State>  {
   constructor(props: Props) {
