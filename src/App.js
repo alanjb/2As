@@ -19,7 +19,6 @@ class App extends React.Component {
             <Route path="/article" component={Article} />
             <Route exact path="/" component={Discover} />    
             <Route path="/invitenewuser" component={InviteNewUser} />    
-            <Route path="/portals" component={InviteNewUser} />  
           </Switch>
         </div>
       </React.Fragment>

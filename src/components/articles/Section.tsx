@@ -9,11 +9,10 @@ export default class Article extends React.Component {
 
   render() {
     return (
-        <div className="Section-Component"> 
-        <h3 className="section-title">Baltics Training Center</h3>
-        {/* <button>choose photo</button> */}
+      <div className="Section-Component"> 
+        <h3 className="section-title">Iraq Politics</h3>
         <Tab/>
-        </div>
+      </div>
     );
   }
 }

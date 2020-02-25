@@ -4,27 +4,22 @@
   text-align: center !important;
   text-overflow: ellipsis !important;
   white-space: nowrap;
-  background-color: $light-blue;
-  border: 2px solid $light-blue !important;
   color: $white;
   z-index: 5;
   margin-bottom: 0px !important;
   display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  margin-left: 10px !important;
+  display: flex; 
   width: auto !important;
-  margin-right: 15px !important;
-  border-radius: 2px;
+  background-color: $white !important;
+  align-items: center;
 }
 
 .banner-title{
-  text-align: center;
-  color: $white;
-  font-size: 15px;
+  text-align: right;
+  font-weight: 600;
+  color: $light-blue;
   overflow: hidden;
   text-decoration: none;
-  position: relative;
 }
 
 a:hover{

@@ -48,12 +48,12 @@ class Article extends React.Component<Props, State>  {
   render() {
     const { isSidePanelClosed } = this.state;
     let tableofcontentsheaderClasses = 'tableofcontents-header '
-    let sidePanelClasses = 'sidebar-article2 ';
+    let sidePanelClasses = 'sidebar-article ';
     let  tableofcontentsHeaderTextClasses = 'tableofcontents-header-text ';
     const sectionitemsClasses = 'sectionitems ';
     
     if(isSidePanelClosed){
-      sidePanelClasses = 'sidebar-article2 close';
+      sidePanelClasses = 'sidebar-article close';
       tableofcontentsHeaderTextClasses = 'tableofcontents-header-text close'; // hide Table of Contents text
       tableofcontentsheaderClasses = 'tableofcontents-header close';
     }
@@ -125,7 +125,7 @@ class Article extends React.Component<Props, State>  {
                   </div>
 
               <div className="article-sections col-xs-7 col-sm-8 col-md-8 col-lg-8">
-                <h1 className="article-title">Baltics Training Center</h1> 
+                <h1 className="article-title">Iraq</h1> 
                 <div className="tag-area">
                 <div className="article-tag first-tag">
                   <span><a>Politics &amp; Governance</a></span>
@@ -139,8 +139,8 @@ class Article extends React.Component<Props, State>  {
                     <Section />
                     <Section />
                     <Section />
+                    <Section />
                     <Button onClick={this.togglePhotoPickerModal}>Insert photo</Button>
-
               </div>   
               <div className="col-xs-3 col-sm-2 col-md-2 col-lg-2">
                 <div className="Article-List row">
